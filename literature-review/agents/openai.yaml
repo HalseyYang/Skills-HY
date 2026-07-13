@@ -1,0 +1,4 @@
+interface:
+  display_name: "Literature Review"
+  short_description: "Plan, run, and write rigorous literature reviews."
+  default_prompt: "Help me conduct a rigorous literature review with search strategy, screening criteria, evidence table, synthesis, and citation checks."

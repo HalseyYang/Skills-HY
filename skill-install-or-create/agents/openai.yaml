@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Install Or Create"
+  short_description: "Install or synthesize skills."
+  default_prompt: "Install this skill source if possible; if it is not installable or too slow, create a valid local Codex skill from the available description."
