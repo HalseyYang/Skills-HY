@@ -1,0 +1,4 @@
+interface:
+  display_name: "MedDev Document Review"
+  short_description: "Review and draft registration documents."
+  default_prompt: "Help me review, revise, and draft medical device registration documents with regulatory, standards, and literature-based comments."
