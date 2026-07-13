@@ -1,0 +1,13 @@
+{
+  "name": "Word 文档生成",
+  "installedAt": 1776225463825,
+  "source": "marketplace",
+  "iconSource": "https://openplatform-cdn.codebuddy.cn/public/skills/icons/minimax-docx.svg",
+  "version": "1.0.0",
+  "skillId": "skill_2053082396193849344",
+  "iconLocalPath": "C:\\Users\\ThinkBook\\.workbuddy\\skills\\minimax-docx\\_icon.svg",
+  "iconDownloadedFrom": "https://openplatform-cdn.codebuddy.cn/public/skills/icons/minimax-docx.svg",
+  "skillName": "minimax-docx",
+  "description_zh": "Word 文档生成与编辑",
+  "description_en": "Generate and edit Word documents from scratch"
+}

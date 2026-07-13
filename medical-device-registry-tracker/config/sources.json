@@ -1,0 +1,407 @@
+{
+  "regions": {
+    "CN": {
+      "name": "中国法规",
+      "sources": [
+        {
+          "id": "nmpa",
+          "name": "国家药品监督管理局",
+          "url": "https://www.nmpa.gov.cn/ylqx/index.html",
+          "type": "web_fetch",
+          "parser": "cn_nmpa",
+          "category": "main",
+          "web_fetch_status": "blocked",
+          "note": "HTTP 412反爬；使用 web_fetch / web_search 兜底"
+        },
+        {
+          "id": "nifdc_standard",
+          "name": "中检院标准管理中心",
+          "url": "https://www.nifdc.org.cn/nifdc/bshff/ylqxbzhgl/index.html",
+          "type": "web_fetch",
+          "parser": "cn_generic",
+          "category": "standard",
+          "web_fetch_status": "untested",
+          "note": "器械标准管理专页，新增标准公告"
+        },
+        {
+          "id": "nifdc_ci",
+          "name": "中检院公告通知",
+          "url": "https://www.nifdc.org.cn/nifdc/xxgk/ggtzh/index.html",
+          "type": "static",
+          "parser": "cn_generic",
+          "category": "standard",
+          "web_fetch_status": "untested"
+        },
+        {
+          "id": "cmde_main",
+          "name": "器械审评中心",
+          "url": "https://www.cmde.org.cn/",
+          "type": "web_fetch",
+          "parser": "cmde",
+          "category": "review",
+          "web_fetch_status": "blocked",
+          "note": "反爬虫保护；使用 web_fetch / web_search 兜底"
+        },
+        {
+          "id": "cmde_report",
+          "name": "审评报告",
+          "url": "https://www.cmde.org.cn/xwdt/shpbg/index.html",
+          "type": "web_fetch",
+          "parser": "cmde",
+          "category": "review",
+          "web_fetch_status": "blocked",
+          "note": "反爬虫保护；使用 web_fetch / web_search 兜底"
+        },
+        {
+          "id": "cmde_faq",
+          "name": "CMDE共性问题",
+          "url": "https://www.cmde.org.cn/splt/ltgxwt/index.html",
+          "type": "web_fetch",
+          "parser": "cmde",
+          "category": "review",
+          "web_fetch_status": "blocked",
+          "note": "反爬虫保护；使用 web_fetch / web_search 兜底"
+        },
+        {
+          "id": "cmde_forum",
+          "name": "CMDE论坛",
+          "url": "https://www.cmde.org.cn/splt/index.html",
+          "type": "web_fetch",
+          "parser": "cmde",
+          "category": "review",
+          "web_fetch_status": "blocked",
+          "note": "反爬虫保护；使用 web_fetch / web_search 兜底"
+        },
+        {
+          "id": "ydcmdei",
+          "name": "器械审评中心（长三角）",
+          "url": "https://www.ydcmdei.org.cn/",
+          "type": "web_fetch",
+          "parser": "cn_generic",
+          "category": "review",
+          "web_fetch_status": "untested",
+          "note": "长三角器械审评中心，关注区域审评动态"
+        },
+        {
+          "id": "mdei_gba",
+          "name": "器械审评中心（大湾区）",
+          "url": "https://www.mdei.org.cn/",
+          "type": "web_fetch",
+          "parser": "cn_generic",
+          "category": "review",
+          "web_fetch_status": "untested",
+          "note": "大湾区器械审评中心，关注区域审评动态"
+        }
+      ]
+    },
+    "EU": {
+      "name": "欧盟法规",
+      "sources": [
+        {
+          "id": "ec_sante_updates",
+          "name": "DG SANTE最新动态",
+          "url": "https://health.ec.europa.eu/latest-updates_en",
+          "type": "static",
+          "parser": "eu_ec",
+          "category": "news",
+          "web_fetch_status": "✅ 成功",
+          "note": "DG SANTE最新动态（泛门户，所有领域）"
+        },
+        {
+          "id": "ec_news",
+          "name": "EC医疗器械动态",
+          "url": "https://health.ec.europa.eu/medical-devices-sector/latest-updates_en",
+          "type": "static",
+          "parser": "eu_ec",
+          "category": "news",
+          "web_fetch_status": "✅ 成功",
+          "note": "MDCG/MDR/IVDR等指南更新"
+        },
+        {
+          "id": "ec_guidance",
+          "name": "MDCG指南文件（新URL）",
+          "url": "https://health.ec.europa.eu/medical-devices-sector-new-regulation/guidance-mdcg-endorsed-documents-and-other-guidance_en",
+          "type": "static",
+          "parser": "eu_ec",
+          "category": "guidance",
+          "web_fetch_status": "⚠️ 待验证（网站改版中）",
+          "note": "⚠️ 2026年网站大规模改版，原URL已404；新URL待验证"
+        },
+        {
+          "id": "ec_harmonized",
+          "name": "协调标准",
+          "url": "https://health.ec.europa.eu/medical-devices-topics-interest/harmonised-standards_en",
+          "type": "static",
+          "parser": "eu_ec",
+          "category": "standard",
+          "web_fetch_status": "✅ 成功"
+        },
+        {
+          "id": "ec_sante_newsletter",
+          "name": "DG SANTE Newsletter（EMA突破性器械试点）",
+          "url": "https://ec.europa.eu/newsroom/sante/newsletter-archives/74172",
+          "type": "static",
+          "parser": "eu_ec",
+          "category": "news",
+          "web_fetch_status": "✅ 成功",
+          "note": "收录EMA突破性医疗器械和体外诊断试剂试点项目等重要法规动态"
+        },
+        {
+          "id": "ec_nb",
+          "name": "公告机构列表",
+          "url": "https://health.ec.europa.eu/medical-devices-topics-interest/notified-bodies-medical-devices_en",
+          "type": "static",
+          "parser": "eu_ec",
+          "category": "nb",
+          "web_fetch_status": "noise",
+          "note": "NB列表页，非法规，噪音较多"
+        },
+        {
+          "id": "teamnb",
+          "name": "Team NB",
+          "url": "https://www.team-nb.org/all-news/",
+          "type": "dynamic",
+          "parser": "eu_teamnb",
+          "category": "nb_news",
+          "web_fetch_status": "untested"
+        },
+        {
+          "id": "imdrf",
+          "name": "IMDRF文档",
+          "url": "https://www.imdrf.org/documents",
+          "type": "static",
+          "parser": "imdrf",
+          "category": "international",
+          "web_fetch_status": "✅ 成功",
+          "note": "建议使用 https://www.imdrf.org/documents"
+        },
+        {
+          "id": "ec_emdn",
+          "name": "EMDN 欧洲医疗器械命名法",
+          "url": "https://health.ec.europa.eu/medical-devices-sector-new-regulation/european-medical-device-nomenclature-emdn_en",
+          "type": "web_fetch",
+          "parser": "eu_ec",
+          "category": "nomenclature",
+          "web_fetch_status": "🆕 新增（待验证）",
+          "note": "🆕 新增来源：EMDN FAQ、EMDN分类更新公告；重要！MDCG 2021-12 EMDN FAQ 发布于此"
+        },
+        {
+          "id": "ec_mdr_revision",
+          "name": "EU MDR/IVDR 改革提案",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_2985",
+          "type": "web_fetch",
+          "parser": "eu_ec",
+          "category": "revision",
+          "web_fetch_status": "🆕 新增（待验证）",
+          "note": "🆕 新增来源：EU MDR & IVDR Targeted Revision Proposal (COM/2025/800)，170页改革提案核心信息"
+        },
+        {
+          "id": "ec_borderline",
+          "name": "边境分类手册（新URL）",
+          "url": "https://health.ec.europa.eu/medical-devices-borderline-and-classification/manual-borderline-classification-under-regulation-eu-2017745-and-2017570_en",
+          "type": "web_fetch",
+          "parser": "eu_ec",
+          "category": "classification",
+          "web_fetch_status": "🆕 新增（待验证）",
+          "note": "🆕 新增来源：MDR/IVDR边境分类手册2026年更新（含数字健康产品边界判定）"
+        },
+        {
+          "id": "ec_clinical_national",
+          "name": "成员国临床试验国家要求（新URL）",
+          "url": "https://health.ec.europa.eu/medical-devices-sector-new-regulation/member-states-specific-national-requirements-clinical-investigations-and-performance-studies_en",
+          "type": "web_fetch",
+          "parser": "eu_ec",
+          "category": "clinical",
+          "web_fetch_status": "🆕 新增（待验证）",
+          "note": "🆕 新增来源：各成员国临床试验国家特殊要求汇总"
+        },
+        {
+          "id": "ec_mir_xsd",
+          "name": "制造商不良事件报告XSD（新URL）",
+          "url": "https://health.ec.europa.eu/medical-devices-sector-new-regulation/new-manufacturer-incident-report-xsd-files-and-xsl-files-sb-11154_en",
+          "type": "web_fetch",
+          "parser": "eu_ec",
+          "category": "vigilance",
+          "web_fetch_status": "🆕 新增（待验证）",
+          "note": "🆕 新增来源：制造商不良事件报告XSD/XSL文件（SB 11154）更新，用于EUDAMED警戒模块"
+        }
+      ]
+    },
+    "US": {
+      "name": "美国FDA法规",
+      "sources": [
+        {
+          "id": "fda_federal_register",
+          "name": "FDA Federal Register（法规分类与重新分类）",
+          "url": "https://www.federalregister.gov/public-inspection/current",
+          "type": "static",
+          "parser": "us_fda",
+          "category": "classification",
+          "web_fetch_status": "需验证",
+          "note": "收录FDA器械分类法规和重新分类命令，发布在Federal Register"
+        },
+        {
+          "id": "fda_recalls",
+          "name": "FDA医疗器械召回",
+          "url": "https://www.fda.gov/medical-devices/medical-device-safety/medical-device-recalls",
+          "type": "static",
+          "parser": "us_fda_recall",
+          "category": "safety",
+          "web_fetch_status": "✅ 成功",
+          "note": "仅收录召回信息，不收录法规分类"
+        },
+        {
+          "id": "fda_early_alerts",
+          "name": "FDA早期警报",
+          "url": "https://www.fda.gov/medical-devices/medical-device-safety/medical-device-recalls/early-alert-system",
+          "type": "static",
+          "parser": "us_fda",
+          "category": "safety",
+          "web_fetch_status": "untested"
+        },
+        {
+          "id": "fda_cdrh",
+          "name": "CDRH中心最新消息",
+          "url": "https://www.fda.gov/medical-devices/medical-devices-news-and-events/cdrh-new-news-and-updates",
+          "type": "web_fetch",
+          "parser": "us_fda_cdrh",
+          "category": "news",
+          "web_fetch_status": "✅ 成功",
+          "note": "使用 web_fetch 工具抓取，包含召回、指南、法规更新等重要动态"
+        },
+        {
+          "id": "fda_safety_comm",
+          "name": "FDA医疗器械安全通讯",
+          "url": "https://www.fda.gov/medical-devices/medical-device-safety/safety-communications",
+          "type": "web_fetch",
+          "parser": "us_fda",
+          "category": "safety",
+          "web_fetch_status": "🆕 新增（待验证）",
+          "note": "🆕 新增来源：Safety Communications专门页面，发布FDA对当前问题的分析及临床建议（2026-03-16有更新）"
+        },
+        {
+          "id": "fda_guidance",
+          "name": "FDA指南文件",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents",
+          "type": "dynamic",
+          "parser": "us_fda",
+          "category": "guidance",
+          "web_fetch_status": "blocked"
+        }
+      ]
+    },
+    "CA": {
+      "name": "加拿大法规",
+      "sources": [
+        {
+          "id": "ca_news",
+          "name": "Health Canada最新消息",
+          "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices/what-new.html",
+          "type": "static",
+          "parser": "ca_health",
+          "category": "news",
+          "web_fetch_status": "✅ 成功",
+          "note": "包含指南、征求意见、重大变更说明"
+        },
+        {
+          "id": "ca_announcements",
+          "name": "Health Canada医疗器械公告",
+          "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices/activities/announcements.html",
+          "type": "web_fetch",
+          "parser": "ca_health",
+          "category": "announcements",
+          "web_fetch_status": "🆕 新增（待验证）",
+          "note": "🆕 新增来源：医疗器械专项公告页面，包含COVID相关、法规修订等重要公告"
+        },
+        {
+          "id": "ca_guidance",
+          "name": "Health Canada指南",
+          "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices/application-information/guidance-documents.html",
+          "type": "static",
+          "parser": "ca_health",
+          "category": "guidance",
+          "web_fetch_status": "✅ 成功"
+        }
+      ]
+    },
+    "IMDRF": {
+      "name": "IMDRF国际协调",
+      "sources": [
+        {
+          "id": "imdrf_documents",
+          "name": "IMDRF文档列表",
+          "url": "https://www.imdrf.org/documents",
+          "type": "static",
+          "parser": "imdrf",
+          "category": "documents",
+          "web_fetch_status": "✅ 成功",
+          "note": "按类别组织：工作成果、会议成果等"
+        },
+        {
+          "id": "ema_events",
+          "name": "EMA即将举行的活动",
+          "url": "https://www.ema.europa.eu/en/events/upcoming-events",
+          "type": "web_fetch",
+          "parser": "eu_ema",
+          "category": "events",
+          "web_fetch_status": "✅ 成功",
+          "note": "收录EMA举办的医疗器械相关会议、培训、网络研讨会等活动通知。注意：145个活动分15页，需关注医疗器械相关活动"
+        },
+        {
+          "id": "imdrf_meetings",
+          "name": "IMDRF会议成果",
+          "url": "https://www.imdrf.org/consultations-open",
+          "type": "static",
+          "parser": "imdrf",
+          "category": "meetings",
+          "web_fetch_status": "✅ 成功"
+        }
+      ]
+    }
+  },
+  "ima": {
+    "knowledge_base_name": "MD 法规更新-Testing"
+  },
+  "web_fetch_urls": {
+    "verified": [
+      "https://health.ec.europa.eu/medical-devices-sector/latest-updates_en",
+      "https://health.ec.europa.eu/latest-updates_en",
+      "https://www.imdrf.org/documents",
+      "https://www.imdrf.org/consultations-open",
+      "https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices/what-new.html",
+      "https://www.fda.gov/medical-devices/medical-device-safety/medical-device-recalls",
+      "https://www.fda.gov/medical-devices/medical-devices-news-and-events/cdrh-new-news-and-updates",
+      "https://www.ema.europa.eu/en/events/upcoming-events"
+    ],
+    "new_us_ca_2026": [
+      "https://www.fda.gov/medical-devices/medical-device-safety/safety-communications",
+      "https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices/activities/announcements.html"
+    ],
+    "new_eu_2026": [
+      "https://health.ec.europa.eu/medical-devices-sector-new-regulation/european-medical-device-nomenclature-emdn_en",
+      "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_2985",
+      "https://health.ec.europa.eu/medical-devices-borderline-and-classification/manual-borderline-classification-under-regulation-eu-2017745-and-2017570_en",
+      "https://health.ec.europa.eu/medical-devices-sector-new-regulation/member-states-specific-national-requirements-clinical-investigations-and-performance-studies_en",
+      "https://health.ec.europa.eu/medical-devices-sector-new-regulation/new-manufacturer-incident-report-xsd-files-and-xsl-files-sb-11154_en",
+      "https://health.ec.europa.eu/medical-devices-sector-new-regulation/mdcg-2021-24-guidance-classification-medical-devices_en",
+      "https://health.ec.europa.eu/medical-devices-sector-new-regulation/mdcg-2020-16-rev-3-guidance-ivdr-classification-rules_en"
+    ],
+    "blocked": [
+      "https://www.nmpa.gov.cn/ylqx/index.html",
+      "https://www.cmde.org.cn/",
+      "https://www.cmde.org.cn/xwdt/shpbg/index.html",
+      "https://www.cmde.org.cn/splt/ltgxwt/index.html",
+      "https://www.cmde.org.cn/splt/index.html"
+    ],
+    "web_search_fallback": [
+      "https://www.nmpa.gov.cn/ylqx/index.html",
+      "https://www.cmde.org.cn/",
+      "https://www.cmde.org.cn/xwdt/shpbg/index.html",
+      "https://www.cmde.org.cn/splt/ltgxwt/index.html",
+      "https://www.cmde.org.cn/splt/index.html",
+      "https://www.nifdc.org.cn/nifdc/bshff/ylqxbzhgl/index.html",
+      "https://www.ydcmdei.org.cn/",
+      "https://www.mdei.org.cn/"
+    ]
+  }
+}

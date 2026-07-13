@@ -1,0 +1,939 @@
+=== FULL DOCUMENT TEXT ===
+[P5] Post-market clinical follow-up plan
+[P6] PMCF Plan
+[P7] PMCF plan number:   ZKBK-TR-NC-0 15
+[P8] PMCF plan version:  A/1
+[P9] Revision history
+[P10] Rev.
+[P11] Revision Date
+[P12] Description of change
+[P13] Revised by
+[P14] A/0
+[P15] 2024.12.31
+[P16] I nitial released  
+[P18] A/1
+[P19] 2025.08.29
+[P20] R evised  the format and content in accordance with MDCG 2020-7.
+[P29] Content
+[P30] Section A. Manufacturer Contact Details 4
+[P31] Section B. Medical Device description and specification 4
+[P32] Section  B.1 General Description of Declared Device 4
+[P33] Section B.1.1 Product component 4
+[P34] Section B.1.2 Model 6
+[P35] Section  B.1.3 All configurations/Variants of the product 7
+[P36] Section B.1.4 UDI and Basic UDI-DI 10
+[P37] Section  B.1.5 Operation Principle 11
+[P38] Section  B.1.6 Accessories or compatible devices 13
+[P39] Section  B.2 Specification of the Intended Purpose, Target Groups, Indications, and Contraindications 16
+[P40] Section  B.2.1 Intended purpose 16
+[P41] Section  B.2.2 Indication 16
+[P42] Section  B.2.3 Patient population 16
+[P43] Section  B.2.3 Site in the body 16
+[P44] Section  B.2.4 Intended user 16
+[P45] Section  B.2.5 Intended environment 17
+[P46] Section  B.2.6 Contact method and duration of use 17
+[P47] Section  B.2.7 Contraindication 17
+[P48] Section  B.2.8 Warning 17
+[P49] Section  B.2.9 Caution 18
+[P50] Section  B.2.10 Limitation 19
+[P51] Section C. Activities related to PMCF: General and specific methods and procedures 19
+[P52] Section C.1.  Define where the need of conducting the PMCF activity 19
+[P53] Section C.2 Survey from health care professional 20
+[P54] Section C.2.1 Description of activity 20
+[P55] Section C.2.2 Aim of the activity 20
+[P56] Section C.2.2 Procedures used as part of PMCF 20
+[P57] Section C.2.3 Rationale for appropriateness of chosen procedures 21
+[P58] Section C.2.4 Timeline 22
+[P59] Section C.3 Screening of scientific literature relating to subject device 22
+[P60] Section C.3.1 Description of activity 22
+[P61] Section C.3.2 Aim of the activity 22
+[P62] Section C.3.2 Procedures used as part of PMCF 22
+[P63] Section C.3.3 Rationale for appropriateness of chosen procedures 24
+[P64] Section C.3.4 Timeline 24
+[P65] Section C.4 Reactive PMS ： Collection of feedback from end-users and distributors, Feedback or adverse events of same category device 24
+[P66] Section C.4.1 Description of activity 24
+[P67] Section C.4.2 Aim of the activity 25
+[P68] Section C.4.2 Procedures used as part of PMCF 25
+[P69] Section C.4.3 Rationale for appropriateness of chosen procedures 25
+[P70] Section C.4.4 Timeline for Reactive PMS 26
+[P71] Section C.7. A summary table of the different PMCF activities foreseen 27
+[P72] Section D. Evaluation of clinical data relating to similar devices 29
+[P73] Section D.1 Description of activity 29
+[P74] Section D.2 Aim of the activity 29
+[P75] Section D.3 Procedures used as part of PMCF 29
+[P76] Section D.4 Rationale for appropriateness of chosen procedures 30
+[P77] Section D.5 Timeline 30
+[P78] Section E. Impact of the results on the technical documentation 32
+[P79] Section F. Reference to any applicable common specification(s), harmonized standard(s) or applicable guidance document(s) 32
+[P80] Common Specification(s) to comply with, if applicable: NA 32
+[P81] Harmonised Standards to apply, if applicable: 32
+[P82] Guidance on PMCF, if applicable 33
+[P83] Section G. Estimated date of the PMCF evaluation report 33
+[P84] ANNEX   A1  Customer Survey Form 34
+[P88] Section A. Manufacturer Contact Details
+[P89] Manufacturer
+[P90] Braincare (Beijing) Medical Device Co., Ltd.
+[P91] Address
+[P92] South of the 3rd floor, Building No. 12-1, Yard 26, Yong Wang West Road, Daxing Bio-pharmaceutical industry Base, Zhong Guan Cun High-Tech Park, Daxing district, Beijing
+[P93] E-mail
+[P94] xuwt@casibrain.com
+[P95] Phone
+[P96] 17801125176
+[P97] European Representative
+[P98] NEO HEALTHIES LTD
+[P99] Address
+[P100] Suite 109, The Capel Building, Mary's Abbey, Dublin 7, D07EC93, IRELAND
+[P101] Person responsible for regulatory compliance
+[P102] Wenting Xu
+[P103] E-mail
+[P104] xuwt@casibrain.com
+[P105] Phone
+[P106] 17801125176
+[P107] Notified Body
+[P108] SGS NB 1639
+[P109] SRN Code
+[P110] DE-AR-000005129
+[P111] Section B. Medical Device description and specification
+[P112] Product Name
+[P113] Non-invasive Cerebral Oximetry System  &  Tissue Oximetry Sensor
+[P114] Trade Name
+[P115] N/A
+[P116] EMDN Code
+[P117] Non-invasive Cerebral Oximetry System :  Z120302 -VITAL SIGNS MONITORING INSTRUMENTS
+[P118] Tissue Oximetry Sensor :  Z12030280  -  VITAL SIGNS MONITORING INSTRUMENTS - HARDWARE ACCESSORIES
+[P119] Notified Body
+[P120] SGS NB 1639
+[P121] Class
+[P122] Class IIb
+[P123] Classification rule
+[P124] MDR Annex VIII, Chapter III, Rule  10
+[P125] Section  B.1  General Description of Declared Device
+[P126] Section  B.1.1  Product component
+[P127] Non-invasive cerebral Oximetry system:
+[P128] The Non-invasive cerebral Oximetry system is composed of the monitor system including Main unit, Hub, Power cord, Communication line (used to connect the main unit and hub),rSO2  sensor  and connecting cables (2 for each), StO2  sensor  and connecting cables (2 for each), SpO2  sensor  and connecting cable (1 set),  wireless rSO2 sensor  (1 set), Accessories including  T issue oximetry sensors  (including cerebral oximetry sensor ,  peripheral tissue oximetry sensor  and  pulse Oximeter Sensor) and  wireless rSO2 sensor .
+[P129] Host
+[P130] Power supply voltage: 220 V
+[P131] Power frequency: 50 Hz
+[P132] 6-channel synchronous acquisition and display on the same screen
+[P133] Input power: 50 VA
+[P134] Front view
+[P136] Alarm indicator. Red light is emitted to alarm when the data is abnormal.
+[P137] Power switch. In the shutdown state, press and hold this switch for 2 seconds to turn on the host. In the power-on state, press and hold this switch for 6 seconds to perform a forced shutdown.
+[P138] Charging indicator: Yellow in charging state and green in fully charged state.
+[P139] Side view
+[P141] 1.The USB interface. U disk, mouse, keyboard and other devices can be connected through this interface.
+[P142] 2.Hub interface. Connect the hub through this serial port.
+[P143] Debug interface. For maintenance and commissioning for the Non-invasive Cerebral Oximetry System. 
+[P144] Top view
+[P146] Rear view
+[P148] 1.Handle. The Non-invasive Cerebral Oximetry System is a portable device, and the handle is designed for convenient carrying.
+[P149] 2.The charging interface. The connection interface between the Non-invasive Cerebral Oximetry System and the mains.
+[P150] 3.The power switch button.
+[P151] 4.Heat dissipation hole. When the instrument is operating, the case becomes hot, and the heat dissipation hole can prevent the instrument from failing due to overheating.
+[P152] Section  B.1.2  M odel
+[P153] Justification for the addition of three models under MDR application
+[P154] Compared with the models previously declared under the Medical Device Directive (93/42/EEC), the current MDR application includes an extension of the model range from BRS-100 to BRS-100A, BRS-100B, and BRS-100C.
+[P155] The differentiation among these models is solely based on the number of output channels configured within the same system architecture. All models share identical intended purpose, fundamental design principles, control and safety mechanisms, software architecture, and performance characteristics.
+[P156] The modification does not introduce any new materials, energy sources, or operating principles, nor does it affect the established risk profile, electrical safety, or clinical performance.
+[P157] Therefore, the inclusion of models BRS-100A, BRS-100B, and BRS-100C under the MDR application is justified as a model family extension without impact on the safety and performance of the device.
+[P158] T able 1  The difference of BRS-100 series
+[P159] Model/Size
+[P160] Number of   output   channels
+[P161] Product composition
+[P162] Channel
+[P163] configuration  page
+[P164] Main difference
+[P165] BRS -100
+[P166] 6  channels: 2  rSO 2 , 2  StO 2 , 1  SpO 2 , 1  wireless rSO 2  sensor
+[P167] The device is composed of a main unit, power cable, hub, and sensors. The sensors are collectively referred to as “Tissue Oximetry Sensors”, which include the cerebral oximetry sensor, peripheral tissue oximetry sensor, and pulse oximetry sensor, as well as the  wireless rSO 2  sensor
+[P168] Configurable up to 6 channels corresponding to output channels
+[P169] CE-certified model; full accessory set included
+[P170] BRS -100A
+[P171] 5 channels: 2  rSO 2 , 2  StO 2 , 1  SpO 2
+[P172] The device is composed of a main unit, power cable, hub, and sensors. The sensors are collectively referred to as “Tissue Oximetry Sensors”, which include the cerebral oximetry sensor, peripheral tissue  oximetry sensor, and pulse oximetry sensor
+[P173] Configurable up to 5 channels
+[P174] Compared to BRS-100:  wireless rSO 2   sensor  not included; no corresponding wireless channel
+[P175] BRS -100B
+[P176] 4  channels: 2  rSO 2 , 2  StO 2
+[P177] The device is composed of a main unit, power cable, hub, and sensors. The sensors are collectively referred to as “Tissue Oximetry Sensors”, which include the cerebral oximetry sensor, peripheral tissue oximetry sensor .
+[P178] Configurable up to 4 channels
+[P179] Compared to BRS-100:  SpO 2  and  wireless rSO 2  sensor  not included; no corresponding channels
+[P180] BRS -100
+[P181] 2  channels: 2  rSO 2
+[P182] The device is composed of a main unit, power cable, hub, and sensors. The sensors are collectively referred to as “Tissue Oximetry Sensors”, which include the cerebral oximetry sensor .
+[P183] Configurable up to 2 channels
+[P184] Compared to BRS-100:  StO 2 ,  SpO 2 , and  wireless rSO2  sensor  not  included; no corresponding channels
+[P185] Table  2  The difference of  Tissue Oximetry Sensor
+[P186] Product name
+[P187] Sensor model
+[P188] Size(mm )  
+[P189] Usage mode 
+[P190] Light source sensor distribution 
+[P191] Tissue Oximetry Sensor   (rSO2)
+[P192] BRS-1-R 
+[P193] 63*30*2 
+[P194] Single-use 
+[P195] 1+1+2 
+[P197] BRS-1-RR 
+[P198] 63*30*2 
+[P199] Single-use 
+[P200] 1+1+2 
+[P202] BRS-1-RL 
+[P203] 63*30*2 
+[P204] Single-use 
+[P205] 1+1+2 
+[P207] BRS-1-RXL 
+[P208] 75*40*2 
+[P209] Single-use 
+[P210] 1+1+2 
+[P212] BRS-1-RM 
+[P213] 52*33*5 
+[P214] Single-use 
+[P215] 1+1+1 
+[P217] BRS-1-RSR 
+[P218] 60*32*5 
+[P219] Single-use 
+[P220] 1+1+1 
+[P222] BRS-1-RSL 
+[P223] 60*32*5 
+[P224] Single-use 
+[P225] 1+1+1 
+[P227] BRS-1RE-R 
+[P228] 63*30*2 
+[P229] Reusable 
+[P230] 1+1+2 
+[P232] BRS-1RE-RR 
+[P233] 63*30*2 
+[P234] Reusable 
+[P235] 1+1+2 
+[P237] BRS-1RE-RL 
+[P238] 63*30*2 
+[P239] Reusable 
+[P240] 1+1+2 
+[P242] BRS-1RE-RXL 
+[P243] 75*40*2 
+[P244] Reusable 
+[P245] 1+1+2 
+[P247] BRS-1RE-RM 
+[P248] 52*33*5 
+[P249] Reusable 
+[P250] 1+1+1 
+[P252] BRS-1RE-RSR 
+[P253] 60*32*5 
+[P254] Reusable 
+[P255] 1+1+1 
+[P257] BRS-1RE-RSL 
+[P258] 60*32*5 
+[P259] Reusable 
+[P260] 1+1+1 
+[P261] Tissue Oximetry Sensor (StO2)
+[P262] BRS-1-C
+[P263] 63*30*2 
+[P264] Single-use 
+[P265] 1+1+2 
+[P267] BRS-1-CR 
+[P268] 63*30*2 
+[P269] Single-use 
+[P270] 1+1+2 
+[P272] BRS-1-CL 
+[P273] 63*30*2 
+[P274] Single-use 
+[P275] 1+1+2 
+[P277] BRS-1-CXL 
+[P278] 75*40*2 
+[P279] Single-use 
+[P280] 1+1+2 
+[P282] BRS-1-CM 
+[P283] 52*33*5 
+[P284] Single-use 
+[P285] 1+1+1 
+[P287] BRS-1-CSR 
+[P288] 60*32*5 
+[P289] Single-use 
+[P290] 1+1+1 
+[P292] BRS-1-CSL 
+[P293] 60*32*5 
+[P294] Single-use 
+[P295] 1+1+1 
+[P297] BRS-1RE-C 
+[P298] 63*30*2 
+[P299] Reusable 
+[P300] 1+1+2 
+[P302] BRS-1RE-CR 
+[P303] 63*30*2 
+[P304] Reusable 
+[P305] 1+1+2 
+[P307] BRS-1RE-CL 
+[P308] 63*30*2 
+[P309] Reusable 
+[P310] 1+1+2 
+[P312] BRS-1RE- CXL 
+[P313] 75*40*2 
+[P314] Reusable 
+[P315] 1+1+2 
+[P317] BRS-1RE-CM 
+[P318] 52*33*5 
+[P319] Reusable 
+[P320] 1+1+1 
+[P322] BRS-1RE-CSR 
+[P323] 60*32*5 
+[P324] Reusable 
+[P325] 1+1+1 
+[P327] BRS-1RE-CSL 
+[P328] 60*32*5 
+[P329] Reusable 
+[P330] 1+1+1 
+[P331] Section  B.1.3  All c onfigurations/Variants  of the product
+[P332] There are no configurations/variants with The Non-invasive Cerebral Oximetry System.
+[P333] Section B.1. 4  UDI and Basic UDI-DI
+[P334] Table  3  UDI and Basic UDI-DI
+[P335] Product name
+[P336] Product model
+[P337] UDI-DI
+[P338] Basic UDI-DI
+[P339] Non-invasive cerebral  oximetry system
+[P340] BRS-100
+[P341] 6975990940022
+[P342] B-697599094101S9EG
+[P343] Non-invasive cerebral  oximetry system
+[P344] BRS-100A
+[P345] 6975990940039
+[P347] Non-invasive cerebral  oximetry system
+[P348] BRS-100B
+[P349] 6975990940046
+[P351] Non-invasive cerebral  oximetry system
+[P352] BRS-100C
+[P353] 6975990940053
+[P355] Tissue Oximetry Sensor ( rSO 2 )
+[P356] BRS-1-R
+[P357] 6975990940084
+[P358] 697599094102SB
+[P359] Tissue Oximetry Sensor ( rSO 2 )
+[P360] BRS-1-RR  
+[P361] 6975990940138
+[P363] Tissue Oximetry Sensor ( rSO 2 )
+[P364] BRS-1-RL
+[P365] 6975990940145
+[P367] Tissue Oximetry Sensor ( rSO 2 )
+[P368] BRS-1-RXL
+[P369] 6975990940152
+[P371] Tissue Oximetry Sensor ( rSO 2 )
+[P372] BRS-1-RM
+[P373] 6975990940169
+[P375] Tissue Oximetry Sensor ( rSO 2 )
+[P376] BRS-1-RSR
+[P377] 6975990940176
+[P379] Tissue Oximetry Sensor ( rSO 2 )
+[P380] BRS-1-RSL
+[P381] 6975990940183
+[P383] Tissue Oximetry Sensor ( rSO 2 )
+[P384] BRS-1RE-R
+[P385] 6975990940190
+[P387] Tissue Oximetry Sensor ( rSO 2 )
+[P388] BRS-1RE-RR
+[P389] 6975990940206
+[P391] Tissue Oximetry Sensor ( rSO 2 )
+[P392] BRS-1RE-RL
+[P393] 6975990940213
+[P395] Tissue Oximetry Sensor ( rSO 2 )
+[P396] BRS-1RE-RXL
+[P397] 6975990940220
+[P399] Tissue Oximetry Sensor ( rSO 2 )
+[P400] BRS-1RE-RM
+[P401] 6975990940237
+[P403] Tissue Oximetry Sensor ( rSO 2 )
+[P404] BRS-1RE-RSR
+[P405] 6975990940244
+[P407] Tissue Oximetry Sensor ( rSO 2 )
+[P408] BRS-1RE-RSL
+[P409] 6975990940251
+[P411] Tissue Oximetry Sensor ( StO 2 )
+[P412] BRS-1-CSL
+[P413] 6975990940275
+[P415] Tissue Oximetry Sensor ( StO 2 )
+[P416] BRS-1-CR
+[P417] 6975990940169
+[P419] Tissue Oximetry Sensor ( StO 2 )
+[P420] BRS-1-CL
+[P421] 6975990940282
+[P423] Tissue Oximetry Sensor ( StO 2 )
+[P424] BRS-1RE-CR
+[P425] 6975990940190
+[P427] Tissue Oximetry Sensor ( StO 2 )
+[P428] BRS-1RE-CXL
+[P429] 6975990940176
+[P431] Tissue Oximetry Sensor ( StO 2 )
+[P432] BRS-1RE-CSL
+[P433] 6975990940251
+[P435] Tissue Oximetry Sensor ( StO 2 )
+[P436] BRS-1RE-CL
+[P437] 6975990940138
+[P439] Tissue Oximetry Sensor ( StO 2 )
+[P440] BRS-1RE-C
+[P441] 6975990940213
+[P443] Tissue Oximetry Sensor ( StO 2 )
+[P444] BRS-1RE-CM
+[P445] 6975990940145
+[P447] Tissue Oximetry Sensor ( StO 2 )
+[P448] BRS-1RE-CSR
+[P449] 6975990940220
+[P451] Tissue Oximetry Sensor ( StO 2 )
+[P452] BRS-1-C
+[P453] 06975990940152
+[P455] Tissue Oximetry Sensor ( StO 2 )
+[P456] BRS-1-CSR
+[P457] 6975990940237
+[P459] Tissue Oximetry Sensor ( StO 2 )
+[P460] BRS-1-CM
+[P461] 6975990940244
+[P463] Tissue Oximetry Sensor ( StO 2 )
+[P464] BRS-1-CXL
+[P465] 6975990940268
+[P467] Section  B.1.5  Operation Principle
+[P468] Non-invasive  cerebral  oximetry system mainly consists of three parts: main unit, display and sensors. Sensors acquire and analyze the physio signal when they connect the monitor. The main unit stores and displays the data from modules. The data can also be sent via network by the main unit.
+[P469] When near-infrared light passes through the skull, photons diffuse along multiple paths in the skull, and some of the light is absorbed by different layers of tissue such as the skull, scalp, and brain, while the remaining photons are scattered in the tissue along the so-called "banana" model  (as  shown in Figure 1). With the help of appropriate optical equipment, we can detect near-infrared light absorbed and scattered by tissue. Analysis of this outgoing light spectrum shows that the main absorption  of near -infrared light in tissue comes from deoxyhemoglobin and oxygenated hemoglobin.
+[P471] Figure 1 Model of near-infrared light propagation in the brain
+[P472] The changes in hemoglobin in tissues can be explained by the Lambert - Beer law,
+[P473]                   (1)
+[P474] When the near-infrared light source and detector are placed as shown in the figure above, the detector receives the photons emitted after passing through the tissue. Some photons are scattered and absorbed in the tissue, and the attenuation of light between the light source and the detector is described by equation (1), where   is the incident light,    is the detection light, and is   the photon density  with a wavelength of, which can be defined as the attenuation of light intensity.  This attenuation is the superposition of the absorption ( ) and scattering ( ) of light with a wavelength of  .  In this way,
+[P475]                 (2)
+[P476] Oxygenated hemoglobin (HbO 2 ) and deoxygenated hemoglobin (Hb) are the main absorption channels of near-infrared light. Therefore, the absorption of light can be defined as,
+[P477]                  (3)
+[P478] Among them,   is   the extinction coefficient of hemoglobin for near-infrared light of a specific wavelength,    is the concentration of hemoglobin,   and is the diffusion path length of light of wavelength in tissue. This length can be defined as,
+[P479]                     (4)
+[P480] Where   is the distance between the light source and the detector,   is the path length difference coefficient, and the path length difference coefficient is a correction for the main scattering path length of the photon and is defined as follows:
+[P481]          (5)
+[P482] Where   is the absorption coefficient and   is   the simplified scattering coefficient at wavelength. Here, the simplified scattering coefficient is used instead of the scattering coefficient according to the anisotropy of scattering. 
+[P483] When scattering, the path length difference coefficient is assumed to be a certain value, and   the difference in optical density can be generated by two paths.
+[P484]    (6)
+[P485] This will eliminate the effect of scattering. 
+[P486] Because each hemoglobin has its own specific extinction coefficient and path length difference coefficient, the measurement of two different wavelengths of light is as follows,
+[P487]                     (7)
+[P488] I n,
+[P489]   (8)
+[P490] a and   is defined as  ，so that we can get
+[P491]                  (9)
+[P492] Determine the absorption and reduced scattering coefficients and  . With these coefficients and formula (5), we can get   the values corresponding to each wavelength, and solving the relative changes in the concentrations of oxygenated hemoglobin and deoxygenated hemoglobin evolves into solving the matrix equation (9). In this way, we can convert the detected near infrared light intensity change signal into the change in blood oxygen saturation in the tissue, that is, the change in hemoglobin concentration.
+[P493] Section  B.1.6  Accessories or compatible devices
+[P494] The accessory components of the product include a cerebral oximetry sensor, a peripheral tissue oximetry sensor, a pulse oximetry sensor, and a  wireless rSO2 sensor . For naming consistency, the term “Tissue Oximetry Sensor” is used as a generic designation encompassing the cerebral oximetry sensor, peripheral tissue oximetry sensor, and pulse oximetry sensor, all of which are intended for monitoring regional tissue oxygen saturation. In the present submission, the cerebral oximetry sensor is being submitted as an individual device.
+[P495] The following accessories are designed for use with the Non-invasive Cerebral Oximetry System and are essential for achieving the intended clinical function.
+[P497] T able 4 Accessories list
+[P498] Accessory Name
+[P499] Description
+[P500] Picture
+[P501] Compatibility with the Host
+[P502] Hub
+[P503] The hub is connected to the host via a communication line and to individual detection sensor via cables. (The Co-Ablation system is also connected to the same monitor and can be used concurrently if needed.)
+[P505] Compatible with all models BRS-100 / BRS-100A / BRS-100B / BRS-100C
+[P506] Tissue Oximetry Sensor (rSO₂)
+[P507] Tissue Oximetry Sensor (rSO₂) is a disposable device designed to be attached to the patient's head using its integrated adhesive. It functions by generating and detecting optical signals in cerebral tissue, which are then converted into electrical data and transmitted via shielded cables to the monitoring system. This enables real-time tracking of cerebral oxygen saturation levels.
+[P508] The sensor operates with two wavelengths of light, each having an output power of 5 mW: 735 nm and 810 nm. It is intended for single use only. Reuse may lead to inaccurate or unstable measurements, complete signal loss, and an increased risk of cross-infection.
+[P510] Compatible with all models BRS-100 / BRS-100A / BRS-100B / BRS-100C
+[P511] Tissue Oximetry Sensor  (StO₂)
+[P512] Tissue Oximetry Sensor (StO₂) is designed to be placed on the patient’s body for real-time monitoring of oxygen saturation levels in corresponding tissue regions. It operates with a light output power of 2 mW at both 735 nm and 810 nm wavelengths.
+[P513] Other technical characteristics and usage methods of the peripheral tissue oximetry sensor are consistent with those of the Tissue Oximetry Sensor (used for the measurement of regional cerebral oxygen saturation). 
+[P515] Compatible with all models BRS-100 / BRS-100A / BRS-100B / BRS-100C
+[P516] Tissue Oximetry Sensor (SpO₂)
+[P517] Tissue Oximetry Sensor (SpO₂) is designed to be placed on the patient's hand or toe for real-time monitoring of pulse oxygen saturation. It operates with a light output power of 5 mW at 660 nm and 5 mW at 905 nm. The data update cycle is 1 second, meaning that the pulse oxygen value is calculated and displayed based on data collected within each 1‑second interval.
+[P519] Compatible with all models BRS-100 / BRS-100A / BRS-100B / BRS-100C
+[P520] Wireless rSO2 sensor
+[P521] Wireless rSO2 sensor is designed to be worn on the patient's head and utilizes Bluetooth 4.0 technology to establish a wireless connection with the host monitor. This enables real-time monitoring of cerebral oxygen saturation levels through wireless data transmission.
+[P523] Compatible with all models BRS-100 / BRS-100A / BRS-100B / BRS-100C
+[P526] Section  B.2 Specification of the Intended  Purpose, Target   Groups, Indications, and  Contraindications
+[P527] Section  B.2.1  Intended purpose
+[P528] This device is intended for continuous, non-invasive monitoring of regional cerebral tissue oxygen saturation, peripheral tissue oxygen saturation, and pulse oxygen saturation, with wireless transmission of regional cerebral tissue oxygen saturation data.
+[P529] Section  B.2.2  Indication
+[P530] This device is indicated for adult patients requiring monitoring of regional cerebral tissue, peripheral tissue, or pulse oxygen saturation.
+[P531] The device is indicated for patients at risk of cerebral or systemic hypoxia where continuous monitoring of oxygenation is clinically relevant. Typical clinical scenarios may include, but are not limited to:
+[P532] • Patients undergoing surgical procedures associated with potential cerebral or systemic ischemia (e.g., cardiovascular surgery, neurosurgery).
+[P533] • Patients in critical care or intensive care settings requiring continuous monitoring of oxygenation.
+[P534] • Patients in emergency care situations where cerebral or systemic oxygenation status needs to be continuously evaluated.
+[P535] Section  B.2.3  Patient population
+[P536] Adult ( ≥18 years old ) patients for whom clinical assessment of regional cerebral, peripheral tissue, or pulse oxygen saturation is recommended.
+[P537] Section  B.2.3  Site in the body
+[P538] Cerebral oximetry :  the site on the forehead above the eyebrow and must below the hairline where the Sensors will be linearly aligned.
+[P539] Tissue oximetry :  site that provides the ideal access to the desired skeletal muscle tissue (if muscle cannot be palpated, too much adipose or edema may be present).
+[P540] – Arm: Position Sensor over the deltoid (shoulder), biceps (upper arm), or brachioradialis muscle.
+[P541] – Leg: Position Sensor over the quadriceps (upper leg), gastrocnemius (calf), or tibialis (calf) muscle. Apply the Sensor with the connector towards the feet.
+[P542] – Flank/Abdomen: Position Sensor over the Latissimus dorsi (flank) or external oblique (abdomen) muscle.
+[P543] Finger oximetry: Finger site
+[P544] Section  B.2.4  Intended user
+[P545] This manual is written for clinical professionals with working knowledge of medical procedures, practices, and terminology as required for monitoring critically ill patients. 
+[P546] The Non-invasive Cerebral Oximetry System is to be operated by qualified personnel only. Failure to read this manual, accessory direction for use, all precautionary information, and specifications could result in injury.  Operators must comply with the included Warnings, Cautions, and Notes to guarantee safe operation of the Non-invasive Cerebral Oximetry System. Do not use the Non-invasive Cerebral Oximetry System for any purpose other than specified in this manual. Doing so will invalidate the oximetry system’s warranty. 
+[P547] Training on this Non-invasive Cerebral Oximetry System for the safe and effective use of its primary operating functions can be provided through Braincare (Beijing) Medical Device Co., Ltd. See Contact Manufacturer Information. Braincare (Beijing) Medical Device Co., Ltd. recommends in-service training on the Non-invasive Cerebral Oximetry System after the initial installation. No periodic retraining should be required. Training may also be provided when updates to the system are provided or as deemed appropriate by Braincare (Beijing) Medical Device Co., Ltd.
+[P548] Section  B.2.5  Intended environment
+[P549] The cerebral oximetry system is intended to be used in the following environments: operating, exam/procedure rooms, surgical recovery, critical care, emergency room, and long-term care.
+[P550] Section  B.2.6  Contact method and duration of use
+[P551] The device is indicated for patients at risk of cerebral or systemic hypoxia where continuous monitoring of oxygenation is clinically relevant. Typical clinical scenarios may include, but are not limited to:
+[P552] Patients undergoing surgical procedures associated with potential cerebral or systemic ischemia (e.g., cardiovascular surgery, neurosurgery).
+[P553] Patients in critical care or intensive care settings requiring continuous monitoring of oxygenation.
+[P554] Patients in emergency care situations where cerebral or systemic oxygenation status needs to be continuously evaluated.
+[P555] Section  B.2.7  Contraindication
+[P556] Cerebral  oximetry sensor  and  Peripheral tissue oximetry sensor  are contraindicated in patients with:
+[P557] Too narrow physical location area for proper sensor placement.
+[P558] Allergic reaction to sensor adhesive.
+[P559] Receiving MRI scanning due to risk of injury.
+[P560] At the time of releasing this guidance, there were no additional contraindications.
+[P561] Section  B.2.8  Warning
+[P562] Before putting the system into operation, the operator must verify that the equipment, connecting cables and accessories are in correct working order and operating condition. To avoid risk of electric shock, the equipment must only be connected to mains power with function earth.
+[P563] To avoid explosion hazard, do not use the equipment in the presence of oxygen-rich atmospheres, flammable anesthetics, or other   flammable agents.
+[P564] This equipment can only be operated by trained and   qualified personnel. The operator must follow the warnings, cautions and notices in this manual to ensure the safe operation of the equipment.
+[P565] Do not open the equipment housings. All servicing and   future upgrades must be carried out by trained and authorized personnel.
+[P566] When using this equipment with electrosurgical equipment, ensure the safety of patients.
+[P567] Do not rely exclusively on the audible alarm system for   patient monitoring. Turning the alarm volume to a low level or off may   result in a hazard to the patient. Remember that alarm settings should be customized according to patient situations. Always keep the patient under close surveillance.
+[P568] The physiological data and alarm messages displayed on the equipment are for reference only and cannot be directly used for   diagnostic interpretation.
+[P569] To avoid inadvertent disconnection, route all cables in a way to prevent a stumbling hazard. Wrap and secure excess cabling to reduce risk of entanglement by patients or personnel.
+[P570] Dispose of the package material as per the applicable waste control regulations. Keep it out of children’s reach.
+[P571] Do not use this equipment in an environment outside the recommended temperature and humidity range.
+[P572] Do not use this equipment for other purposes not specified in this manual, otherwise the warranty of this equipment monitor will be invalidated.
+[P573] When a trend toward patient deoxygenation is indicated, analyze the blood samples with a laboratory co-oximeter to completely understand the patient’s condition.
+[P574] Do not use the monitor during magnetic resonance imaging (MRI). Induced current could potentially causes burns. The sensor may   affect the MRI image, and the MRI unit may affect the accuracy of the oximetry measurements.
+[P575] Prolonged continuous monitoring may increase the risk of undesirable changes in skin characteristics, such as irritation, reddening, blistering or burns. Inspect the sensor site every two hours and move the sensor if the skin quality changes. Change the application site every four hours. For patients with poor peripheral blood circulation or sensitive   skin, inspect the sensor site more frequently.
+[P576] Setting alarm limits to extreme values may cause the alarm system to become ineffective. Do not set the high alarm limit to 100%,   which is equivalent to switching off the alarm.
+[P577] Extremely high ambient temperature may cause battery overheat protection, resulting in monitor shutdown.
+[P578] The lithium-ion battery has a service life of 5 years. Replace your battery when it reaches the end of its service life. Failure to replace   the battery may cause serious damage to your equipment from battery overheating.
+[P579] Section  B.2.9  Caution
+[P580] Use only parts and accessories specified in this Operation Manual.
+[P581] Magnetic and electrical fields are capable of interfering with the proper performance of the equipment. For  this reason, make sure that all external devices operated in the vicinity of the equipment comply with the relevant EMC requirements. Mobile phone, X-ray equipment or MRI devices are a possible source of interference as they may emit higher
+[P582] levels of electromagnetic radiation.
+[P583] Before connecting the equipment to the power line, check that the voltage and frequency ratings of   the power line are the same as those indicated on the equipment’s label or in this manual.
+[P584] Always install or carry the equipment properly to avoid damage caused by drop, impact, strong vibration or other mechanical   those indicated on the equipment’s label or in this manual.
+[P585] Always install or carry the equipment properly to avoid damage caused by drop, impact, strong vibration or other mechanical  force.
+[P586] Section  B.2.10  Limitation
+[P587] The cerebral oximetry system is intended only as an ad junc t in patient assessment. It must be used in combination with clinical signs and symptoms. If the accuracy of any value displayed on the cerebral oximetry system is questionable, determine the patient’s vital signs by alternative means. The functions of the alarm system for patient monitoring must be verified at regular intervals (every six months) and whenever the integrity of the product is in doubt. Periodically test all functions. Failure to comply may lead to injury.
+[P588] The cerebral oximetry system is intended only as an aid in patient assessment. It must be used in conjunction with clinical signs and symptoms.
+[P589] If the accuracy of any value displayed on the cerebral oximetry system is in doubt, determine the patient's vital signs by other means. The functionality of alar systems used for patient monitoring must be verified periodically and whenever product integrity is in doubt.
+[P590] Alarm testing should be performed at least every 6 months, failure to comply may result in erroneous equipment test results.
+[P591] Section C. Activities related to PMCF: General and specific methods and procedures
+[P592] Section  C.1.  D efine where the need of conducting the PMCF activity
+[P593] According to the results of the Clinical Evaluation Report (CER), no specific PMCF  study  is required for the subject device, as the available clinical data sufficiently demonstrate conformity with the relevant General Safety and Performance Requirements (GSPRs). Nevertheless, in alignment with MDCG 2020-7 and Meddev 2.12/2 guidance, the manufacturer has decided to proactively conduct PMCF activities to continuously confirm the safety and performance of the Non-invasive Cerebral Oximetry System , including its  tissue oximetry sensor in the intended patient population and clinical settings.
+[P594] The planned PMCF activities include:
+[P595] A PMCF  survey  to prospectively collect additional real-world clinical data.
+[P596] Systematic literature searches to identify new scientific evidence relevant to the subject device and similar  devices.
+[P597] Vigilance ,  customer and user feedback to capture usability and clinical performance in daily practice  c ustomer and user feedback surveys to capture usability and clinical performance in daily practice.
+[P598] The justification of whether a PMCF study is required has been performed in accordance with Meddev 2.12/2 and MDCG 2020-7. The details of this justification are documented in Section  13.3  of Appendix  7.1b  of the ZKBK-TR-TD-028   Clinical Evaluation Report.
+[P599] Section C.2   Survey  from health care professional
+[P600] Section C.2. 1  Description of activity
+[P601] This activity is a specific PMCF activity. In the clinical evaluation, the safety and performance of the subject device have been demonstrated mainly through  clinical investigation  and  PMS  data  of device , which confirm compliance with the relevant General Safety and Performance Requirements (GSPRs). However, feedback from health care professionals in real-world clinical practice will provide additional insights into the usability, clinical performance, and safety of the device in its intended use environment. Therefore, the manufacturer plans to conduct structured surveys among health care professionals who routinely use the device, in order to actively collect supplementary clinical data and user experience information. The description of this activity is as below.
+[P602] Section C.2. 2 A im of the activity
+[P603] confirming the safety of the medical device 
+[P604] confirming the performance of the medical device 
+[P605] identifying previously unknown side-effects (related to the procedures or to the medical devices). 
+[P606] monitoring the identified side-effects and contraindications 
+[P607] identifying and analyzing emergent risks 
+[P608] ensuring the continued acceptability of the benefit-risk ratio 
+[P609] identifying possible systematic misuse or off-label use of the device
+[P610] Section C.2. 2 P rocedures used as part of PMCF
+[P611] Objective
+[P612] The objective of this activity is to proactively collect real-world clinical data and professional feedback regarding the safety, performance, and usability of the Non-invasive Cerebral Oximetry System, including its tissue oximetry sensor in routine clinical practice, in order to complement the evidence presented in the Clinical Evaluation Report.
+[P613] Target Participants
+[P614] Licensed health care professionals with direct experience in using the subject device in clinical settings (e.g., anesthesiologists, intensivists, neurosurgeons, critical care nurses).
+[P615] Methodology
+[P616] Braincare (Beijing)Medical Device Co.,LTD’s sales representatives will distribute the standardized “Customer Survey Form” to distributors, and distributors will further circulate the form to health care professionals who routinely operate the device. After clinical use in everyday practice,  H ealth care professionals w will document their observations on usability, reliability of measurements, impact on decision-making, and any safety- or performance-related issues, then return completed forms to Braincare (Beijing)Medical Device Co.,LTD for aggregation and evaluation. The survey may be completed electronically or on paper according to site preference; participation is voluntary, responses are anonymous unless the respondent explicitly consents to be contacted for clarification, and no patient-identifiable data are requested. The questionnaire structure, endpoints, and scoring scales are provided in Annex 1 – Customer Survey Form.
+[P617] S ample size
+[P618] The Sample size is calculated as follow:
+[P620] N ote:
+[P621] n is the sample size
+[P622] Z is the Z value corresponding to the confidence level (e.g., 1. 645  for 9 0 % confidence level)
+[P623] p is the expected proportion  (20 %）
+[P624] e is the margin of error （15 % ）
+[P625] After calculation, the sample size should be  19  cases. 
+[P626] Data Collection and Management
+[P627] Descriptive analyses will be performed for device-related safety, usability, and performance endpoints, as well as for procedural characteristics and, where applicable, patient baseline characteristics indirectly reported by users. For binary variables, results will be summarized with respondent counts, percentages, and exact  90 % Clopper-Pearson confidence intervals. For continuous variables, results will be summarized with the number of observations, mean, standard deviation, median, and  90 % confidence intervals for the mean. Qualitative feedback from free-text responses will be evaluated by thematic analysis to detect recurrent patterns, potential risks, or improvement opportunities. All verified results will be integrated into the PMCF Evaluation Report and reflected in the PSUR, CER updates, and the Risk Management File as appropriate.
+[P628] Section C.2. 3  Rationale for appropriateness of chosen procedures
+[P629] The sample size and endpoints of this survey are defined based on state-of-the-art information, results from the Clinical Evaluation Report, and the device risk management process. Considering the clinical application of the Non-invasive Cerebral Oximetry System, including its tissue oximetry sensor, the survey design, timescale, and target population are appropriate to capture representative real-world feedback. No comparator is required, as the  objective is to confirm safety, usability, and performance in daily clinical practice. Adequate control measures and statistical methods will ensure data reliability and minimize bias; therefore, this PMCF activity is scientifically justified and without significant limitations.
+[P630] Section C.2. 4  Timeline
+[P631] Following CE certification, the device requires a certain period for market introduction and use in clinical practice across different countries. Considering the time needed for health care professionals to utilize the device and provide feedback, the planned duration of the customer survey is up to five years. Data collection will be continuous throughout this period, and the collected information will be analyzed and summarized in the PMCF Evaluation Report on an annual basis to monitor trends, confirm safety and performance, and support regulatory reporting.
+[P632] The  details of “Customer survey form” can be seen in Annex I.
+[P633] Section C. 3  Screening of scientific literature relating to subject device
+[P634] Section C. 3 . 1  Description of activity
+[P635] This activity is a general PMCF activity. The objective is to maintain and update a comprehensive bibliography of all published literature relevant to the Non-invasive Cerebral Oximetry System, including its tissue oximetry sensor. The purpose is to continuously monitor the scientific evidence for safety, performance, and clinical utility in real-world use, to identify new information that may impact the risk-benefit profile, and to support updates to the Clinical Evaluation Report ,  PMCF plan  and PMS plan . Literature sources include publicly available scientific databases such as PubMed, Embase, Cochrane Library, Google Scholar, and CNKI.
+[P636] Section C. 3 . 2 A im of the activity
+[P637] confirming the safety of the medical device 
+[P638] confirming the performance of the medical device 
+[P639] identifying previously unknown side-effects (related to the procedures or to the medical devices). 
+[P640] monitoring the identified side-effects and contraindications 
+[P641] identifying and analyzing emergent risks 
+[P642] ensuring the continued acceptability of the benefit-risk ratio 
+[P643] identifying possible systematic misuse or off-label use of the device
+[P644] Section C. 3 . 2 P rocedures used as part of PMCF
+[P645] Objective
+[P646] The objective of this PMCF activity is to continuously monitor and update the scientific evidence related to the Non-invasive Cerebral Oximetry System, including its tissue oximetry sensor, including both the subject device and similar devices. This ensures that any new information regarding safety, performance, clinical utility, or emerging risks is identified in a timely manner, supporting updates to the Clinical Evaluation Report, PMCF plan, and overall post-market surveillance strategy.
+[P647] Methodology
+[P648] A structured literature search will be conducted at least annually, or more frequently if new evidence emerges. Scientific databases including PubMed, Embase, Cochrane Library, Google Scholar, and CNKI will be used as primary sources.  “ PICO” approach will be used to build searching strategy. Detailed search methods are as below:
+[P649] MEDLINE (PubMed)
+[P650] PubMed
+[P651] Key words
+[P652] No.
+[P653] Search terms
+[P655] #1
+[P656] ((((Cerebral oximetry) OR (regional cerebral oxygen saturation)) OR (cerebral oxygen saturation)) OR (Spectroscopy, Near-Infrared[MeSH Terms])) OR (rSO2)
+[P658] #2
+[P659] ((tissue oxygen saturation) OR (StO2)) OR (pulse oximetry)
+[P661] #3
+[P662] (((non-invasive) OR (noninvasive)) OR (continuous)) OR (wireless)
+[P664] #4
+[P665] (((anesthesia) OR (perioperative period)) OR (cardiac surgery)) OR (neurosurgery)
+[P667] #5
+[P668] Braincare
+[P670] #6
+[P671] #1 AND #2 AND #3 AND #4 AND #5
+[P672] Article type
+[P673] Full text, Clinical Study, Clinical Trial, Multicenter Study, Randomized Controlled Trial, Humans.
+[P674] Embase
+[P675] Embase
+[P676] Key words
+[P677] No.
+[P678] Search terms
+[P680] #1
+[P681] (((anesthesia) OR (perioperative period)) OR (cardiac surgery)) OR (neurosurgery)
+[P683] #2
+[P684] (((Cerebral oximetry) OR (regional cerebral oxygen saturation)) OR (cerebral oxygen saturation)) OR (rSO2)
+[P686] #3
+[P687] (((non-invasive) OR (noninvasive)) OR (continuous)) OR (wireless)
+[P689] #4
+[P690] ((tissue oxygen saturation) OR (StO2)) OR (pulse oximetry)
+[P692] #5
+[P693] Braincare
+[P695] #6
+[P696] #1 AND #2 AND #3 AND #4 AND #5
+[P697] Article type
+[P698] clinical trial, randomized controlled trial
+[P699] CNKI
+[P700] CNKI
+[P701] Search strategy 
+[P702] No.
+[P703] Search terms
+[P705] #1
+[P706] 无创脑血氧监测仪 “Non-invasive Cerebral Oximetry System”
+[P708] #2
+[P709] 中科博康  “Braincare”
+[P711] #3
+[P712] #1 AND #2 AND #3
+[P713] Article type
+[P714] Clinical trial
+[P715] Google Scholar
+[P716] Key words
+[P717] " Braincare " AND "  cerebral oximetry  "
+[P718] Article type
+[P719] / (No filter options are set in google scholar)
+[P720] Cochrane Library
+[P721] Cochrane Library
+[P722] Search strategy 
+[P723] No.
+[P724] Search terms
+[P726] #1
+[P727] anesthesia OR perioperative period OR cardiac surgery OR neurosurgery
+[P729] #2
+[P730] tissue oxygen saturation OR StO2 OR pulse oximetry
+[P732] #3
+[P733] non-invasive OR noninvasive OR continuous OR wireless
+[P735] #4
+[P736] Cerebral oximetry
+[P738] #5
+[P739] regional cerebral oxygen saturation
+[P741] #6
+[P742] cerebral oxygen saturation
+[P744] #7
+[P745] Spectroscopy, Near-Infrared[MeSH Terms]
+[P747] #8
+[P748] rSO2
+[P750] #9
+[P751] #4 OR #5 OR #6 OR #7 OR #8
+[P753] #10
+[P754] #1 AND #2 AND #3 AND #9
+[P756] #11
+[P757] Braincare
+[P759] #12
+[P760] #10 AND #11
+[P761] Article type
+[P762] Trial
+[P763] Data Collection and Management
+[P764] All literature search results and extracted data will be stored in a secure reference management system, with traceability and version control. Duplicates will be removed, and bibliographic records will be organized for easy access and review. Extracted data will be verified for completeness and reliability before inclusion in summary tables or analysis. Key findings will be analyzed in the context of existing clinical evidence and PMS data, and any significant new information will be incorporated into the CER, PMCF Evaluation Report, and, where relevant, risk management updates. Documentation of search strategies, screening decisions, and data extraction will be maintained to ensure reproducibility and compliance with MDR requirements.
+[P765] Section C. 3 . 3  Rationale for appropriateness of chosen procedures
+[P766] This activity is scientifically justified because the  Non-invasive Cerebral Oximetry System  is already supported by substantial clinical evidence, but new studies and publications may provide additional safety or performance data or highlight emerging risks. Regular, structured literature screening ensures that the clinical evaluation remains current and comprehensive, supporting the ongoing benefit-risk assessment. By using multiple reputable databases, standardized screening and extraction procedures, and data verification measures, the process ensures reliability, minimizes bias, and generates robust evidence to support regulatory compliance and patient safety.
+[P767] Section C. 3 . 4  Timeline
+[P768] M anufacture  will collect all new publications available on Non-invasive Cerebral Oximetry System at least annually. The data will be analyzed and updated in the Clinical Evaluation Report in every year.
+[P769] Section C. 4  Reactive PMS ： Collection of feedback from end-users and distributors, Feedback or adverse events of same category device
+[P770] Section C. 4 . 1  Description of activity
+[P771] This activity is a reactive PMCF process that collects and evaluates feedback, complaints, and adverse events reported by end-users, distributors, and external databases. It includes monitoring both the subject device and other  devices in the same category to identify potential safety signals, usability concerns, or emerging risks that may not have been captured during  post -market evaluation.
+[P772] Section C. 4 . 2 A im of the activity
+[P773] confirming the safety of the medical device 
+[P774] confirming the performance of the medical device 
+[P775] identifying previously unknown side-effects (related to the procedures or to the medical devices). 
+[P776] monitoring the identified side-effects and contraindications 
+[P777] identifying and analyzing emergent risks 
+[P778] ensuring the continued acceptability of the benefit-risk ratio 
+[P779] identifying possible systematic misuse or off-label use of the device
+[P780] Section C. 4 . 2 P rocedures used as part of PMCF
+[P781] Objective
+[P782] The objective of this activity is to ensure continuous monitoring of device safety and performance in real-world use conditions by collecting, analyzing, and trending reactive information. This helps in identifying new or unexpected risks, evaluating device reliability, and validating that the benefit–risk profile remains acceptable throughout the device lifecycle.
+[P783] Methodology
+[P784] Feedback will be collected systematically from end-users and distributors through existing channels such as complaint handling systems, service reports, training feedback, and communication records.
+[P785] Adverse events and vigilance reports will be reviewed using internal complaint files and external sources, including FDA MAUDE, EUDAMED, and other publicly available vigilance databases.
+[P786] Information from competitor or same-category devices will also be screened to detect potential risks relevant to the subject device.
+[P787] Data Collection and Management
+[P788] All feedback, complaints, and vigilance data will be included in the statistical analysis.
+[P789] Relevant findings will be incorporated into the PMCF Evaluation Report, CER updates, and risk management documentation. Any signals requiring corrective or preventive action (CAPA) will be escalated according to established procedures.
+[P790] Section C. 4 . 3  Rationale for appropriateness of chosen procedures
+[P791] This activity is justified because real-world data provide critical insights into device safety and performance beyond clinical studies. End-user and distributor feedback may reveal usability issues, while adverse event monitoring helps detect rare but clinically significant risks. Monitoring same-category devices broadens the surveillance scope, allowing early identification of risks that may be relevant to the subject device. By systematically collecting,  analyzing, and trending reactive PMS data, the manufacturer ensures regulatory compliance with MDR requirements and supports patient safety and device reliability.
+[P792] Section C. 4 . 4  Timeline for Reactive PMS
+[P793] Feedback, complaints, and vigilance data will be collected continuously, reviewed annually, and included in PMCF/PSUR. Significant findings will be evaluated immediately.
+[P795] Section C.7. A summary table of the different PMCF activities foreseen
+[P797] Number of
+[P798] Activity
+[P799] Description of activity
+[P800] Aim of the activity
+[P801] Description of Procedure
+[P802] Timeline
+[P803] 1
+[P804] PMCF Survey
+[P805] confirming the safety of the medical device 
+[P806] confirming the performance of the medical device 
+[P807] identifying previously unknown side-effects (related to the procedures or to the medical devices). 
+[P808] monitoring the identified side-effects and contraindications 
+[P809] identifying and analyzing emergent risks 
+[P810] ensuring the continued acceptability of the benefit-risk ratio 
+[P811] identifying possible systematic misuse or off-label use of the device
+[P812] This activity is a specific PMCF activity. In the clinical evaluation, the safety and performance of the subject device have been demonstrated mainly through  clinical investigation  and  PMS  data  of device , which confirm compliance with the relevant General Safety and Performance Requirements (GSPRs). However, feedback from health care professionals in real-world clinical practice will provide additional insights into the usability, clinical performance, and safety of the device in its intended use environment. Therefore, the manufacturer plans to conduct structured surveys among health care professionals who routinely use the device, in order to actively collect supplementary clinical data and user experience information.
+[P813] Following CE certification, the device requires a certain period for market introduction and use in clinical practice across different countries. Considering the time needed for health care professionals to utilize the device and provide feedback, the planned duration of the customer survey is up to five years. Data collection will be continuous throughout this period, and the collected information will be analyzed and summarized in the PMCF Evaluation Report on an annual basis to monitor trends, confirm safety and performance, and support regulatory reporting.
+[P814] 2
+[P815] Screening of scientific literature and other sources of clinical data
+[P817] This activity is a general PMCF activity. The objective is to maintain and update a comprehensive bibliography of all published literature relevant to the Non-invasive Cerebral Oximetry System, including both the subject device and similar devices. The  purpose is to continuously monitor the scientific evidence for safety, performance, and clinical utility in real-world use, to identify new information that may impact the risk-benefit profile, and to support updates to the Clinical Evaluation Report ,  PMCF plan  and PMS plan . Literature sources include publicly available scientific databases such as PubMed, Embase, Cochrane Library, Google Scholar, and CNKI.
+[P818] M anufacture  will collect all new publications available on Non-invasive Cerebral Oximetry System at least annually. The data will be analyzed and updated in the Clinical Evaluation Report in every year.
+[P819] 3
+[P820] Reactive PMS
+[P821] Collection of feedback from end-users and distributors
+[P822] Feedback or adverse events of same category device
+[P824] This activity is a reactive PMCF process that collects and evaluates feedback, complaints, and adverse events reported by end-users, distributors, and external databases. It includes monitoring both the subject device and other devices in the same category to identify potential safety signals, usability concerns, or emerging risks that may not have been captured during pre-market evaluation.
+[P825] Feedback, complaints, and vigilance data will be collected continuously, reviewed annually, and included in PMCF/PSUR. Significant findings will be evaluated immediately.
+[P827] Section  D . Evaluation of clinical data relating to similar devices
+[P828] The similar device of proposed device is FORE-SIGHT ELITE Oximeter, which is consistent throughout the technical documentation. The summary of this activity is shown in below
+[P829] Section  D . 1  Description of activity
+[P830] This activity is a general PMCF activity. The objective is to maintain and update a comprehensive bibliography of all published literature relevant to the  similar device . The purpose is to continuously monitor the scientific evidence for safety, performance, and clinical utility in real-world use, to identify new information that may impact the risk-benefit profile, and to support updates to the Clinical Evaluation Report ,  PMCF plan  and PMS plan . Literature sources include publicly available scientific databases such as PubMed, Embase, Cochrane Library, Google Scholar, and CNKI.
+[P831] Section  D . 2 A im of the activity
+[P832] confirming the safety of the medical device 
+[P833] confirming the performance of the medical device 
+[P834] identifying previously unknown side-effects (related to the procedures or to the medical devices). 
+[P835] monitoring the identified side-effects and contraindications 
+[P836] identifying and analyzing emergent risks 
+[P837] ensuring the continued acceptability of the benefit-risk ratio 
+[P838] identifying possible systematic misuse or off-label use of the device
+[P839] Section  D.3 P rocedures used as part of PMCF
+[P840] Objective
+[P841] The objective of this PMCF activity is to continuously monitor and update the scientific evidence related to similar devices. This ensures that any new information regarding safety, performance, clinical utility, or emerging risks is identified in a timely manner, supporting updates to the Clinical Evaluation Report, PMCF plan, and overall post-market surveillance strategy.
+[P842] Methodology
+[P843] A structured literature search will be conducted at least annually, or more frequently if new evidence emerges. Scientific databases including PubMed, Embase, Cochrane Library, Google Scholar, and CNKI will be used as primary sources.  “ PICO” approach will be used to build searching strategy. Detailed search methods are as below:
+[P844] MEDLINE (PubMed)
+[P845] PubMed
+[P846] Key words
+[P847] No.
+[P848] Search terms
+[P850] # 1
+[P851] FORE-SIGHT ELITE Oximeter
+[P852] Article type
+[P853] Full text, Clinical Study, Clinical Trial, Multicenter Study, Randomized Controlled Trial, Humans.
+[P854] Embase
+[P855] Embase
+[P856] Key words
+[P857] No.
+[P858] Search terms
+[P860] # 1
+[P861] FORE-SIGHT ELITE Oximeter
+[P862] Article type
+[P863] clinical trial, randomized controlled trial
+[P864] Google Scholar
+[P865] Key words
+[P866] FORE-SIGHT ELITE Oximeter
+[P867] Article type
+[P868] / (No filter options are set in google scholar)
+[P869] Cochrane Library
+[P870] Cochrane Library
+[P871] Search strategy 
+[P872] No.
+[P873] Search terms
+[P875] #1
+[P876] FORE-SIGHT ELITE Oximeter
+[P877] Article type
+[P878] Trial
+[P879] Data Collection and Management
+[P880] Key findings will be analyzed in the context of existing clinical evidence and PMS data, and any significant new information will be incorporated into the CER, PMCF Evaluation Report, and, where relevant, risk management updates. Documentation of search strategies, screening decisions, and data extraction will be maintained to ensure reproducibility and compliance with MDR requirements.
+[P881] Section  D.4  Rationale for appropriateness of chosen procedures
+[P882] This activity is scientifically justified because the Non-invasive Cerebral Oximetry System is already supported by substantial clinical evidence, but new studies and publications may provide additional safety or performance data or highlight emerging risks. Regular, structured literature screening ensures that the clinical evaluation remains current and comprehensive, supporting the ongoing benefit-risk assessment. By using multiple reputable databases, standardized screening and extraction procedures, and data verification measures, the process ensures reliability, minimizes bias, and generates robust evidence to support regulatory compliance and patient safety.
+[P883] Section  D.5  Timeline
+[P884] M anufacture  will collect all new publications available on  similar device  at least annually. The data will be analyzed and updated in the Clinical Evaluation Report in every year.
+[P889] The similar device  information as below:
+[P890] Product Name of similar device
+[P891] Intended Purpose
+[P892] Intended Users
+[P893] Intended patient population
+[P894] Intended Environment
+[P895] FORE-SIGHT ELITE Oximeter
+[P896] CAS Medical Systems , Inc.
+[P897] The noninvasive FORE-SIGHT ELITE Absolute Tissue Oximeter is intended for use as an adjunct monitor of absolute regional hemoglobin oxygen saturation of blood under the Sensors in individuals at risk for reduced-flow or no-flow ischemic states and is indicated for use as follows: 
+[P898] •  When used with large Sensors, the FORE-SIGHT ELITE Oximeter is indicated for use on adults and transitional adolescents ≥ 40 kg (88.2 lbs). 
+[P899] •  When used with Medium Sensors, the FORE-SIGHT ELITE Oximeter is indicated for use on pediatric subjects ≥ 3 kg (6.6 lbs). 
+[P900] •  When used with Small Sensors, the FORE-SIGHT ELITE Oximeter is indicated for cerebral use on pediatric subjects < 8 kg (17.6 lbs) and non-cerebral use on pediatric  subjects < 5 kg (11 lbs).
+[P901] It is intended to be used by a trained professional physician.
+[P902] The noninvasive FORE-SIGHT ELITE Absolute Tissue Oximeter is intended for use as an adjunct monitor of absolute regional hemoglobin oxygen saturation of blood under the Sensors in individuals at risk for reduced-flow or no-flow ischemic states and is indicated for use as follows: 
+[P903] •  When used with large Sensors, the FORE-SIGHT ELITE Oximeter is indicated for use on adults and transitional adolescents ≥ 40 kg (88.2 lbs). 
+[P904] •  When used with Medium Sensors, the FORE-SIGHT ELITE Oximeter is indicated for use on pediatric subjects ≥ 3 kg (6.6 lbs). 
+[P905] •  When used with Small Sensors, the FORE-SIGHT ELITE Oximeter is indicated for cerebral use on pediatric subjects < 8 kg (17.6 lbs) and non-cerebral use on pediatric subjects < 5 kg (11 lbs).
+[P906] The Oximeter is intended to be used in the following   environments:   operating, exam/procedure rooms, surgical recovery, critical care, emergency room, and long-term care.
+[P908] Section  E .  Impact of the results on the  technical documentation
+[P909] Appendix 7.1a ZKBK-TR-NC-032-  Clinical Evaluation Plan  V A/1 .
+[P910] No relevant information from the clinical evaluation  plan  to be considered in this plan
+[P911] (2) Appendix 7.1 b  ZKBK-TR-NC-0 28 - Clinical Evaluation Report  V A/1 .
+[P912] No relevant information from the clinical evaluation report to be considered in this plan
+[P913] (3) Appendix 5.1b ZKBK-TR-NC-030 Part 5 Risk Management Report   V A/1 .
+[P914] No relevant information from the risk management file to be considered in this plan
+[P915] Section F. Reference to any applicable common specification(s), harmonized standard(s) or applicable guidance document(s)
+[P916] Common Specification(s) to comply with, if applicable:  NA
+[P917] Harmonised Standards to apply, if applicable:  
+[P918] ISO 14971:2019/A11:2021 Medical devices-application of risk management to medical devices
+[P919] EN ISO 15223-1:2021   Medical devices-Symbols used with medical device labels, labelling and information to be supplied- Part 1: General requirements.
+[P920] EN ISO 20417:2021 Information supplied by the manufacturer of medical devices
+[P921] EN 60601-1:2006/A1:2013/A2:2021 Medical electrical equipment - Part 1: General requirements for basic safety and essential performance
+[P922] EN 60601-1-2：2015/A1：2021 Medical electrical equipment - Part 1-2: General requirements for basic safety and essential performance - Collateral standard: Electromagnetic disturbances- Requirements and tests
+[P923] IEC 60601-1-6-2010/AMD2-2020 Medical electrical equipment - Part 1-6: General requirements for basic safety and essential performance - Collateral standard: Usability
+[P924] IEC 62366-1:2015/Amd 1:2020 Medical devices -- Quality management systems -- Requirements for regulatory purposes
+[P925] EN 62304:2006/A1:2015 Medical device software — Software life-cycle processes
+[P926] EN ISO 14971:2019/A11:2021 Medical devices - Application of risk management to medical devices.
+[P927] EN ISO 13485:2016 Medical Devices - Quality Management Systems - Requirements for Regulatory Purposes
+[P928] ISO/TR 24971-2020 Medical devices — Guidance on the application of ISO 14971
+[P929] EN ISO 10993-1:2020 Biological Evaluation of Medical Devices- Part 1: Evaluation and Testing
+[P930] EN ISO 10993-5:2009 Biological evaluation of medical devices - Part 5:  Tests for in vitro Cytotoxicity
+[P931] ISO 10993-10: 2021 Biological evaluation of medical devices - Part 10: Tests for skin sensitization
+[P932] IEC 80601-2-61:2017 Medical electrical equipment - Part 2-61: Particular requirements for basic safety and essential performance of pulse oximeter equipment
+[P933] IEC 60601-1-8：2020 Medical electrical equipment -Part 1-8: General requirements for basic safety and essential performance -Collateral standard: General requirements, tests and guidance for alarmsystems in medical electrical equipment and medical electrical systems
+[P934] IEC 62506-2013 Methods for product accelerated testing
+[P935] ASTM D4169-22 Standard Practice for Performance Testing of Shipping Containers and Systems
+[P936] AAMI TIR 12: 2020 Designing, Testing and Labeling Reusable Medical Devices for Reprocessing in Health Care Facilities: A Guide for Medical Device Manufacturers
+[P937] EN 301489-1 Electromagnetic Compatibility (EMC) standard for radio equipment and   services - Part 1: Common technical requirements - Harmonised Standard for Electromagnetic Compatibility
+[P938] EN 300328-2019 Wideband transmission systems - Data transmission equipment operating in the 2.4 GHz band - Harmonised Standard for access to radio spectrum (Endorsement of the English version EN 300 328 V2.2.2 (2019-07) as a German standard)
+[P939] ETSI EN 301 489-17 Electro Magnetic Compatibility (EMC) standard for radio equipment and services; Part 17: Specific conditions for Broadband Data Transmission Systems; Harmonised Standard covering the essential requirements of article 3. 1(b) of Directive 2014/53/EU
+[P940] EN 62479 :2010 Assessment of the compliance of low power electronic and electrical equipment with the basic restrictions related to human exposure to electromagnetic fields (10 MHz to 300 GHz)
+[P941] Guidance on PMCF, if applicable
+[P942] MDCG 2020-7 Post-market clinical follow-up (PMCF) Plan Template A guide for manufacturers and notified bodies. April 2020 
+[P943] MDCG 2020-8 Post-market clinical follow-up (PMCF) Report Template A guide for manufacturers and notified bodies. April 2020 
+[P944] Section G. Estimated date of the PMCF evaluation report
+[P945] The PMCF report is outputted in every year according to PMCF plan .
+[P948] ANNEX   A1  Customer Survey Form
+[P952] PMCF Questionnaire
+[P953] Doctor Information
+[P954] Name
+[P956] Hospital of Residence
+[P958] Department
+[P959] ☐   C ardiac surgery 
+[P960] ☐   N eurosurgery 
+[P961] ☐  Stroke department 
+[P962] ☐  Neonatal department 
+[P963] ☐   O thers，Please note
+[P964] Years of experience
+[P966] Product name
+[P968] Specifications and Models
+[P970] Surgical instruments used in the past
+[P971] ☐  The carotid artery and jugular vein were embedded 
+[P972] ☐   B lood gas analyzer 
+[P973] ☐  Jugular venous oxygen saturation (SvjO₂) 
+[P974] ☐  Brain tissue oxygen partial pressure (PtiO₂) 
+[P975] ☐   M onitoring: Near-infrared spectroscopy (NIRS) monitoring technology 
+[P976] ☐  others，Please note
+[P977] Signature name
+[P979] Signature date
+[P983] E ffectiveness of product
+[P984] Index of evaluation
+[P985] Method of evaluation
+[P986] Results
+[P987] blood gas analyzer
+[P988] According to the BCI curve characteristics, the absorption and transmission characteristics of infrared and infrared light emitted by the probe by human tissue are simulated to calibrate the accuracy of blood oxygen saturation.
+[P989] ☐  Cerebral blood oxygen saturation measurement range: 50% to 100%. 
+[P990] ☐  Tissue oxygen saturation measurement range: 50% to 100%.  ☐  Range of oxygen saturation measurement of finger pulse: 70% to 100%. The tolerance is ± 1%.
+[P991] real-time
+[P992] Continuous, real-time monitoring of brain blood oxygen saturation
+[P993] ☐  Time resolution: no more than 100ms. 
+[P994] ☐  Time stability: the blood oxygen fluctuation does not exceed ± 1%.
+[P995] Multi-channel monitoring
+[P996] The device can connect to different channels and the system displays normal
+[P997] ☐ 1-2 channel  ☐ 3-4 channel  ☐ 5-6 channel
+[P998] Non-invasive
+[P999] The probe does not cause any discomfort to the patient
+[P1000] ☐  Feel comfortable 
+[P1001] ☐  Feel good 
+[P1002] ☐  Discomfort at the contact site
+[P1003] Wireless transmission
+[P1004] Head-mounted wireless transmission can collect patient data without slipping or giving system sound
+[P1005] ☐  Accurate monitoring 
+[P1006] ☐  Monitoring is within the error range 
+[P1007] ☐  Monitoring exceeds error
+[P1008] Alarm timeliness
+[P1009] Response to different ones by setting high and low alarms
+[P1010] ☐  alarm error: Tolerance: ± 1%, effectiveness
+[P1011] ☐  more than the tolerance 1%, function false
+[P1012] P roduct safety evaluation
+[P1013] Evaluation content
+[P1014] Observation results
+[P1015] Safety performance in use
+[P1016] ☐  Safe  ☐  unsafe （Please note if happened）
+[P1017] Immediate (intraoperative) adverse events
+[P1018] Please note if happened
+[P1019] Postoperative adverse events
+[P1020] Please note if happened
+[P1021] Rare adverse events
+[P1022] Please note if happened
+[P1023] P roduct complete machine performance evaluation
+[P1024] O verall device functional
+[P1025] Evaluation content
+[P1026] Satisfied
+[P1027] General
+[P1028] Dissatisfied
+[P1029] Place the probe to the appropriate location
+[P1030] ☐   Very satisfied
+[P1031] ☐  Can be placed well
+[P1032] ☐  Limited placement
+[P1033] Case management set-up interface
+[P1034] ☐  Definite interface functional areas and clear operation procedures
+[P1035] ☐  Indefinite interface functional areas and unclear operation procedures
+[P1036] ☐  Ambiguous interface functional areas and hazy operation procedures
+[P1037] Image browse and processing function
+[P1038] ☐  Easy operation and sensitive response
+[P1039] ☐  Less convenient operation and common response
+[P1040] ☐  Complicated operation or delayed response
+[P1041] Monitoring parameters of different probe sites/channels
+[P1042] ☐  Definite interface functional areas and clear operation procedures
+[P1043] ☐  Indefinite interface functional areas and unclear operation procedures
+[P1044] ☐  Ambiguous interface functional areas and hazy operation procedures
+[P1045] Easy operation
+[P1046] ☐  Performance monitoring parameters can be adjusted at any time
+[P1047] ☐  Performance monitoring parameter adjustment settings have an impact
+[P1048] ☐  The performance monitoring parameter adjustment settings cannot be used
+[P1049] (2) Machine stability
+[P1050] Evaluation item
+[P1051] Satisfied
+[P1052] General
+[P1053] Dissatisfied
+[P1054] System  operation
+[P1055] ☐  Normal operation
+[P1056] ☐  After startup, the system is  not running and the computer crashes.
+[P1057] ☐  When the system software runs to the step of osteotomy navigation and positioning, the  system software crashes, the computer crashes, and the mechanical arm hovers after braking.
+[P1058] (3) Machine convenience
+[P1059] Evaluation item
+[P1060] Satisfied
+[P1061] General
+[P1062] Dissatisfied
+[P1063] Patient and equipment placement requirements
+[P1064] ☐  Clear requirements and sequential prompt of preoperative preparation steps
+[P1065] ☐  Correct placement depends on manual checklist
+[P1066] ☐  No inspection procedures or error prompts
+[P1067] Man-machine interface setting
+[P1068] ☐  Friendly, items clear and easy to understand
+[P1069] ☐  Complex, items are complex
+[P1070] ☐  Chaotic, items ambiguous
+[P1071] Selection and modification of variables and parameters
+[P1072] ☐  Convenient, with error prompt
+[P1073] ☐  Complex operation
+[P1074] ☐  Tedious, with no error prompt
+[P1075] Data management function
+[P1076] ☐  Easy operation and sensitive response
+[P1077] ☐  Less convenient operation and common
+[P1078] ☐  Complicated operation or delayed response

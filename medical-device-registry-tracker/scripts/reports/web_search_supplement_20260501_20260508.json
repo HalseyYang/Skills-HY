@@ -1,0 +1,138 @@
+{
+  "report_period": {
+    "start": "2026-05-01",
+    "end": "2026-05-08"
+  },
+  "items": [
+    {
+      "title": "市场监管总局批准筹建全国智能化医疗器械标准化工作组",
+      "source": "国家药品监督管理局",
+      "publish_date": "2026-05-06",
+      "url": "https://www.samr.gov.cn/xw/mtjj/art/2026/art_7a4fc71c51234a4bbbd5c04b50aa4ddc.html",
+      "region": "CN",
+      "tags": ["标准", "AI", "指南", "通知"],
+      "summary": "市场监管总局批准筹建全国智能化医疗器械标准化工作组，由国家药监局负责管理。工作组成员涵盖AI医疗器械、医用机器人、脑机接口及融合技术医疗器械等领域的标准化工作。",
+      "impact": "此举填补了国内智能化医疗器械领域标准化技术组织的空白，对AI医疗器械制造商具有重要的合规指导意义。"
+    },
+    {
+      "title": "《生物医学新技术与药品、医疗器械界定指导原则（暂行）》发布实施",
+      "source": "国家卫生健康委",
+      "publish_date": "2026-04-28",
+      "url": "https://baike.baidu.com/item/生物医学新技术与药品、医疗器械界定指导原则（暂行）",
+      "region": "CN",
+      "tags": ["指南", "实施"],
+      "summary": "国家卫生健康委印发《生物医学新技术与药品、医疗器械界定指导原则（暂行）》，自2026年5月1日起实施，明确了生物医学新技术与药品、医疗器械的界定标准。",
+      "impact": "为生物医学新技术产品的监管分类提供了明确的判定依据，企业应据此确定产品的监管类别。"
+    },
+    {
+      "title": "国家药监局器审中心发布《弹簧圈系统同品种临床评价注册审查指导原则》等5项指导原则",
+      "source": "器械审评中心",
+      "publish_date": "2026-04-30",
+      "url": "https://www.ydcmdei.org.cn/article/855",
+      "region": "CN",
+      "tags": ["指导原则", "临床", "注册"],
+      "summary": "国家药监局器审中心发布2026年第15号通告，公布《弹簧圈系统同品种临床评价注册审查指导原则》等5项医疗器械注册审查指导原则。",
+      "impact": "为弹簧圈系统等医疗器械的同品种临床评价提供了明确的注册审查标准，对同类产品的临床评价路径具有指导意义。"
+    },
+    {
+      "title": "《幽门螺杆菌耐药基因突变检测试剂注册审查指导原则》发布",
+      "source": "器械审评中心（长三角）",
+      "publish_date": "2026-04-30",
+      "url": "https://www.ydcmdei.org.cn/article/category/release",
+      "region": "CN",
+      "tags": ["指导原则", "IVD", "注册"],
+      "summary": "国家药监局器审中心发布《幽门螺杆菌耐药基因突变检测试剂注册审查指导原则》，用于规范该类体外诊断试剂的注册审查要求。",
+      "impact": "为幽门螺杆菌耐药基因突变检测类IVD产品注册提供了明确的审查标准。"
+    },
+    {
+      "title": "《结核分枝杆菌复合群核酸检测试剂注册审查指导原则（2025年修订版）》发布",
+      "source": "器械审评中心（长三角）",
+      "publish_date": "2026-04-30",
+      "url": "https://www.ydcmdei.org.cn/article/category/release",
+      "region": "CN",
+      "tags": ["指导原则", "IVD", "注册", "修订"],
+      "summary": "国家药监局器审中心发布《结核分枝杆菌复合群核酸检测试剂注册审查指导原则（2025年修订版）》，对原有指导原则进行了更新完善。",
+      "impact": "修订版对原有要求进行了更新，相关IVD制造商应按新版本要求准备注册资料。"
+    },
+    {
+      "title": "关于公开征求《用于肿瘤辅助诊断相关基因检测试剂阳性判断值研究注册审查指导原则（征求意见稿）》意见",
+      "source": "器械审评中心",
+      "publish_date": "2026-04-30",
+      "url": "http://www.camdi.cn/news/14718",
+      "region": "CN",
+      "tags": ["征求意见", "IVD", "临床", "注册"],
+      "summary": "国家药监局器审中心就《用于肿瘤辅助诊断相关基因检测试剂阳性判断值研究注册审查指导原则（征求意见稿）》公开征求意见，截止日期为2026年5月31日。",
+      "impact": "相关IVD企业应关注征求意见稿内容，如有意见应及时反馈，确保产品注册符合最新要求。"
+    },
+    {
+      "title": "国家药监局关于废止《外科植入物 金属材料 第8部分：锻造钴-镍-铬-钼-钨-铁合金》等2项医疗器械行业标准的公告（2026年第26号）",
+      "source": "中检院标准管理中心",
+      "publish_date": "2026-03-19",
+      "url": "https://www.nifdc.org.cn/nifdc/bshff/ylqxbzhgl/index.html",
+      "region": "CN",
+      "tags": ["标准", "公告"],
+      "summary": "国家药监局发布2026年第26号公告，宣布废止《外科植入物 金属材料 第8部分：锻造钴-镍-铬-钼-钨-铁合金》等2项医疗器械行业标准。",
+      "impact": "相关产品制造商需关注被废止标准对质量体系的影响，必要时采用替代标准。"
+    },
+    {
+      "title": "EU MDR & IVDR改革提案发布（COM(2025)1023 final）",
+      "source": "European Commission",
+      "publish_date": "2025-12-16",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_2985",
+      "region": "EU",
+      "tags": ["MDR", "IVDR", "修订", "通知"],
+      "summary": "欧盟委员会发布MDR和IVDR改革提案COM(2025)1023 final，提出延长证书有效期、简化产品管理、改进公告机构报告要求等措施。",
+      "impact": "MDR/IVDR制造商应密切关注改革进展，评估对产品上市时间表和合规策略的影响。"
+    },
+    {
+      "title": "MDCG 2026年分类指南、EMDN代码及边境分类更新",
+      "source": "MDCG / EC",
+      "publish_date": "2026-04",
+      "url": "https://meddeviceguide.com/blog/mdcg-2026-classification-emdn-borderline-guidance-update-guide",
+      "region": "EU",
+      "tags": ["MDCG", "指南", "分类", "EMDN", "MDR"],
+      "summary": "2026年4月MDCG发布重要更新，包括MDCG 2021-24 Rev.1分类指南变更、EMDN v3/2026代码更新以及边境分类手册更新。",
+      "impact": "MDR制造商应按最新分类指南重新评估产品分类，IVD制造商需更新EMDN编码系统。"
+    },
+    {
+      "title": "FDA 2024-2026年医疗器械召回趋势分析",
+      "source": "FDA / MedTech Guide",
+      "publish_date": "2026-04-27",
+      "url": "https://meddeviceguide.com/blog/medical-device-recall-trends-2024-2026-statistics-root-causes-guide",
+      "region": "US",
+      "tags": ["FDA", "召回", "安全"],
+      "summary": "2024-2026年医疗器械召回事件达1,059次，I类召回达15年最高水平，器械故障成为首要原因，约4.4亿台/件受影响。",
+      "impact": "制造商应加强器械故障的早期检测和预防性维护，关注FDA召回趋势，加强质量管理。"
+    },
+    {
+      "title": "FDA CDRH FY2026拟议指南文件清单发布",
+      "source": "FDA CDRH",
+      "publish_date": "2025-11-21",
+      "url": "https://www.fda.gov/medical-devices/guidance-documents-medical-devices-and-radiation-emitting-products/cdrh-proposed-guidances-fiscal-year-2026-fy2026",
+      "region": "US",
+      "tags": ["FDA", "指南", "CDRH"],
+      "summary": "FDA CDRH发布2026财年拟议指南清单，包括AI/ML医疗器械、网络安全、510(k)审评等优先领域的指南文件计划。",
+      "impact": "制造商应关注FDA指南制定计划，提前准备合规策略，特别是AI/ML和网络安全相关要求。"
+    },
+    {
+      "title": "FDA人员裁减对医疗器械510(k)审评时间线的影响",
+      "source": "MedTech Guide",
+      "publish_date": "2026-05",
+      "url": "https://meddeviceguide.com/blog/fda-workforce-reduction-impact-medical-device-regulatory-timelines-2026-guide",
+      "region": "US",
+      "tags": ["FDA", "510(k)", "通知"],
+      "summary": "FDA及CDRH的裁员正在影响510(k)及其他医疗器械审评的时间线，可能导致审评周期延长。",
+      "impact": "510(k)申请人应预留更充足的审评时间，提前与FDA沟通，关注审评状态更新。"
+    },
+    {
+      "title": "Health Canada 2026年3-4月发布4项新/修订医疗器械指导文件",
+      "source": "Health Canada",
+      "publish_date": "2026-04",
+      "url": "https://www.nsf.org/life-science-regulatory-news/new-health-canada-guidance-documents-medical-devices-published-march-april-2026",
+      "region": "CA",
+      "tags": ["Health Canada", "指南", "通知"],
+      "summary": "2026年3-4月，Health Canada发布了4项新制定和修订的医疗器械指导文件，进一步明确了对II至IV类医疗器械的监管预期。",
+      "impact": "计划进入加拿大市场的医疗器械制造商应关注新发布的指导文件，确保符合Health Canada的最新要求。"
+    }
+  ]
+}

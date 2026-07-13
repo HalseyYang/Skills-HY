@@ -1,0 +1,13 @@
+{
+  "name": "PDF 文档生成",
+  "installedAt": 1776225464539,
+  "source": "marketplace",
+  "iconSource": "https://openplatform-cdn.codebuddy.cn/public/skills/icons/minimax-pdf.svg",
+  "version": "1.0.0",
+  "skillId": "skill_2053082401866706944",
+  "iconLocalPath": "C:\\Users\\ThinkBook\\.workbuddy\\skills\\minimax-pdf\\_icon.svg",
+  "iconDownloadedFrom": "https://openplatform-cdn.codebuddy.cn/public/skills/icons/minimax-pdf.svg",
+  "skillName": "minimax-pdf",
+  "description_zh": "高质量 PDF 文档生成",
+  "description_en": "Generate high-quality designed PDF documents"
+}

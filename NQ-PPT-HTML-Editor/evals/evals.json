@@ -1,0 +1,27 @@
+{
+  "skill_name": "editable-html",
+  "evals": [
+    {
+      "id": 1,
+      "name": "ppt-fine-tune-request",
+      "prompt": "我刚用 ppt skill 生成了一个智研社的分享 PPT，文件在 D:\\agent\\WeMedia\\AIRS share\\airs01\\index.html。有几页的标题位置太低了，想往上提一点，还有一页的背景框太宽想改窄。能不能让我自己在浏览器里调，不想每次都找你改代码？",
+      "expected_output": "助手识别这是 PPT 文件想做可视化微调，读取该 HTML 确认是 #deck/.slide/vw/vh 布局，然后在 </body> 前注入 editable-html 的 bootstrap 脚本（EDITOR_BASE 指向 assets/），并告诉用户用 Chrome/Edge 打开后按 Ctrl+E，说明选中/拖拽/改字号/Ctrl+S 等操作方式。不应直接帮用户改 PPT 代码。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "landing-page-editable",
+      "prompt": "你帮我做的那个产品落地页 index.html 我挺满意的，但是想自己能改改上面的标语文字，还有改一下主标题的字号让它更醒目。加个编辑模式吧。",
+      "expected_output": "助手识别这是想让已生成的静态 HTML 可视化编辑，读取文件确认是普通网页（px/rem 纵向布局），注入 bootstrap 脚本，告知用户 Ctrl+E 进入后可双击改字、用面板改字号、Ctrl+S 保存。说明这是普通网页类型（非 PPT，单页编辑）。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "generic-html-make-editable",
+      "prompt": "make this editable https://或者本地路径/xxx.html 我需要在浏览器里直接改它的内容",
+      "prompt_alt": "让这个 HTML 可以编辑，我要改里面的文字和颜色",
+      "expected_output": "助手触发 editable-html skill（不应 undertrigger），读取目标 HTML，注入 bootstrap 脚本，说明 Ctrl+E / 选中 / 改字 / 改颜色 / Ctrl+S 的操作流程。即使请求很简短也应触发。",
+      "files": []
+    }
+  ]
+}

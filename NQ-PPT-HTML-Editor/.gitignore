@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Generated artifacts (editables/exports are user output, not source)
+*-editable.html
+*-export.html
+*-edited.html
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Logs
+*.log

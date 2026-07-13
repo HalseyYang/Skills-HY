@@ -1,0 +1,11 @@
+{
+  "name": "AI绘图",
+  "installedAt": 1776225473935,
+  "source": "marketplace",
+  "iconSource": "nano-banana-pro",
+  "version": "1.0.1",
+  "skillId": "skill_2053082421296758784",
+  "skillName": "nano-banana-pro",
+  "description_zh": "AI 图片生成与编辑（支持 4K）",
+  "description_en": "AI image generation & editing (up to 4K)"
+}

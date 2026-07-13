@@ -1,0 +1,112 @@
+[
+  {
+    "title": "关于发布医疗器械注册审查指导原则编制计划的通告（2026年第14号）",
+    "source": "CMDE 器械审评中心",
+    "region": "CN",
+    "publish_date": "2026-04-24",
+    "url": "https://www.cmde.org.cn/",
+    "tags": ["指导原则", "编制计划", "IVD"],
+    "summary": "CMDE发布2026年第14号通告，公布医疗器械注册审查指导原则编制计划，含80项IVD医疗器械相关指导原则。旨在加强指导原则在注册申报和技术审评中的指导作用。",
+    "compliance_impact": "企业应关注编制计划中涉及自身产品类别的指导原则动态，提前做好注册申报准备。"
+  },
+  {
+    "title": "国家药监局发布26项医疗器械行业标准（含YY/T 1438-2026等）",
+    "source": "NMPA 国家药品监督管理局",
+    "region": "CN",
+    "publish_date": "2026-04-30",
+    "url": "https://finance.sina.com.cn/jjxw/2026-04-30/doc-inhwfpqq6353290.shtml",
+    "tags": ["标准", "行业标准", "YY/T"],
+    "summary": "国家药监局发布26项医疗器械行业标准，包含修订和新制定项目。重点标准包括：YY/T 1438-2026（呼气峰值流量计）、YY/T 1406-2026（医疗器械软件指南）、YY/T 1625-2026（移动CT）、YY/T 1953-2026（纳米器械抗菌评价）、YY/T 1997-2026（IVD临床试验样本管理）、YY/T 2000-2026（真实世界数据术语）、YY/T 2004.1-2026（中医器械皮肤针）。统一实施日期为2027年3月1日。",
+    "compliance_impact": "相关企业应对照新标准要求，评估产品合规差距，确保在2027年3月1日前完成标准切换。"
+  },
+  {
+    "title": "中检院征集2026年度医疗器械国家标准制修订项目起草验证单位",
+    "source": "NIFDC 中检院",
+    "region": "CN",
+    "publish_date": "2026-04-13",
+    "url": "https://www.nifdc.org.cn/nifdc/bshff/ylqxbzhgl/qxggtzh/ggqt/202604130833561999554.html",
+    "tags": ["标准", "制修订", "征集"],
+    "summary": "中检院发布2026年度医疗器械国家标准制修订项目起草验证单位征集通知，符合条件的单位可书面形式提出申请。",
+    "compliance_impact": "有标准制修订经验的企业可申请参与，影响未来标准制定方向。"
+  },
+  {
+    "title": "国家药监局核查中心召开2026年进口医疗器械境外检查企业沟通会",
+    "source": "CFDI 核查中心",
+    "region": "CN",
+    "publish_date": "2026-04-21",
+    "url": "https://www.cfdi.org.cn/cfdi/index",
+    "tags": ["核查", "境外检查", "进口器械"],
+    "summary": "国家药监局核查中心召开2026年进口医疗器械境外检查企业沟通会，同时举办2026年药品检查能力提升培训班。",
+    "compliance_impact": "进口医疗器械企业应关注境外检查动态，做好迎检准备。"
+  },
+  {
+    "title": "器械审评中心（长三角）发布多项注册审查指导原则",
+    "source": "长三角分中心 YdCMDEI",
+    "region": "CN",
+    "publish_date": "2026-04-16",
+    "url": "https://www.ydcmdei.org.cn/article/category/release",
+    "tags": ["指导原则", "长三角", "注册审查"],
+    "summary": "国家药监局器审中心发布多项注册审查指导原则，包括幽门螺杆菌耐药基因突变检测试剂和结核分枝杆菌复合群核酸检测试剂等IVD产品指导原则。",
+    "compliance_impact": "相关IVD企业应仔细研究新发布指导原则，确保注册申报符合最新要求。"
+  },
+  {
+    "title": "MDCG发布多项指南文件更新（2026年4月）",
+    "source": "EC 欧盟委员会",
+    "region": "EU",
+    "publish_date": "2026-04-27",
+    "url": "https://mdlaw.eu/mdr/eu-guidance-documents-updated-in-april-2026/",
+    "tags": ["MDCG", "指南", "分类"],
+    "summary": "欧盟委员会2026年4月更新多项MDCG指南文件：(1) MDCG 2021-24 Rev.1 器械分类指南修订版，引入术语澄清，将'外科植入'改为'临床植入'，重整规则9；(2) MDCG 2021-12 Rev.2 EMDN常见问题更新，明确要求使用最具体（终端）代码；(3) 边境分类手册第5版；(4) Article 10a 决策树（新增）；(5) 供应中断/停止义务Q&A第2版；(6) 新增制造商不良事件报告XSD/XSL文件。",
+    "compliance_impact": "所有MDR/IVDR相关企业应立即审查新分类指南，确保器械分类正确；EMDN用户需更新代码选择策略。"
+  },
+  {
+    "title": "EUDAMED将于2026年5月28日成为强制使用系统",
+    "source": "EC 欧盟委员会",
+    "region": "EU",
+    "publish_date": "2026-04-30",
+    "url": "https://mavenprofserv.com/blog/eudamed-mandatory-28-may-2026-mdr-ivdr/",
+    "tags": ["EUDAMED", "合规", "MDR/IVDR"],
+    "summary": "根据欧盟实施决定(EU) 2025/2371，EUDAMED核心模块（Actor、UDI/Device、公告机构和证书、市场监督）将于2026年5月28日起强制使用。各模块在声明功能后6个月内成为强制要求。",
+    "compliance_impact": "所有在欧盟上市的医疗器械和IVD制造商必须在此日期前完成EUDAMED相关模块注册。"
+  },
+  {
+    "title": "FDA CDRH发布早期警报：Bolton Medical胸主动脉支架移植物问题",
+    "source": "FDA CDRH",
+    "region": "US",
+    "publish_date": "2026-04-28",
+    "url": "https://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-thoracic-stent-graft-issue-bolton-medical",
+    "tags": ["早期警报", "召回", "心血管器械"],
+    "summary": "FDA CDRH针对Bolton Medical的胸主动脉支架移植物发布早期警报，提醒医疗机构和患者关注相关风险。",
+    "compliance_impact": "使用相关产品的医疗机构应关注FDA后续通知并评估患者风险。"
+  },
+  {
+    "title": "FDA安全通讯：TRUE METRIX血糖监测系统使用风险",
+    "source": "FDA CDRH",
+    "region": "US",
+    "publish_date": "2026-04-28",
+    "url": "https://www.fda.gov/medical-devices/safety-communications/risks-using-true-metrix-blood-glucose-monitoring-systems-trividia-health-fda-safety-communication",
+    "tags": ["安全通讯", "IVD", "血糖监测"],
+    "summary": "FDA发布安全通讯，警告Trividia Health公司TRUE METRIX血糖监测系统的使用风险，同期该公司也发布了产品纠正/召回通知。",
+    "compliance_impact": "使用该产品的医疗机构和患者应立即关注并遵循FDA建议。"
+  },
+  {
+    "title": "FDA扩展医疗器械召回通讯试点项目至所有医疗器械",
+    "source": "FDA CDRH",
+    "region": "US",
+    "publish_date": "2026-04-28",
+    "url": "https://www.fda.gov/medical-devices/medical-device-safety/medical-device-recalls-and-early-alerts",
+    "tags": ["召回", "试点项目", "通讯"],
+    "summary": "CDRH宣布将医疗器械召回通讯试点项目扩展至所有医疗器械类别，增强召回信息的透明度和及时性。",
+    "compliance_impact": "所有医疗器械制造商应关注新的召回通讯要求，确保召回流程合规。"
+  },
+  {
+    "title": "EU MDR/IVDR简化提案持续推进",
+    "source": "EC 欧盟委员会",
+    "region": "EU",
+    "publish_date": "2026-04-12",
+    "url": "https://meddeviceguide.com/blog/eu-mdr-ivdr-simplification-proposal-2026-guide",
+    "tags": ["MDR/IVDR", "简化", "立法提案"],
+    "summary": "欧盟委员会于2025年12月16日发布COM(2025)1023号立法提案，拟修订MDR 2017/745和IVDR 2017/746法规，简化合规要求。2026年4月立法进程持续推进中。",
+    "compliance_impact": "企业应持续跟踪简化提案进展，可能影响未来合规策略和资源配置。"
+  }
+]

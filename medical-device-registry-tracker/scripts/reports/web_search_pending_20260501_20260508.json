@@ -1,0 +1,57 @@
+{
+  "report_period": {
+    "start": "2026-05-01",
+    "end": "2026-05-08"
+  },
+  "blocked_sources": [
+    {
+      "source_id": "nmpa",
+      "source_name": "国家药品监督管理局",
+      "url": "https://www.nmpa.gov.cn/ylqx/index.html",
+      "web_search_query": "site:nmpa.gov.cn 医疗器械 通知 公告 指导原则 2026年5月"
+    },
+    {
+      "source_id": "cmde_main",
+      "source_name": "器械审评中心",
+      "url": "https://www.cmde.org.cn/",
+      "web_search_query": "site:cmde.org.cn 器械审评 最新 通知 指南 2026年5月"
+    },
+    {
+      "source_id": "cmde_report",
+      "source_name": "器械审评中心-审评报告",
+      "url": "https://www.cmde.org.cn/xwdt/shpbg/index.html",
+      "web_search_query": "site:cmde.org.cn 审评报告 2026年5月"
+    },
+    {
+      "source_id": "cmde_faq",
+      "source_name": "器械审评中心-共性问题",
+      "url": "https://www.cmde.org.cn/splt/ltgxwt/index.html",
+      "web_search_query": "site:cmde.org.cn 共性问题 解答 2026年5月"
+    },
+    {
+      "source_id": "cmde_forum",
+      "source_name": "器械审评中心-论坛",
+      "url": "https://www.cmde.org.cn/splt/index.html",
+      "web_search_query": "site:cmde.org.cn 论坛 讨论 最新 2026年5月"
+    },
+    {
+      "source_id": "ydcmdei",
+      "source_name": "器械审评中心（长三角）",
+      "url": "https://www.ydcmdei.org.cn/",
+      "web_search_query": "site:ydcmdei.org.cn 长三角器械审评 2026年5月"
+    },
+    {
+      "source_id": "mdei_gba",
+      "source_name": "器械审评中心（大湾区）",
+      "url": "https://www.mdei.org.cn/",
+      "web_search_query": "site:mdei.org.cn 大湾区器械审评 2026年5月"
+    },
+    {
+      "source_id": "nifdc_standard",
+      "source_name": "中检院标准管理中心",
+      "url": "https://www.nifdc.org.cn/nifdc/bshff/ylqxbzhgl/index.html",
+      "web_search_query": "site:nifdc.org.cn 器械标准 征集 发布 2026年5月"
+    }
+  ],
+  "instructions": "AI自动化流程：对每个 blocked_sources 条目执行 web_search，将搜索结果整理为标准条目格式，保存为 web_search_supplement_{start}_{end}.json，然后运行 run_tracker.py --web-search-items <json_file>"
+}

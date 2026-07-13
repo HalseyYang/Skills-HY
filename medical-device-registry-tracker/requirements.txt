@@ -1,0 +1,8 @@
+# 医疗器械法规追踪 Skill 依赖
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+tzdata>=2023.0
+
+# 可选：增强抓取能力（处理 JS 渲染的网站如 CMDE）
+# playwright>=1.40.0
+# playwright install chromium

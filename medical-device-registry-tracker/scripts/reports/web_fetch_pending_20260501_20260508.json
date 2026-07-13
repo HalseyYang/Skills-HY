@@ -1,0 +1,128 @@
+{
+  "report_period": {
+    "start": "2026-05-01",
+    "end": "2026-05-08"
+  },
+  "web_fetch_sources": [
+    {
+      "source_id": "nmpa",
+      "source_name": "国家药品监督管理局",
+      "region": "CN",
+      "url": "https://www.nmpa.gov.cn/ylqx/index.html",
+      "parser": "cn_nmpa"
+    },
+    {
+      "source_id": "nifdc_standard",
+      "source_name": "中检院标准管理中心",
+      "region": "CN",
+      "url": "https://www.nifdc.org.cn/nifdc/bshff/ylqxbzhgl/index.html",
+      "parser": "cn_generic"
+    },
+    {
+      "source_id": "cmde_main",
+      "source_name": "器械审评中心",
+      "region": "CN",
+      "url": "https://www.cmde.org.cn/",
+      "parser": "cmde"
+    },
+    {
+      "source_id": "cmde_report",
+      "source_name": "审评报告",
+      "region": "CN",
+      "url": "https://www.cmde.org.cn/xwdt/shpbg/index.html",
+      "parser": "cmde"
+    },
+    {
+      "source_id": "cmde_faq",
+      "source_name": "CMDE共性问题",
+      "region": "CN",
+      "url": "https://www.cmde.org.cn/splt/ltgxwt/index.html",
+      "parser": "cmde"
+    },
+    {
+      "source_id": "cmde_forum",
+      "source_name": "CMDE论坛",
+      "region": "CN",
+      "url": "https://www.cmde.org.cn/splt/index.html",
+      "parser": "cmde"
+    },
+    {
+      "source_id": "ydcmdei",
+      "source_name": "器械审评中心（长三角）",
+      "region": "CN",
+      "url": "https://www.ydcmdei.org.cn/",
+      "parser": "cn_generic"
+    },
+    {
+      "source_id": "mdei_gba",
+      "source_name": "器械审评中心（大湾区）",
+      "region": "CN",
+      "url": "https://www.mdei.org.cn/",
+      "parser": "cn_generic"
+    },
+    {
+      "source_id": "ec_emdn",
+      "source_name": "EMDN 欧洲医疗器械命名法",
+      "region": "EU",
+      "url": "https://health.ec.europa.eu/medical-devices-sector-new-regulation/european-medical-device-nomenclature-emdn_en",
+      "parser": "eu_ec"
+    },
+    {
+      "source_id": "ec_mdr_revision",
+      "source_name": "EU MDR/IVDR 改革提案",
+      "region": "EU",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_2985",
+      "parser": "eu_ec"
+    },
+    {
+      "source_id": "ec_borderline",
+      "source_name": "边境分类手册（新URL）",
+      "region": "EU",
+      "url": "https://health.ec.europa.eu/medical-devices-borderline-and-classification/manual-borderline-classification-under-regulation-eu-2017745-and-2017570_en",
+      "parser": "eu_ec"
+    },
+    {
+      "source_id": "ec_clinical_national",
+      "source_name": "成员国临床试验国家要求（新URL）",
+      "region": "EU",
+      "url": "https://health.ec.europa.eu/medical-devices-sector-new-regulation/member-states-specific-national-requirements-clinical-investigations-and-performance-studies_en",
+      "parser": "eu_ec"
+    },
+    {
+      "source_id": "ec_mir_xsd",
+      "source_name": "制造商不良事件报告XSD（新URL）",
+      "region": "EU",
+      "url": "https://health.ec.europa.eu/medical-devices-sector-new-regulation/new-manufacturer-incident-report-xsd-files-and-xsl-files-sb-11154_en",
+      "parser": "eu_ec"
+    },
+    {
+      "source_id": "fda_cdrh",
+      "source_name": "CDRH中心最新消息",
+      "region": "US",
+      "url": "https://www.fda.gov/medical-devices/medical-devices-news-and-events/cdrh-new-news-and-updates",
+      "parser": "us_fda_cdrh"
+    },
+    {
+      "source_id": "fda_safety_comm",
+      "source_name": "FDA医疗器械安全通讯",
+      "region": "US",
+      "url": "https://www.fda.gov/medical-devices/medical-device-safety/safety-communications",
+      "parser": "us_fda"
+    },
+    {
+      "source_id": "ca_announcements",
+      "source_name": "Health Canada医疗器械公告",
+      "region": "CA",
+      "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices/activities/announcements.html",
+      "parser": "ca_health"
+    },
+    {
+      "source_id": "ema_events",
+      "source_name": "EMA即将举行的活动",
+      "region": "IMDRF",
+      "url": "https://www.ema.europa.eu/en/events/upcoming-events",
+      "parser": "eu_ema"
+    }
+  ],
+  "instructions": "AI自动化流程：对每个 web_fetch_sources 条目执行 web_fetch 工具抓取页面内容，解析出标题、日期、URL，保存为 web_fetch_supplement_{start}_{end}.json，然后运行 run_tracker.py --web-fetch-items <json_file>"
+}
