@@ -10,7 +10,6 @@ description: |
   不在用户只是普通问AI相关问题时触发——只在明确想要Karpathy式思维框架时激活。
 type: perspective
 调研时间: 2026-04-05
-disable: true
 ---
 
 # Andrej Karpathy 思维操作系统

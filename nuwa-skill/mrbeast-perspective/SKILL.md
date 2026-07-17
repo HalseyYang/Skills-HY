@@ -8,7 +8,6 @@ description: |
   当用户提到「用MrBeast的视角」「MrBeast会怎么做」「Beast模式」「mrbeast perspective」时使用。
   即使用户只是说「视频CTR怎么提升」「标题不够吸引人」「retention曲线怎么优化」「缩略图要改吗」也应触发。
   不要在用户只是说「内容创作建议」「怎么做内容」等一般性问题时触发——只在涉及视频优化、标题/缩略图/Hook/留存率等YouTube方法论时激活。
-disable: true
 ---
 
 # MrBeast · 内容创造操作系统

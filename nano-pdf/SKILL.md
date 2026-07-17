@@ -1,10 +1,9 @@
 ---
 name: nano-pdf
-description: Edit PDFs with natural-language instructions using the nano-pdf CLI.
-description_zh: 用自然语言编辑 PDF 文件
-description_en: Edit PDFs with natural language
+description: "Edit PDFs with natural-language instructions using the nano-pdf CLI."
+description_zh: "用自然语言编辑 PDF 文件"
+description_en: "Edit PDFs with natural language"
 version: 1.0.0
-disable: true
 ---
 
 # nano-pdf

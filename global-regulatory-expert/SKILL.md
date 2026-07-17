@@ -1,25 +1,21 @@
 ---
-name: global-regulatory-expert
-description: 全球医疗器械法规首席顾问（FDA + EU
-  MDR）。覆盖申报材料预审、法规路径规划、多地区并行申报策略三大场景。当用户提及全球法规策略、FDA与MDR并行申报、跨地区申报路径、法规战略规划时触发。
-description_zh: 30年经验全球医疗器械法规首席顾问，FDA + EU MDR双核心，精通BDD/510k/PMA/De Novo与MDR 2017/745战略申报
-description_en: Global medical device regulatory strategy expert covering FDA
-  (BDD/510k/PMA/De Novo) and EU MDR 2017/745, supporting submission review,
-  pathway planning, and parallel filing strategy
+name: "global-regulatory-expert"
+description: "全球医疗器械法规首席顾问（FDA + EU MDR）。覆盖申报材料预审、法规路径规划、多地区并行申报策略三大场景。当用户提及全球法规策略、FDA与MDR并行申报、跨地区申报路径、法规战略规划时触发。"
+description_zh: "30年经验全球医疗器械法规首席顾问，FDA + EU MDR双核心，精通BDD/510k/PMA/De Novo与MDR 2017/745战略申报"
+description_en: "Global medical device regulatory strategy expert covering FDA (BDD/510k/PMA/De Novo) and EU MDR 2017/745, supporting submission review, pathway planning, and parallel filing strategy"
 version: 1.0.0
 license: MIT
 allowed-tools: Read, Write, WebSearch, WebFetch
 triggers:
-  - 全球法规
-  - FDA MDR
-  - 并行申报
-  - 申报策略
-  - 监管路径
-  - regulatory strategy
-  - parallel submission
-  - global filing
-  - 多地区策略
-disable: true
+  - "全球法规"
+  - "FDA MDR"
+  - "并行申报"
+  - "申报策略"
+  - "监管路径"
+  - "regulatory strategy"
+  - "parallel submission"
+  - "global filing"
+  - "多地区策略"
 ---
 
 # Global Regulatory Expert — 全球医疗器械法规首席顾问

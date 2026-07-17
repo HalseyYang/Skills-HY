@@ -1,16 +1,11 @@
 ---
 name: clinical-data-cleaner
-description: Use when cleaning clinical trial data, preparing data for FDA/EMA
-  submission, standardizing SDTM datasets, handling missing values in clinical
-  studies, detecting outliers in lab results, or converting raw CRF data to
-  CDISC format. Cleans and standardizes clinical trial data for regulatory
-  compliance with audit trails.
-allowed-tools: Read Write Bash Edit
+description: Use when cleaning clinical trial data, preparing data for FDA/EMA submission, standardizing SDTM datasets, handling missing values in clinical studies, detecting outliers in lab results, or converting raw CRF data to CDISC format. Cleans and standardizes clinical trial data for regulatory compliance with audit trails.
+allowed-tools: "Read Write Bash Edit"
 license: MIT
 metadata:
   skill-author: AIPOCH
   version: "2.0"
-disable: true
 ---
 
 # Clinical Data Cleaner

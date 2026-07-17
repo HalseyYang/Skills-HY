@@ -3,9 +3,7 @@ name: medical-device-mdr-auditor
 description: Audit medical device technical files against EU MDR 2017/745 regulations.
 license: MIT
 skill-author: AIPOCH
-disable: true
 ---
-
 # Medical Device MDR Auditor
 
 **ID**: 130  

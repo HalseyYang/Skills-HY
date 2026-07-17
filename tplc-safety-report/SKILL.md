@@ -1,14 +1,15 @@
 ---
 name: tplc-safety-report
-description: 'Generate CE MDR-compliant Safety Data Report and/or Clinical
-  Safety Parameters from FDA TPLC database. Supports any FDA product code with
-  5-year lookback. Now supports INTENDED USE text as primary input —
-  auto-detects the correct product code via FDA classification/TPLC/510(k)
-  search, then generates the report. Trigger: "TPLC报告", "FDA TPLC", "安全数据报告",
-  "Safety Data Report", "Clinical Safety Parameters", "product code + safety",
-  or when user provides an FDA product code and asks for post-market safety
-  analysis, OR when user provides intended use/indication text and asks for FDA
-  product code + TPLC report. (agent_created: true)'
+description: >-
+  Generate CE MDR-compliant Safety Data Report and/or Clinical Safety Parameters
+  from FDA TPLC database. Supports any FDA product code with 5-year lookback.
+  Now supports INTENDED USE text as primary input — auto-detects the correct
+  product code via FDA classification/TPLC/510(k) search, then generates the report.
+  Trigger: "TPLC报告", "FDA TPLC", "安全数据报告", "Safety Data Report",
+  "Clinical Safety Parameters", "product code + safety", or when user provides
+  an FDA product code and asks for post-market safety analysis, OR when user
+  provides intended use/indication text and asks for FDA product code + TPLC report.
+  (agent_created: true)
 allowed-tools:
   - Read
   - Write
@@ -18,7 +19,6 @@ allowed-tools:
   - WebSearch
   - Skill
   - AskUserQuestion
-disable: true
 ---
 
 # FDA TPLC Safety Data Report Generator

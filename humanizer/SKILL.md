@@ -1,12 +1,8 @@
 ---
 name: humanizer
-description: "Remove signs of AI-generated writing from text. Use when editing
-  or reviewing text to make it sound more natural and human-written. Detects and
-  fixes patterns including: inflated symbolism, promotional language,
-  superficial analyses, vague attributions, em dash overuse, rule of three, AI
-  vocabulary words, negative parallelisms, and excessive conjunctive phrases."
-description_zh: 去除文本中的 AI 写作痕迹
-description_en: Remove AI writing patterns from text
+description: "Remove signs of AI-generated writing from text. Use when editing or reviewing text to make it sound more natural and human-written. Detects and fixes patterns including: inflated symbolism, promotional language, superficial analyses, vague attributions, em dash overuse, rule of three, AI vocabulary words, negative parallelisms, and excessive conjunctive phrases."
+description_zh: "去除文本中的 AI 写作痕迹"
+description_en: "Remove AI writing patterns from text"
 version: 2.1.1
 allowed-tools:
   - Read
@@ -15,7 +11,6 @@ allowed-tools:
   - Grep
   - Glob
   - AskUserQuestion
-disable: true
 ---
 
 # Humanizer: Remove AI Writing Patterns

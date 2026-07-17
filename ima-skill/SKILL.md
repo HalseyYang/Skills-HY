@@ -1,9 +1,33 @@
 ---
 name: ima-skill
-description: >-
-  Unified IMA OpenAPI skill for Tencent ima notes and knowledge-base operations. Use when the user asks to configure ima credentials, manage ima notes, search or browse ima knowledge bases, upload files or webpages to ima, or work with Tencent ima OpenAPI.
+description: |
+  统一的 IMA OpenAPI 技能，支持笔记管理和知识库操作。
+  当用户提到知识库、资料库、笔记、备忘录、记事，或者想要上传文件、添加网页到知识库、
+  搜索知识库内容、搜索/浏览/创建/编辑笔记时，使用此 skill。
+  即使用户没有明确说"知识库"或"笔记"，只要意图涉及文件上传到知识库、网页收藏、
+  知识搜索、个人文档存取（如"帮我记一下"、"搜一下知识库里有没有XX"），也应触发此 skill。
+homepage: https://ima.qq.com
+metadata:
+  openclaw:
+    emoji: 🔧
+    requires:
+      env:
+        - IMA_OPENAPI_CLIENTID
+        - IMA_OPENAPI_APIKEY
+    primaryEnv: IMA_OPENAPI_CLIENTID
+  security:
+    credentials_usage: |
+      This skill requires user-provisioned IMA OpenAPI credentials (Client ID and API Key)
+      to authenticate with the official IMA API at https://ima.qq.com.
+      Credentials are ONLY sent to the official IMA API endpoint (ima.qq.com) as HTTP headers.
+      The file-upload flow also sends requests to COS endpoints (*.myqcloud.com) using
+      short-lived, scoped temporary credentials returned by the IMA API (create_media);
+      the user's Client ID / API Key are never sent to COS.
+      No credentials are logged, stored in files, or transmitted to any other destination.
+    allowed_domains:
+      - ima.qq.com
+      - '*.myqcloud.com'
 ---
-
 
 # ima-skill
 

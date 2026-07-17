@@ -1,12 +1,16 @@
 ---
 name: fda-guideline-search
-description: |-
-  Search FDA industry guidelines by therapeutic area or topic.
+description: 'Search FDA industry guidelines by therapeutic area or topic.
+
   Trigger when user requests FDA guidance documents, regulatory guidelines,
+
   or asks about FDA requirements for specific disease areas, drug development,
+
   or therapeutic categories (e.g., oncology, cardiology, rare diseases).
+
   Also triggered by queries about FDA ICH guidelines, FDA guidance documents,
-  or regulatory compliance requirements.
+
+  or regulatory compliance requirements.'
 version: 1.0.0
 category: Pharma
 tags: []
@@ -16,9 +20,8 @@ status: Draft
 risk_level: High
 skill_type: Hybrid (Tool/Script + Network/API)
 owner: AIPOCH
-reviewer: ""
-last_updated: 2026-02-06
-disable: true
+reviewer: ''
+last_updated: '2026-02-06'
 ---
 
 # FDA Guideline Search

@@ -1,7 +1,3 @@
----
-disable: true
----
-
 # Knowledge Base (知识库)
 
 API base path: `openapi/wiki/v1` — 完整数据结构和接口参数详见 `references/api.md`。

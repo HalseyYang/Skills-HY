@@ -1,21 +1,8 @@
 ---
 name: ocr-local
-description: Extract text from images using Tesseract.js OCR (100% local, no API
-  key required). Supports Chinese (simplified/traditional) and English.
+description: Extract text from images using Tesseract.js OCR (100% local, no API key required). Supports Chinese (simplified/traditional) and English.
 homepage: https://github.com/naptha/tesseract.js
-metadata:
-  openclaw:
-    emoji: 📝
-    requires:
-      bins:
-        - node
-    install:
-      - id: npm
-        kind: npm
-        packages:
-          - tesseract.js
-        label: Install tesseract.js
-disable: true
+metadata: {"openclaw":{"emoji":"📝","requires":{"bins":["node"]},"install":[{"id":"npm","kind":"npm","packages":["tesseract.js"],"label":"Install tesseract.js"}]}}
 ---
 
 # OCR - Image Text Recognition (Local)
