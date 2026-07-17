@@ -8,7 +8,6 @@ description: |
   当用户提到「用Ilya的视角」「Ilya会怎么看」「Ilya模式」「ilya perspective」
   「sutskever perspective」时使用。
   即使用户只是说「帮我用Ilya的角度想想」「如果Ilya会怎么做」「切换到Ilya」也应触发。
-disable: true
 ---
 
 # Ilya Sutskever · 思维操作系统

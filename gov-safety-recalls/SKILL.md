@@ -1,15 +1,8 @@
 ---
 name: gov-safety-recalls
-description: Search NHTSA vehicle recalls, FDA food/drug recalls, and CFPB
-  consumer complaints. 3 tools for product safety monitoring.
+description: Search NHTSA vehicle recalls, FDA food/drug recalls, and CFPB consumer complaints. 3 tools for product safety monitoring.
 homepage: https://github.com/martc03/gov-mcp-servers
-metadata:
-  clawdbot:
-    emoji: 🚗
-    requires:
-      bins:
-        - mcporter
-disable: true
+metadata: {"clawdbot":{"emoji":"🚗","requires":{"bins":["mcporter"]}}}
 ---
 
 # US Safety Recalls

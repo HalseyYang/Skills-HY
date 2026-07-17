@@ -1,12 +1,9 @@
 ---
 name: arxiv-watcher
-description: Search and summarize papers from ArXiv. Use when the user asks for
-  the latest research, specific topics on ArXiv, or a daily summary of AI
-  papers.
-description_zh: 搜索和总结 ArXiv 最新研究论文
-description_en: Search and summarize the latest research papers from ArXiv
+description: Search and summarize papers from ArXiv. Use when the user asks for the latest research, specific topics on ArXiv, or a daily summary of AI papers.
+description_zh: "搜索和总结 ArXiv 最新研究论文"
+description_en: "Search and summarize the latest research papers from ArXiv"
 version: 1.0.0
-disable: true
 ---
 
 # ArXiv Watcher

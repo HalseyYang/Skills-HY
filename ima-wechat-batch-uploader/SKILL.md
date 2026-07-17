@@ -1,7 +1,3 @@
----
-disable: true
----
-
 name: ima-wechat-batch-uploader
 description: Batch upload WeChat official account articles (from CSV) to IMA knowledge base with filtering and categorization support. Used when the user wants to import WeChat public account articles to a specific IMA knowledge base folder.
 agent_created: true

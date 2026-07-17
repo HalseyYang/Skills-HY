@@ -17,7 +17,6 @@ description: |
   - 模式A（文档改写）：输入原始文档 → 结构化输出
   - 自动应用金字塔原理、MECE原则
   - 生成分析框架 + 关键洞察 + PPT故事线
-disable: true
 ---
 
 # McKinsey Report Skill

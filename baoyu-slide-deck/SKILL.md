@@ -1,9 +1,6 @@
 ---
 name: baoyu-slide-deck
-description: Generates professional slide deck images from content. Creates
-  outlines with style instructions, then generates individual slide images. Use
-  when user asks to "create slides", "make a presentation", "generate deck",
-  "slide deck", or "PPT".
+description: Generates professional slide deck images from content. Creates outlines with style instructions, then generates individual slide images. Use when user asks to "create slides", "make a presentation", "generate deck", "slide deck", or "PPT".
 version: 1.117.4
 metadata:
   openclaw:
@@ -12,7 +9,6 @@ metadata:
       anyBins:
         - bun
         - npx
-disable: true
 ---
 
 # Slide Deck Generator

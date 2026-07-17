@@ -1,0 +1,5 @@
+interface:
+  display_name: "医疗器械注册售前方案"
+  short_description: "生成CE MDR、FDA注册路径、报价及品牌化Word方案"
+  brand_color: "#00B8D0"
+  default_prompt: "使用 $medical-device-presales-registration 生成经官方来源核验并符合公司模板的医疗器械注册售前方案。"

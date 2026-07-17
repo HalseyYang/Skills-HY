@@ -1,15 +1,12 @@
 ---
 name: 语言逻辑优化器
 description: >
-  A thought-organizing skill that takes messy, disorganized text and
-  restructures it into clear, logical communication. This skill should be used
-  when the user sends text prefixed with "优化" or explicitly asks to organize,
-  restructure, clarify, or clean up messy writing. Supports both Chinese and
-  English. Covers scenarios including voice-to-text transcripts, rough drafts,
-  work emails/messages, and brainstorming notes. Auto-detects the appropriate
-  tone based on context. Does NOT add AI-flavor words or fabricate meaning not
-  present in the original text.
-disable: true
+  A thought-organizing skill that takes messy, disorganized text and restructures it into clear,
+  logical communication. This skill should be used when the user sends text prefixed with "优化" or
+  explicitly asks to organize, restructure, clarify, or clean up messy writing. Supports both Chinese
+  and English. Covers scenarios including voice-to-text transcripts, rough drafts, work emails/messages,
+  and brainstorming notes. Auto-detects the appropriate tone based on context. Does NOT add AI-flavor
+  words or fabricate meaning not present in the original text.
 ---
 
 # 语言逻辑优化器

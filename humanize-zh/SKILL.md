@@ -3,7 +3,6 @@ name: de-ai-ify
 version: 1.0.0
 description: 将AI生成的机械化文本转换为自然、有人情味的人类写作风格
 author: ieou新知
-disable: true
 ---
 
 # 去除AI味 (De-AI-ify)
