@@ -1,6 +1,9 @@
 ---
 name: MDR-PMS-auditor
-description: "EU MDR 2017/745 Post-Market Surveillance auditor. Reviews PMS Plans against Article 84 and MDCG 2025-10, and PSURs against Article 86 and MDCG 2022-21. Cross-references ISO 13485 QMS requirements for feedback handling, complaints, vigilance, and corrective actions."
+description: EU MDR 2017/745 Post-Market Surveillance auditor. Reviews PMS Plans
+  against Article 84 and MDCG 2025-10, and PSURs against Article 86 and MDCG
+  2022-21. Cross-references ISO 13485 QMS requirements for feedback handling,
+  complaints, vigilance, and corrective actions.
 triggers:
   - PMS
   - PMS Plan
@@ -14,6 +17,7 @@ triggers:
   - PMS audit
   - PSUR review
 version: 1.0.0
+disable: true
 ---
 
 # MDR Post-Market Surveillance Auditor

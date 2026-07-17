@@ -1,12 +1,16 @@
 ---
 name: workrally
-description: WorkRally CLI (workrally) — 面向 AI Agent 的 AIGC 漫剧视频创作全流程工具集。 支持 AI 生图、AI 生视频、项目/剧集/场次/分镜的完整 CRUD、资产库、媒资管理、无限画布、文件上传下载等。 Use when user asks to generate images, generate videos, manage projects, series, shots, upload files, download assets, manage materials, or interact with WorkRally platform via command line.
+description: WorkRally CLI (workrally) — 面向 AI Agent 的 AIGC 漫剧视频创作全流程工具集。 支持 AI
+  生图、AI 生视频、项目/剧集/场次/分镜的完整 CRUD、资产库、媒资管理、无限画布、文件上传下载等。 Use when user asks to
+  generate images, generate videos, manage projects, series, shots, upload
+  files, download assets, manage materials, or interact with WorkRally platform
+  via command line.
 version: 2.4.1
 homepage: https://workrally.qq.com
 author: WorkRally Team
 metadata:
   openclaw:
-    emoji: "\U0001F3AC"
+    emoji: 🎬
     requires:
       bins:
         - workrally
@@ -19,7 +23,8 @@ metadata:
     credentials:
       storage: ~/.workrally/config.json
       configDirEnv: WORKRALLY_CONFIG_DIR
-      description: workrally auth login 写入的 API Key 持久化文件，JSON 格式，仅存储 api_key 和 endpoint。非持久化容器中可通过 WORKRALLY_CONFIG_DIR 环境变量指定配置目录
+      description: workrally auth login 写入的 API Key 持久化文件，JSON 格式，仅存储 api_key 和
+        endpoint。非持久化容器中可通过 WORKRALLY_CONFIG_DIR 环境变量指定配置目录
     install:
       - id: npm
         kind: node
@@ -40,11 +45,13 @@ metadata:
       - series
 license: MIT-0
 user-invocable: true
-display_name: "WorkRally"
-display_name_en: "Workrally"
-description_zh: "WorkRally AI 内容创作（生图、生视频、画布、素材管理）"
-description_en: "WorkRally AI content creation: image/video generation, canvas, asset management"
-visibility: "public"
+display_name: WorkRally
+display_name_en: Workrally
+description_zh: WorkRally AI 内容创作（生图、生视频、画布、素材管理）
+description_en: "WorkRally AI content creation: image/video generation, canvas,
+  asset management"
+visibility: public
+disable: true
 ---
 
 # WorkRally CLI (workrally)

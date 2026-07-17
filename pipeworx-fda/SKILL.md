@@ -1,14 +1,16 @@
 ---
 name: pipeworx-fda
-description: US FDA open data — adverse drug event reports, drug labeling/package inserts, and food recall enforcement actions
+description: US FDA open data — adverse drug event reports, drug
+  labeling/package inserts, and food recall enforcement actions
 version: 1.0.0
 metadata:
   openclaw:
     requires:
       bins:
         - curl
-    emoji: "💊"
+    emoji: 💊
     homepage: https://pipeworx.io/packs/fda
+disable: true
 ---
 
 # FDA Open Data

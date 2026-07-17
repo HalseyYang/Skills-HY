@@ -1,9 +1,11 @@
 ---
 name: songsee
-description: "Generate spectrograms and feature-panel visualizations from audio with the songsee CLI."
-description_zh: "从音频生成频谱图和可视化"
-description_en: "Generate spectrograms from audio"
+description: Generate spectrograms and feature-panel visualizations from audio
+  with the songsee CLI.
+description_zh: 从音频生成频谱图和可视化
+description_en: Generate spectrograms from audio
 version: 1.0.0
+disable: true
 ---
 
 # songsee

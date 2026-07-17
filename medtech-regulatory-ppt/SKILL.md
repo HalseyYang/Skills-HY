@@ -1,14 +1,26 @@
 ---
 name: medtech-regulatory-ppt
-description: |
-  Generates three reusable PPT instruction templates adapted to any medical device
-  regulatory topic. Given a topic (e.g., "FDA 510(k) Submission Strategy", "CE MDR
-  Clinical Evaluation", "EU Breakthrough Device Designation"), outputs: 指令一 (15-page
+description: >
+  Generates three reusable PPT instruction templates adapted to any medical
+  device
+
+  regulatory topic. Given a topic (e.g., "FDA 510(k) Submission Strategy", "CE
+  MDR
+
+  Clinical Evaluation", "EU Breakthrough Device Designation"), outputs: 指令一
+  (15-page
+
   content structure spec), 指令二 (3-4 visual style concepts via ImageGen), 指令三
-  (editable PPTX generation with python-pptx — text boxes, tables, shapes; not images).
+
+  (editable PPTX generation with python-pptx — text boxes, tables, shapes; not
+  images).
+
   All slide text is fully editable. Trigger: 法规PPT指令, 生成PPT指令, PPT instruction
-  template, PPT指令模板, any request to "generate PPT instructions" for a regulatory topic.
+
+  template, PPT指令模板, any request to "generate PPT instructions" for a regulatory
+  topic.
 agent_created: true
+disable: true
 ---
 
 # MedTech Regulatory PPT — Instruction Template Generator

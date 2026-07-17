@@ -3,9 +3,9 @@ name: firm-medtech-pack
 version: 1.0.0
 description: >
   Curated skill bundle for medical device companies, digital health startups and
-  pharma R&D teams. Activates the firm pyramid with RA (Regulatory Affairs), Clinical,
-  R&D and Quality agents pre-configured for FDA/CE compliance, clinical documentation
-  and pharmacovigilance workflows.
+  pharma R&D teams. Activates the firm pyramid with RA (Regulatory Affairs),
+  Clinical, R&D and Quality agents pre-configured for FDA/CE compliance,
+  clinical documentation and pharmacovigilance workflows.
 author: romainsantoli-web
 license: MIT
 metadata:
@@ -27,6 +27,7 @@ tags:
   - ce-marking
   - firm-pack
   - sector
+disable: true
 ---
 
 # firm-medtech-pack

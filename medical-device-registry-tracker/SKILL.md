@@ -1,14 +1,12 @@
 ---
-name: "medical-device-registry-tracker"
+name: medical-device-registry-tracker
 description: >
-  医疗器械法规追踪 Skill。自动检索中国(NMPA/CMDE)、欧盟(EC/MDR/MDCG)、美国(FDA)、加拿大(Health Canada)等地区的医疗器械法规更新，生成汇总报告并上传到 IMA 知识库。每周五自动执行。
+  医疗器械法规追踪 Skill。自动检索中国(NMPA/CMDE)、欧盟(EC/MDR/MDCG)、美国(FDA)、加拿大(Health
+  Canada)等地区的医疗器械法规更新，生成汇总报告并上传到 IMA 知识库。每周五自动执行。
 
-  使用场景：
-  - "帮我追踪本周医疗器械法规更新"
-  - "生成最新的法规周报"
-  - "查看本周FDA指南动态"
-  - "追踪欧盟MDR指南更新"
-  - 自动化：每周五 8:30 自动检索并上传到 IMA 知识库「MD法规更新汇总」
+  使用场景： - "帮我追踪本周医疗器械法规更新" - "生成最新的法规周报" - "查看本周FDA指南动态" - "追踪欧盟MDR指南更新" -
+  自动化：每周五 8:30 自动检索并上传到 IMA 知识库「MD法规更新汇总」
+disable: true
 ---
 
 # 医疗器械法规追踪 Skill

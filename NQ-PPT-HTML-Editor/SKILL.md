@@ -3,14 +3,14 @@ name: NQ-PPT-HTML-Editor
 description: >
   给已生成的静态 HTML（尤其 PPT 幻灯片，也含落地页/文档/原型）生成一个"可视化编辑版"——
   让用户在浏览器里直接可视化微调：选中元素改文字、改字号字重颜色行高字间距、拖动移动位置、
-  面板数字+滑动条改元素宽高、复制/删除/上下调换组件，编辑完点"导出"生成纯净版（不含编辑器代码），
-  还能"全屏预览"看效果。支持 vw/vh 自适应 PPT 和普通 px 网页，编辑不破坏原文件的脚本/样式/自适应。
-  只要用户想让一个已生成的 HTML「可以自己改」「可视化编辑」「不碰代码就能调字号/位置/大小」，
-  就应该用本 Skill。典型触发语：「让这个 HTML/PPT 可以编辑」「加个编辑模式」「我想自己微调」
-  「改一下这个 PPT 的标题字号/位置」「把这块色块改窄一点」「生成可编辑版」「make this editable」
-  「editable html」「visual editor for html」。用户用 PPT skill / 前端 skill 生成了文件后想自己微调、
-  或拿到别人给的静态 HTML 想改内容时，都应触发。不要 undertrigger。不适用于：代码编辑器、
-  CMS 后台、生成全新的 HTML（那是别的 skill 的活）、修改 JSON/CSV 等非 HTML 文件。
+  面板数字+滑动条改元素宽高、复制/删除/上下调换组件，编辑完点"导出"生成纯净版（不含编辑器代码）， 还能"全屏预览"看效果。支持 vw/vh 自适应
+  PPT 和普通 px 网页，编辑不破坏原文件的脚本/样式/自适应。 只要用户想让一个已生成的
+  HTML「可以自己改」「可视化编辑」「不碰代码就能调字号/位置/大小」， 就应该用本 Skill。典型触发语：「让这个 HTML/PPT
+  可以编辑」「加个编辑模式」「我想自己微调」 「改一下这个 PPT 的标题字号/位置」「把这块色块改窄一点」「生成可编辑版」「make this
+  editable」 「editable html」「visual editor for html」。用户用 PPT skill / 前端 skill
+  生成了文件后想自己微调、 或拿到别人给的静态 HTML 想改内容时，都应触发。不要 undertrigger。不适用于：代码编辑器、 CMS
+  后台、生成全新的 HTML（那是别的 skill 的活）、修改 JSON/CSV 等非 HTML 文件。
+disable: true
 ---
 
 # NQ-PPT-HTML-Editor

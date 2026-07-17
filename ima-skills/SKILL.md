@@ -6,8 +6,8 @@ description: |
   搜索知识库内容、搜索/浏览/创建/编辑笔记时，使用此 skill。
   即使用户没有明确说"知识库"或"笔记"，只要意图涉及文件上传到知识库、网页收藏、
   知识搜索、个人文档存取（如"帮我记一下"、"搜一下知识库里有没有XX"），也应触发此 skill。
-description_zh: "ima笔记与知识库管理（读取、写入、检索、上传文件）"
-description_en: "IMA notes & knowledge base management (read, write, search, upload)"
+description_zh: ima笔记与知识库管理（读取、写入、检索、上传文件）
+description_en: IMA notes & knowledge base management (read, write, search, upload)
 version: 1.1.7
 homepage: https://ima.qq.com
 metadata:
@@ -19,17 +19,29 @@ metadata:
         - IMA_OPENAPI_APIKEY
     primaryEnv: IMA_OPENAPI_CLIENTID
   security:
-    credentials_usage: |
-      This skill requires user-provisioned IMA OpenAPI credentials (Client ID and API Key)
+    credentials_usage: >
+      This skill requires user-provisioned IMA OpenAPI credentials (Client ID
+      and API Key)
+
       to authenticate with the official IMA API at https://ima.qq.com.
-      Credentials are ONLY sent to the official IMA API endpoint (ima.qq.com) as HTTP headers.
-      The file-upload flow also sends requests to COS endpoints (*.myqcloud.com) using
-      short-lived, scoped temporary credentials returned by the IMA API (create_media);
+
+      Credentials are ONLY sent to the official IMA API endpoint (ima.qq.com) as
+      HTTP headers.
+
+      The file-upload flow also sends requests to COS endpoints (*.myqcloud.com)
+      using
+
+      short-lived, scoped temporary credentials returned by the IMA API
+      (create_media);
+
       the user's Client ID / API Key are never sent to COS.
-      No credentials are logged, stored in files, or transmitted to any other destination.
+
+      No credentials are logged, stored in files, or transmitted to any other
+      destination.
     allowed_domains:
       - ima.qq.com
-      - '*.myqcloud.com'
+      - "*.myqcloud.com"
+disable: true
 ---
 
 # ima-skill

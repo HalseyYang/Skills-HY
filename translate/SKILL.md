@@ -1,12 +1,18 @@
 ---
 name: Translate
-description: "Translate text accurately — preserve formatting, handle plurals, and adapt tone per locale."
+description: Translate text accurately — preserve formatting, handle plurals,
+  and adapt tone per locale.
 metadata:
-  emoji: "🌐"
-  category: "text"
-  difficulty: "intermediate"
-  os: "all"
-  tags: ["translation", "localization", "languages", "formatting"]
+  emoji: 🌐
+  category: text
+  difficulty: intermediate
+  os: all
+  tags:
+    - translation
+    - localization
+    - languages
+    - formatting
+disable: true
 ---
 
 # Translate

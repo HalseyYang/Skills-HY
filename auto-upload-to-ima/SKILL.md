@@ -1,3 +1,7 @@
+---
+disable: true
+---
+
 # Skill: 自动上传输出文件到知识库
 
 > 所有 WorkBuddy 生成的输出文件（PDF、Word、Excel、Markdown、图片等），自动上传到 **「个人知识库 > Workbuddy 审核」**。

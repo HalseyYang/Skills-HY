@@ -1,9 +1,12 @@
 ---
 name: nano-banana-pro
-description: "Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports text-to-image + image-to-image; 1K/2K/4K; use --input-image."
-description_zh: "AI 图片生成与编辑（支持 4K）"
-description_en: "AI image generation & editing (up to 4K)"
+description: Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use
+  for image create/modify requests incl. edits. Supports text-to-image +
+  image-to-image; 1K/2K/4K; use --input-image.
+description_zh: AI 图片生成与编辑（支持 4K）
+description_en: AI image generation & editing (up to 4K)
 version: 1.0.1
+disable: true
 ---
 
 # Nano Banana Pro Image Generation & Editing

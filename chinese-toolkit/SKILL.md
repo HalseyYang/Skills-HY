@@ -1,8 +1,15 @@
 ---
 name: chinese-toolkit
-description: "为OpenClaw提供中文文本处理、翻译、OCR、语音识别等功能的综合工具包。支持中文分词、拼音转换、中英文翻译、关键词提取、文本分析等功能。"
+description: 为OpenClaw提供中文文本处理、翻译、OCR、语音识别等功能的综合工具包。支持中文分词、拼音转换、中英文翻译、关键词提取、文本分析等功能。
 homepage: https://github.com/openclaw/chinese-toolkit
-metadata: { "openclaw": { "emoji": "🇨🇳", "requires": { "bins": ["python3", "pip"] } } }
+metadata:
+  openclaw:
+    emoji: 🇨🇳
+    requires:
+      bins:
+        - python3
+        - pip
+disable: true
 ---
 
 # 中文工具包技能
