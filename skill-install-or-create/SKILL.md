@@ -1,6 +1,13 @@
 ---
 name: skill-install-or-create
-description: Install third-party Codex or Claude-style skills from GitHub, npm/npx commands, local folders, or user-provided skill descriptions; when the source cannot be recognized, is too slow, has no valid SKILL.md, or the named skill is missing, synthesize a valid local Codex skill from README, docs, repository structure, or the user's description. Use when the user asks to install, add, clone, import, convert, create, or learn a skill from an external source.
+description: Install third-party Codex or Claude-style skills from GitHub,
+  npm/npx commands, local folders, or user-provided skill descriptions; when the
+  source cannot be recognized, is too slow, has no valid SKILL.md, or the named
+  skill is missing, synthesize a valid local Codex skill from README, docs,
+  repository structure, or the user's description. Use when the user asks to
+  install, add, clone, import, convert, create, or learn a skill from an
+  external source.
+disable: true
 ---
 
 # Skill Install Or Create

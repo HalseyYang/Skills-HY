@@ -1,6 +1,12 @@
 ---
 name: slide-image-to-editable-pptx
-description: Convert slide screenshots, exported slide images, scanned presentation pages, or image-only decks into editable PowerPoint PPTX files. Use when the user asks to rebuild a PPT from images, make screenshots editable, convert PNG/JPG/PDF slide pages to editable slides, recreate layouts, extract tables/text/shapes from slide images, or avoid image-only PPT output.
+description: Convert slide screenshots, exported slide images, scanned
+  presentation pages, or image-only decks into editable PowerPoint PPTX files.
+  Use when the user asks to rebuild a PPT from images, make screenshots
+  editable, convert PNG/JPG/PDF slide pages to editable slides, recreate
+  layouts, extract tables/text/shapes from slide images, or avoid image-only PPT
+  output.
+disable: true
 ---
 
 # Slide Image To Editable PPTX

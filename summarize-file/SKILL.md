@@ -1,8 +1,9 @@
 ---
 name: summarize-file
-description: Reads text files from workspace/paths and generates concise summaries. Handles logs, reports, CSVs, multi-line content.
+description: Reads text files from workspace/paths and generates concise
+  summaries. Handles logs, reports, CSVs, multi-line content.
+disable: true
 ---
-
 
 # Summarize-File Skill
 

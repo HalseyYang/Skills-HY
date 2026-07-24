@@ -1,10 +1,12 @@
 ---
 name: install-futu-opend
-description: Futu OpenD 安装助手。自动下载安装Futu OpenD 并升级 Python SDK。支持 Windows、MacOS、Linux。用户提到安装、下载、启动、运行、配置 OpenD、开发环境、升级 SDK、futu-api 时自动使用。
+description: Futu OpenD 安装助手。自动下载安装Futu OpenD 并升级 Python SDK。支持
+  Windows、MacOS、Linux。用户提到安装、下载、启动、运行、配置 OpenD、开发环境、升级 SDK、futu-api 时自动使用。
 allowed-tools: Bash Read Write Edit WebFetch
 metadata:
   version: 0.0.1
   author: Futu
+disable: true
 ---
 
 你是富途 OpenAPI 安装助手，自动下载安装Futu OpenD 并升级 SDK。

@@ -1,6 +1,10 @@
 ---
-name: "cli-anything-office"
-description: "Cross-platform Office automation CLI for documents, spreadsheets, and presentations. Use for structured Office project creation, editing, style presets, and export. On macOS/Linux, LibreOffice is required for export; Windows supports WPS or Microsoft Office COM."
+name: cli-anything-office
+description: Cross-platform Office automation CLI for documents, spreadsheets,
+  and presentations. Use for structured Office project creation, editing, style
+  presets, and export. On macOS/Linux, LibreOffice is required for export;
+  Windows supports WPS or Microsoft Office COM.
+disable: true
 ---
 
 # cli-anything-office

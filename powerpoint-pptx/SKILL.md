@@ -1,8 +1,12 @@
 ---
 name: powerpoint-pptx
-description: Create, inspect, and edit Microsoft PowerPoint presentations and PPTX decks with reliable layouts, templates, placeholders, notes, charts, and visual QA. Use when (1) the task is about PowerPoint or `.pptx`; (2) layouts, placeholders, notes, charts, comments, or template fidelity matter; (3) the deck must render cleanly after edits.
+description: Create, inspect, and edit Microsoft PowerPoint presentations and
+  PPTX decks with reliable layouts, templates, placeholders, notes, charts, and
+  visual QA. Use when (1) the task is about PowerPoint or `.pptx`; (2) layouts,
+  placeholders, notes, charts, comments, or template fidelity matter; (3) the
+  deck must render cleanly after edits.
+disable: true
 ---
-
 
 ## When to Use
 

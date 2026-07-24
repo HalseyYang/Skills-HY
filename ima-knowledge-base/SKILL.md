@@ -1,7 +1,11 @@
 ---
 name: ima-knowledge-base
-description: >-
-  Tencent ima knowledge-base skill for listing knowledge bases and folders, uploading files or webpages, searching knowledge-base content, and managing documents through IMA OpenAPI. Use when the user mentions ima knowledge base, upload to knowledge base, search knowledge base, personal document library, or file storage in ima.
+description: Tencent ima knowledge-base skill for listing knowledge bases and
+  folders, uploading files or webpages, searching knowledge-base content, and
+  managing documents through IMA OpenAPI. Use when the user mentions ima
+  knowledge base, upload to knowledge base, search knowledge base, personal
+  document library, or file storage in ima.
+disable: true
 ---
 
 # Knowledge Base (知识库)

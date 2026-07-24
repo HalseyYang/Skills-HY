@@ -1,6 +1,11 @@
 ---
 name: rw-consulting-ppt
-description: Use when the user wants to turn bullet points, rough notes, research findings, or a page outline into an image-only consulting-grade PPT deck, especially standalone report exhibits, live-presentation concept slides, full-slide PNGs, or PNG plus image-only PPTX. Use when editable PPTX or code-rendered slide pages are not allowed.
+description: Use when the user wants to turn bullet points, rough notes,
+  research findings, or a page outline into an image-only consulting-grade PPT
+  deck, especially standalone report exhibits, live-presentation concept slides,
+  full-slide PNGs, or PNG plus image-only PPTX. Use when editable PPTX or
+  code-rendered slide pages are not allowed.
+disable: true
 ---
 
 # RW Consulting PPT

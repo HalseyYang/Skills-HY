@@ -1,9 +1,10 @@
 ---
 name: regulatory-affairs-specialist
-description: >-
-  Regulatory affairs specialist for biotech, pharma, and medical products. Use for regulatory strategy, submission planning, compliance review, labeling, authority interactions, and regulatory risk analysis.
+description: Regulatory affairs specialist for biotech, pharma, and medical
+  products. Use for regulatory strategy, submission planning, compliance review,
+  labeling, authority interactions, and regulatory risk analysis.
+disable: true
 ---
-
 
 # Regulatory Affairs Specialist
 

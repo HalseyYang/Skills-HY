@@ -1,8 +1,9 @@
 ---
 name: summarize-cli
-description: Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).
+description: Summarize URLs or files with the summarize CLI (web, PDFs, images,
+  audio, YouTube).
+disable: true
 ---
-
 
 # Summarize
 

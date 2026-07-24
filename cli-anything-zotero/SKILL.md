@@ -1,8 +1,7 @@
 ---
-name: >-
-  cli-anything-zotero
-description: >-
-  CLI harness for Zotero.
+name: cli-anything-zotero
+description: CLI harness for Zotero.
+disable: true
 ---
 
 # cli-anything-zotero

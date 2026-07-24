@@ -1,8 +1,8 @@
 ---
 name: feynman-perspective
-description: |
+description: ""
+disable: true
 ---
-
 
 # 费曼 · 思维操作系统
 

@@ -1,6 +1,13 @@
 ---
 name: ppt-generator-pro
-description: Generate high-quality AI-assisted PPT slide images and presentation videos from documents or text using the NanoBanana PPT workflow, Gemini/Nano Banana image generation, optional Kling AI transitions, style templates, interactive HTML viewers, and FFmpeg video composition. Use when the user asks to create a PPT, presentation deck, slide images, visual presentation, AI-generated slides, animated PPT transitions, looping title animation, or export a PPT-style video from source content.
+description: Generate high-quality AI-assisted PPT slide images and presentation
+  videos from documents or text using the NanoBanana PPT workflow, Gemini/Nano
+  Banana image generation, optional Kling AI transitions, style templates,
+  interactive HTML viewers, and FFmpeg video composition. Use when the user asks
+  to create a PPT, presentation deck, slide images, visual presentation,
+  AI-generated slides, animated PPT transitions, looping title animation, or
+  export a PPT-style video from source content.
+disable: true
 ---
 
 # PPT Generator Pro

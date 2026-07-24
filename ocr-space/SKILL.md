@@ -1,8 +1,8 @@
 ---
 name: ocr-space
 description: 调用 OCR.space 免费 API 识别图片中的文字
+disable: true
 ---
-
 
 # OCR.space 文字识别 Skill
 

@@ -1,6 +1,15 @@
 ---
 name: meddev-regulatory-strategy
-description: Senior medical device regulatory strategy expert for FDA, FDA Breakthrough Devices Program (BDD), 510(k), De Novo, PMA, HDE, Q-Submission, CE MDR 2017/745, clinical evaluation, GSPR, standards strategy, classification, intended use, claims, risk-based evidence planning, and regulatory consulting. Use when the user asks for regulatory pathway analysis, FDA or EU MDR registration strategy, product classification, predicate strategy, notified body strategy, clinical evidence requirements, standards applicability, regulatory risk assessment, or expert consulting opinions for medical device clients.
+description: Senior medical device regulatory strategy expert for FDA, FDA
+  Breakthrough Devices Program (BDD), 510(k), De Novo, PMA, HDE, Q-Submission,
+  CE MDR 2017/745, clinical evaluation, GSPR, standards strategy,
+  classification, intended use, claims, risk-based evidence planning, and
+  regulatory consulting. Use when the user asks for regulatory pathway analysis,
+  FDA or EU MDR registration strategy, product classification, predicate
+  strategy, notified body strategy, clinical evidence requirements, standards
+  applicability, regulatory risk assessment, or expert consulting opinions for
+  medical device clients.
+disable: true
 ---
 
 # MedDev Regulatory Strategy

@@ -1,6 +1,13 @@
 ---
 name: literature-review
-description: Plan, conduct, evaluate, and write rigorous literature reviews, scoping reviews, systematic review drafts, annotated bibliographies, evidence maps, and research syntheses. Use when the user asks for literature search strategy, paper screening, inclusion/exclusion criteria, PRISMA-style workflow, evidence tables, thematic synthesis, gap analysis, research background sections, related work sections, citation quality checks, or review of medical, scientific, technical, product, policy, or academic literature.
+description: Plan, conduct, evaluate, and write rigorous literature reviews,
+  scoping reviews, systematic review drafts, annotated bibliographies, evidence
+  maps, and research syntheses. Use when the user asks for literature search
+  strategy, paper screening, inclusion/exclusion criteria, PRISMA-style
+  workflow, evidence tables, thematic synthesis, gap analysis, research
+  background sections, related work sections, citation quality checks, or review
+  of medical, scientific, technical, product, policy, or academic literature.
+disable: true
 ---
 
 # Literature Review

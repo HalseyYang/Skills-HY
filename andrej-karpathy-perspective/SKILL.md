@@ -1,8 +1,8 @@
 ---
 name: andrej-karpathy-perspective
-description: |
+description: ""
+disable: true
 ---
-
 
 # Andrej Karpathy 思维操作系统
 

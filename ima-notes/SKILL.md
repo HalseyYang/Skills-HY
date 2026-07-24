@@ -1,7 +1,10 @@
 ---
 name: ima-notes
-description: >-
-  Tencent ima notes skill for searching, browsing, creating, editing, and organizing notes through IMA OpenAPI. Use when the user mentions ima notes, note taking, memo, reminders, record this, search notes, or manage personal notes.
+description: Tencent ima notes skill for searching, browsing, creating, editing,
+  and organizing notes through IMA OpenAPI. Use when the user mentions ima
+  notes, note taking, memo, reminders, record this, search notes, or manage
+  personal notes.
+disable: true
 ---
 
 # Notes (笔记)

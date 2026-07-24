@@ -1,6 +1,11 @@
 ---
 name: openspec
-description: Use when the user asks for OpenSpec, spec-driven development, SDD, OPSX commands, product/engineering proposals, requirements/spec changes, implementation plans tied to specs, validating implementation against specs, or archiving completed changes. Provides workflow guidance for Fission-AI OpenSpec and the installed `openspec` CLI.
+description: Use when the user asks for OpenSpec, spec-driven development, SDD,
+  OPSX commands, product/engineering proposals, requirements/spec changes,
+  implementation plans tied to specs, validating implementation against specs,
+  or archiving completed changes. Provides workflow guidance for Fission-AI
+  OpenSpec and the installed `openspec` CLI.
+disable: true
 ---
 
 # OpenSpec

@@ -1,6 +1,13 @@
 ---
 name: zotero-review-matrix
-description: Organize Zotero collections and all nested subcollection items, metadata, notes, PDF or EPUB highlights, and annotations into a thematic literature review matrix, CSV, and literature review DOCX with GB/T 7714-2015 references. Use when the user asks to整理 Zotero collection 文献、笔记、高亮、批注, create a literature review matrix, annotated review table, Markdown matrix, CSV export, Word literature review, docx 文献综述, or research synthesis table from Zotero.
+description: Organize Zotero collections and all nested subcollection items,
+  metadata, notes, PDF or EPUB highlights, and annotations into a thematic
+  literature review matrix, CSV, and literature review DOCX with GB/T 7714-2015
+  references. Use when the user asks to整理 Zotero collection 文献、笔记、高亮、批注, create
+  a literature review matrix, annotated review table, Markdown matrix, CSV
+  export, Word literature review, docx 文献综述, or research synthesis table from
+  Zotero.
+disable: true
 ---
 
 # Zotero Review Matrix

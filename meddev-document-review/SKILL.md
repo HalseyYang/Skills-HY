@@ -1,6 +1,15 @@
 ---
 name: meddev-document-review
-description: Expert review, editing, and drafting of medical device registration, FDA submission, EU MDR technical documentation, clinical evaluation, risk management, standards compliance, labeling, IFU, software, cybersecurity, usability, PMS/PMCF, and client regulatory documents. Use when the user provides documents, excerpts, tables, protocols, reports, submissions, deficiency letters, reviewer questions, or draft claims and asks for professional comments, modification suggestions, redlines, gap analysis, writing, rewriting, translation-polishing, audit-style review, or document package preparation.
+description: Expert review, editing, and drafting of medical device
+  registration, FDA submission, EU MDR technical documentation, clinical
+  evaluation, risk management, standards compliance, labeling, IFU, software,
+  cybersecurity, usability, PMS/PMCF, and client regulatory documents. Use when
+  the user provides documents, excerpts, tables, protocols, reports,
+  submissions, deficiency letters, reviewer questions, or draft claims and asks
+  for professional comments, modification suggestions, redlines, gap analysis,
+  writing, rewriting, translation-polishing, audit-style review, or document
+  package preparation.
+disable: true
 ---
 
 # MedDev Document Review
