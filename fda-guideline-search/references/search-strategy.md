@@ -1,59 +1,59 @@
-# FDA Guideline Search Strategy
+# FDA 指南搜索策略
 
-## Data Sources
+## 数据来源
 
-### Primary Sources
-1. **FDA CDER Guidance Documents**
+### 主要来源
+1. **FDA CDER 指导文件**
    - URL: https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
-   - Contains drug development and review guidelines
+   - 包含药物开发和审查指南
 
-2. **FDA CBER Guidance Documents**
+2. **FDA CBER 指导文件**
    - URL: https://www.fda.gov/vaccines-blood-biologics/guidance-compliance-regulatory-information-biologics/guidances-biologics
-   - Contains biologics and blood product guidelines
+   - 包含生物制品和血液制品指南
 
-3. **ICH Guidelines**
+3. **ICH 指南**
    - URL: https://database.ich.org/home
-   - International harmonized guidelines adopted by FDA
+   - FDA 采用的国际协调指南
 
-## Search Methodology
+## 搜索方法
 
-### 1. Therapeutic Area Mapping
-- Normalize user input to standard therapeutic area names
-- Use keyword expansion for comprehensive matching
-- Support partial matches and aliases
+### 1. 治疗领域映射
+- 将用户输入标准化为标准治疗领域名称
+- 使用关键词扩展进行全面匹配
+- 支持部分匹配和别名
 
-### 2. Document Filtering
-- By type: Draft, Final, ICH
-- By date: Single year or date ranges
-- By content: Full-text search within titles
+### 2. 文件筛选
+- 按类型：草案、最终版、ICH
+- 按日期：单一年份或日期范围
+- 按内容：标题内的全文搜索
 
-### 3. Rate Limiting
-- Maximum 10 requests per minute to FDA servers
-- 6-second delay between requests
-- Respect robots.txt and server response times
+### 3. 速率限制
+- FDA 服务器每分钟最多 10 次请求
+- 请求之间 6 秒延迟
+- 遵守 robots.txt 和服务器响应时间
 
-## Implementation Notes
+## 实现说明
 
-### Current Approach
-- Python script with urllib for HTTP requests
-- Regex-based HTML parsing (for reliability)
-- Local JSON caching
-- Mock data structure for demonstration
+### 当前方法
+- 使用 urllib 的 Python 脚本进行 HTTP 请求
+- 基于正则表达式的 HTML 解析（用于可靠性）
+- 本地 JSON 缓存
+- 用于演示的模拟数据结构
 
-### Production Enhancement Path
-1. Use BeautifulSoup for robust HTML parsing
-2. Implement FDA OpenFDA API integration
-3. Add full-text indexing with SQLite/Elasticsearch
-4. PDF text extraction for content search
+### 生产增强路径
+1. 使用 BeautifulSoup 进行可靠的 HTML 解析
+2. 实现 FDA OpenFDA API 集成
+3. 使用 SQLite/Elasticsearch 添加全文索引
+4. PDF 文本提取用于内容搜索
 
-## Known Limitations
+## 已知限制
 
-1. FDA does not provide a comprehensive public API for all guidance documents
-2. Some historical documents lack digital PDFs
-3. Document numbering and URLs may change
-4. ICH guidelines require separate database access
+1. FDA 不为所有指导文件提供完整的公共 API
+2. 部分历史文件缺少数字 PDF
+3. 文件编号和 URL 可能会更改
+4. ICH 指南需要单独的数据库访问
 
-## Reference Links
+## 参考链接
 
 - FDA Guidance Index: https://www.fda.gov/regulatory-information/search-fda-guidance-documents
 - FDA Drug Guidance: https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs

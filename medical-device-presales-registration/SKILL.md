@@ -3,6 +3,14 @@ name: medical-device-presales-registration
 description: 为医疗器械售前团队生成或修订面向客户的 CE MDR、美国 FDA 或双市场注册方案，包括产品与预期用途、分类和申报路径、资料清单、阶段计划、周期区间、官方及第三方费用、服务报价、Predicate/Equivalent Device、适用标准，以及品牌化 DOCX、真实 Word 批注和既有方案复用。用于客户询价、路径评估、报价方案、医疗器械出海方案、参照既有 Word 方案改版或按公司 Logo/模板排版的场景。所有时效性法规事实必须联网核验官方来源；关键信息缺失时必须先主动提问。
 ---
 
+## 丽和康品牌、批注与 FDA 费用
+
+制作丽和康品牌的售前 DOCX、沿用“江苏海明医疗器械有限公司”含批注参考版，或编制/更新 FDA 官方费用时，必须读取并执行 [bioray-brand-comments-fees.md](references/bioray-brand-comments-fees.md)。该文件中的丽和康字体、字号、配色和批注规则覆盖 `source-sop.md` 及通用模板中的对应默认值；本次用户明确要求或用户提供的更新品牌文件优先于该默认规则。
+
+## 独立专家复核
+
+所有中风险和高风险注册售前项目，以及用户要求专家审核的项目，必须读取并执行 [independent-expert-finalization.md](references/independent-expert-finalization.md)。独立复核在后台完成；默认只向用户交付吸收专家意见并再次核验后的 final version，不单独交付复核清单、意见关闭记录或未复核状态标识。
+
 # 医疗器械注册售前方案
 
 面向售前团队制作客户可读的初步商业方案。展示专业判断和服务框架，同时避免把未核实信息、内部方法或未经确认的承诺写入客户版本。

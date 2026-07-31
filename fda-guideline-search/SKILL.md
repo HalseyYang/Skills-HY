@@ -1,17 +1,17 @@
 ---
 name: fda-guideline-search
-description: 'Search FDA industry guidelines by therapeutic area or topic.
+description: '按治疗领域或主题搜索 FDA 行业指南。
 
-  Trigger when user requests FDA guidance documents, regulatory guidelines,
+  当用户请求 FDA 指导文件、法规指南，
 
-  or asks about FDA requirements for specific disease areas, drug development,
+  或询问特定疾病领域、药物开发
 
-  or therapeutic categories (e.g., oncology, cardiology, rare diseases).
+  或治疗类别（如肿瘤学、心脏病学、罕见疾病）的 FDA 要求时触发。
 
-  Also triggered by queries about FDA ICH guidelines, FDA guidance documents,
+  也由关于 FDA ICH 指南、FDA 指导文件
 
-  or regulatory compliance requirements.'
-version: 1.0.0
+  或法规合规要求的查询触发。'
+version: "1.0.2"
 category: Pharma
 tags: []
 author: AIPOCH
@@ -22,39 +22,41 @@ skill_type: Hybrid (Tool/Script + Network/API)
 owner: AIPOCH
 reviewer: ''
 last_updated: '2026-02-06'
+displayName: "FDA 指南检索"
+slug: fda-guideline-search
 ---
 
-# FDA Guideline Search
+# FDA 指南检索
 
-Quickly search and retrieve FDA industry guidelines by therapeutic area.
+按治疗领域快速搜索和检索 FDA 行业指南。
 
-## Features
+## 功能特点
 
-- Search FDA guidelines by therapeutic area (oncology, cardiology, neurology, etc.)
-- Filter by document type (draft, final, ICH guidelines)
-- Download and cache guideline documents
-- Search within document content
+- 按治疗领域搜索 FDA 指南（肿瘤学、心脏病学、神经病学等）
+- 按文件类型筛选（草案、最终版、ICH 指南）
+- 下载并缓存指南文件
+- 在文件内容中搜索
 
-## Usage
+## 使用方法
 
-### Python Script
+### Python 脚本
 
 ```bash
 python scripts/main.py --area <therapeutic_area> [options]
 ```
 
-## Parameters
+## 参数
 
-| Parameter | Type | Default | Required | Description |
+| 参数 | 类型 | 默认值 | 必填 | 描述 |
 |-----------|------|---------|----------|-------------|
-| `--area` | string | - | Yes | Therapeutic area (oncology, cardiology, rare-disease) |
-| `--type` | string | all | No | Document type (all, draft, final, ich) |
-| `--year` | string | - | No | Filter by year (e.g., 2023, 2020-2024) |
-| `--download` | flag | false | No | Download PDF to local cache |
-| `--search` | string | - | No | Search term within documents |
-| `--limit` | int | 20 | No | Max results (1-100) |
+| `--area` | string | - | 是 | 治疗领域（oncology、cardiology、rare-disease） |
+| `--type` | string | all | 否 | 文件类型（all、draft、final、ich） |
+| `--year` | string | - | 否 | 按年份筛选（例如，2023、2020-2024） |
+| `--download` | flag | false | 否 | 下载 PDF 至本地缓存 |
+| `--search` | string | - | 否 | 文件内搜索词 |
+| `--limit` | int | 20 | 否 | 最大结果数（1-100） |
 
-### Examples
+### 示例
 
 ```bash
 # Search oncology guidelines
@@ -67,16 +69,16 @@ python scripts/main.py --area "rare disease" --type draft
 python scripts/main.py --area cardiology --download --limit 10
 ```
 
-## Technical Details
+## 技术细节
 
-- **Source**: FDA CDER/CBER Guidance Documents Database
+- **来源**: FDA CDER/CBER Guidance Documents Database
 - **API**: FDA Open Data / Web scraping with rate limiting
-- **Cache**: Local PDF storage in `references/cache/`
-- **Difficulty**: Medium
+- **缓存**: Local PDF storage in `references/cache/`
+- **难度**: 中等
 
-## Output Format
+## 输出格式
 
-Results are returned as structured JSON:
+结果以结构化 JSON 格式返回：
 
 ```json
 {
@@ -100,64 +102,64 @@ Results are returned as structured JSON:
 }
 ```
 
-## References
+## 参考资料
 
-- [FDA Search Strategy](./references/search-strategy.md)
-- [Therapeutic Area Mappings](./references/area-mappings.json)
-- [FDA API Documentation](./references/fda-api-notes.md)
+- [FDA 搜索策略](./references/search-strategy.md)
+- [治疗领域映射](./references/area-mappings.json)
+- [FDA API 文档](./references/fda-api-notes.md)
 
-## Limitations
+## 限制
 
-- Rate limited to 10 requests/minute to respect FDA servers
-- Some historical documents may not have digital PDFs
-- ICH guidelines require separate search scope
+- 速率限制为每分钟 10 次请求，以尊重 FDA 服务器
+- 部分历史文件可能没有数字 PDF
+- ICH 指南需要单独的搜索范围
 
-## Risk Assessment
+## 风险评估
 
-| Risk Indicator | Assessment | Level |
+| 风险指标 | 评估 | 级别 |
 |----------------|------------|-------|
-| Code Execution | Python scripts with tools | High |
-| Network Access | External API calls | High |
-| File System Access | Read/write data | Medium |
-| Instruction Tampering | Standard prompt guidelines | Low |
-| Data Exposure | Data handled securely | Medium |
+| 代码执行 | 带工具的 Python 脚本 | 高 |
+| 网络访问 | 外部 API 调用 | 高 |
+| 文件系统访问 | 读写数据 | 中 |
+| 指令篡改 | 标准提示指南 | 低 |
+| 数据暴露 | 数据安全处理 | 中 |
 
-## Security Checklist
+## 安全检查表
 
-- [ ] No hardcoded credentials or API keys
-- [ ] No unauthorized file system access (../)
-- [ ] Output does not expose sensitive information
-- [ ] Prompt injection protections in place
-- [ ] API requests use HTTPS only
-- [ ] Input validated against allowed patterns
-- [ ] API timeout and retry mechanisms implemented
-- [ ] Output directory restricted to workspace
-- [ ] Script execution in sandboxed environment
-- [ ] Error messages sanitized (no internal paths exposed)
-- [ ] Dependencies audited
-- [ ] No exposure of internal service architecture
-## Prerequisites
+- [ ] 无硬编码凭据或 API 密钥
+- [ ] 无未授权文件系统访问（../）
+- [ ] 输出不暴露敏感信息
+- [ ] 已实施提示注入保护
+- [ ] API 请求仅使用 HTTPS
+- [ ] 输入已针对允许模式进行验证
+- [ ] 已实施 API 超时和重试机制
+- [ ] 输出目录限制在工作区内
+- [ ] 脚本在沙盒环境中执行
+- [ ] 错误消息已清理（无内部路径暴露）
+- [ ] 依赖项已审计
+- [ ] 无内部服务架构暴露
+## 前提条件
 
-No additional Python packages required.
+无需额外的 Python 包。
 
-## Evaluation Criteria
+## 评估标准
 
-### Success Metrics
-- [ ] Successfully executes main functionality
-- [ ] Output meets quality standards
-- [ ] Handles edge cases gracefully
-- [ ] Performance is acceptable
+### 成功指标
+- [ ] 成功执行主要功能
+- [ ] 输出符合质量标准
+- [ ] 优雅处理边缘情况
+- [ ] 性能可接受
 
-### Test Cases
-1. **Basic Functionality**: Standard input → Expected output
-2. **Edge Case**: Invalid input → Graceful error handling
-3. **Performance**: Large dataset → Acceptable processing time
+### 测试用例
+1. **基本功能**：标准输入 → 预期输出
+2. **边缘情况**：无效输入 → 优雅的错误处理
+3. **性能**：大型数据集 → 可接受的处理时间
 
-## Lifecycle Status
+## 生命周期状态
 
-- **Current Stage**: Draft
-- **Next Review Date**: 2026-03-06
-- **Known Issues**: None
-- **Planned Improvements**: 
-  - Performance optimization
-  - Additional feature support
+- **当前阶段**: 草案
+- **下次审查日期**: 2026-03-06
+- **已知问题**: 无
+- **计划改进**: 
+  - 性能优化
+  - 额外功能支持

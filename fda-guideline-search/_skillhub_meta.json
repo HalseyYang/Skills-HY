@@ -1,8 +1,7 @@
 {
   "slug": "fda-guideline-search",
-  "name": "Fda Guideline Search",
-  "version": "0.1.0",
-  "installedAt": 1778210952108,
-  "source": "skillhub",
-  "iconDownloadFailedAt": 1784803430410
+  "name": "fda-guideline-search",
+  "version": "1.0.2",
+  "installedAt": 1785468310885,
+  "source": "skillhub"
 }
