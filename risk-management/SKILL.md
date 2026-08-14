@@ -3,7 +3,7 @@ name: risk-management
 description: Medical device risk management workflow for ISO 14971-style hazard
   analysis, risk controls, benefit-risk reasoning, residual risk evaluation, and
   risk-management file preparation.
-disable: true
+disable-model-invocation: true
 ---
 
 # Risk Management Skill

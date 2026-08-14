@@ -5,7 +5,7 @@ description: Create, inspect, and edit Microsoft PowerPoint presentations and
   visual QA. Use when (1) the task is about PowerPoint or `.pptx`; (2) layouts,
   placeholders, notes, charts, comments, or template fidelity matter; (3) the
   deck must render cleanly after edits.
-disable: true
+disable-model-invocation: true
 ---
 
 ## When to Use

@@ -7,7 +7,7 @@ description: Install third-party Codex or Claude-style skills from GitHub,
   repository structure, or the user's description. Use when the user asks to
   install, add, clone, import, convert, create, or learn a skill from an
   external source.
-disable: true
+disable-model-invocation: true
 ---
 
 # Skill Install Or Create

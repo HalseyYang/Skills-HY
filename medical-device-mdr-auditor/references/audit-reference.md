@@ -1,22 +1,22 @@
-# Audit Reference
+# 审计参考
 
-## Scope
+## 适用范围
 
-- Skill directory: `medical-device-mdr-auditor`
-- Core purpose: Audit medical device technical files against EU MDR 2017/745 regulations.
-- Use only within the documented workflow and category boundary defined in `SKILL.md`
+- 技能目录：`medical-device-mdr-auditor`
+- 核心用途：依据欧盟 MDR 2017/745 法规审计医疗器械技术文件。
+- 仅在 `SKILL.md` 中已文档化的工作流与分类边界内使用。
 
-## Supported Audit Paths
+## 支持的审计路径
 
 - `python -m py_compile scripts/main.py`
 - `python scripts/main.py --help`
 - `python scripts/main.py -h`
 
-## Fallback Boundary
+## 应急处理边界
 
-If required inputs are incomplete, the skill should still return:
+若必需输入不完整，本技能仍应返回：
 
-- the missing required inputs
-- the steps that can still be completed safely
-- assumptions that need confirmation before execution
-- the next checks before accepting the final deliverable
+- 缺失的必需输入
+- 仍可安全完成的步骤
+- 执行前需要确认的假设
+- 接受最终可交付物之前的下一步核查

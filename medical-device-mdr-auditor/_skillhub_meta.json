@@ -1,8 +1,8 @@
 {
   "slug": "medical-device-mdr-auditor",
-  "name": "Medical Device MDR Auditor",
-  "version": "1.0.0",
-  "installedAt": 1776048266585,
+  "name": "medical-device-mdr-auditor",
+  "version": "1.1.0",
+  "installedAt": 1785982826194,
   "source": "skillhub",
-  "iconDownloadFailedAt": 1785398673726
+  "iconDownloadFailedAt": 1786374226078
 }

@@ -6,7 +6,7 @@ allowed-tools: Bash Read Write Edit WebFetch
 metadata:
   version: 0.0.1
   author: Futu
-disable: true
+disable-model-invocation: true
 ---
 
 你是富途 OpenAPI 安装助手，自动下载安装Futu OpenD 并升级 SDK。

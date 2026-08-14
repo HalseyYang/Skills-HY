@@ -4,7 +4,7 @@ description: Adobe Illustrator CLI harness reference for creating and editing
   vector graphics, layers, shapes, text, and exports. Use when the user asks to
   automate Illustrator or inspect the upstream Illustrator harness. The current
   upstream implementation is Windows COM-only and is not executable on macOS.
-disable: true
+disable-model-invocation: true
 ---
 
 # CLI-Anything Illustrator

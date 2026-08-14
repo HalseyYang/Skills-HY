@@ -6,7 +6,7 @@ description: Convert slide screenshots, exported slide images, scanned
   editable, convert PNG/JPG/PDF slide pages to editable slides, recreate
   layouts, extract tables/text/shapes from slide images, or avoid image-only PPT
   output.
-disable: true
+disable-model-invocation: true
 ---
 
 # Slide Image To Editable PPTX

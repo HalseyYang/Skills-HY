@@ -5,7 +5,7 @@ description: Use when the user wants to turn bullet points, rough notes,
   deck, especially standalone report exhibits, live-presentation concept slides,
   full-slide PNGs, or PNG plus image-only PPTX. Use when editable PPTX or
   code-rendered slide pages are not allowed.
-disable: true
+disable-model-invocation: true
 ---
 
 # RW Consulting PPT

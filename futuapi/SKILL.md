@@ -8,7 +8,7 @@ allowed-tools: Bash Read Write Edit
 metadata:
   version: 0.0.1
   author: Futu
-disable: true
+disable-model-invocation: true
 ---
 
 你是富途 OpenAPI 编程助手，帮助用户使用 Python SDK 获取行情数据、执行交易操作、订阅实时推送。

@@ -1,76 +1,78 @@
 ---
-name: medical-device-mdr-auditor
-description: Audit medical device technical files against EU MDR 2017/745 regulations.
+slug: medical-device-mdr-auditor
+displayName: 医疗器械 MDR 合规审计
+version: 1.1.0
+description: 依据欧盟医疗器械法规（MDR，Regulation (EU) 2017/745）检查医疗器械技术文件是否齐全合规，包括临床评价报告（CER）、上市后监督计划（PMS）、上市后临床跟踪计划（PMCF）等关键文档的完整性核查。适用于医疗器械技术文档合规自查、递交前审阅、以及按器械分类（I、IIa、IIb、III类）核对必备文件清单。以下场景也会触发本技能："帮我审核这份技术文件是否符合MDR""这份临床评价报告缺哪些内容""检查一下上市后监督计划是否合规""这个IIa类器械的技术文档齐全吗""按MDR要求核对我的技术文档"。
 license: MIT
-skill-author: AIPOCH
+author: AIPOCH
 ---
-# Medical Device MDR Auditor
+# 医疗器械 MDR 合规审计
 
-**ID**: 130  
-**Version**: 1.0.0  
-**Description**: Check whether medical device technical files contain required documents according to EU MDR (2017/745) regulations
+**ID**: 130
+**版本**: 1.1.0
+**描述**: 依据欧盟 MDR（2017/745）法规要求，检查医疗器械技术文件是否包含必需文档
 
 ---
 
-## When to Use
+## 适用场景
 
-- Use this skill when the task needs Audit medical device technical files against EU MDR 2017/745 regulations.
-- Use this skill for academic writing tasks that require explicit assumptions, bounded scope, and a reproducible output format.
-- Use this skill when you need a documented fallback path for missing inputs, execution errors, or partial evidence.
+- 需要依据欧盟 MDR 2017/745 法规审计医疗器械技术文件时使用本技能。
+- 需要在学术/合规写作任务中明确假设前提、限定范围、并输出可复现格式结果时使用本技能。
+- 需要为缺失输入、执行错误或证据不完整的情况提供文档化的应急处理路径时使用本技能。
 
-## Key Features
+## 核心特性
 
-- Scope-focused workflow aligned to: Audit medical device technical files against EU MDR 2017/745 regulations.
-- Packaged executable path(s): `scripts/main.py`.
-- Reference material available in `references/` for task-specific guidance.
-- Structured execution path designed to keep outputs consistent and reviewable.
+- 聚焦于依据欧盟 MDR 2017/745 法规审计医疗器械技术文件的工作流。
+- 打包的可执行入口：`scripts/main.py`。
+- `references/` 目录中提供任务专用的参考资料。
+- 结构化的执行路径，确保输出结果一致且可复核。
 
-## Dependencies
+## 依赖项
 
-See `## Prerequisites` above for related details.
+详见上方「## 前置条件」。
 
-- `Python`: `3.10+`. Repository baseline for current packaged skills.
-- `dataclasses`: `unspecified`. Declared in `requirements.txt`.
-- `enum`: `unspecified`. Declared in `requirements.txt`.
+- `Python`：`3.10+`。仓库内所有已打包技能的基线版本。
+- `dataclasses`：随 `requirements.txt` 声明（Python 3.7+ 标准库已内置，无需额外安装）。
+- `enum`：随 `requirements.txt` 声明（Python 标准库已内置，无需额外安装）。
 
-## Example Usage
+## 用法示例
 
-See `## Usage` above for related details.
+详见下方「## 用法」章节。
 
 ```bash
-cd "20260318/scientific-skills/Academic Writing/medical-device-mdr-auditor"
+cd medical-device-mdr-auditor
 python -m py_compile scripts/main.py
 python scripts/main.py --help
 ```
 
-Example run plan:
-1. Confirm the user input, output path, and any required config values.
-2. Edit the in-file `CONFIG` block or documented parameters if the script uses fixed settings.
-3. Run `python scripts/main.py` with the validated inputs.
-4. Review the generated output and return the final artifact with any assumptions called out.
+示例执行步骤：
+1. 确认用户输入、输出路径以及任何必需的配置项。
+2. 如脚本使用固定配置，编辑文件内的 `CONFIG` 区块或已文档化的参数。
+3. 使用已校验的输入运行 `python scripts/main.py`。
+4. 复核生成的输出结果，交付最终结果时明确列出所做的假设。
 
-## Implementation Details
+## 实现说明
 
-See `## Workflow` above for related details.
+详见下方「## 工作流程」章节。
 
-- Execution model: validate the request, choose the packaged workflow, and produce a bounded deliverable.
-- Input controls: confirm the source files, scope limits, output format, and acceptance criteria before running any script.
-- Primary implementation surface: `scripts/main.py`.
-- Reference guidance: `references/` contains supporting rules, prompts, or checklists.
-- Parameters to clarify first: input path, output path, scope filters, thresholds, and any domain-specific constraints.
-- Output discipline: keep results reproducible, identify assumptions explicitly, and avoid undocumented side effects.
+- 执行模型：校验请求、选择打包的工作流、产出边界明确的可交付结果。
+- 输入控制：在运行任何脚本前，先确认来源文件、范围限制、输出格式与验收标准。
+- 主要实现入口：`scripts/main.py`。
+- 参考资料：`references/` 目录中包含配套的规则、提示或核查清单。
+- 需先明确的参数：输入路径、输出路径、范围过滤条件、阈值以及任何领域特定约束。
+- 输出规范：保证结果可复现，明确标注假设，避免未文档化的副作用。
 
-## Quick Check
+## 快速检查
 
-Use this command to verify that the packaged script entry point can be parsed before deeper execution.
+在深入执行前，用以下命令验证打包的脚本入口能否被正常解析。
 
 ```bash
 python -m py_compile scripts/main.py
 ```
 
-## Audit-Ready Commands
+## 可审计命令
 
-Use these concrete commands for validation. They are intentionally self-contained and avoid placeholder paths.
+以下命令用于验证，均可直接运行，不含占位路径。
 
 ```bash
 python -m py_compile scripts/main.py
@@ -78,77 +80,80 @@ python scripts/main.py --help
 python scripts/main.py -h
 ```
 
-## Workflow
+## 工作流程
 
-1. Confirm the user objective, required inputs, and non-negotiable constraints before doing detailed work.
-2. Validate that the request matches the documented scope and stop early if the task would require unsupported assumptions.
-3. Use the packaged script path or the documented reasoning path with only the inputs that are actually available.
-4. Return a structured result that separates assumptions, deliverables, risks, and unresolved items.
-5. If execution fails or inputs are incomplete, switch to the fallback path and state exactly what blocked full completion.
+1. 在展开详细工作前，先确认用户目标、所需输入以及不可协商的约束条件。
+2. 校验请求是否符合已文档化的范围，若任务需要不受支持的假设，提前止步。
+3. 仅使用实际可获得的输入，走打包脚本路径或已文档化的推理路径。
+4. 返回结构化结果，将假设、可交付物、风险与未解决事项分开呈现。
+5. 若执行失败或输入不完整，切换到应急处理路径，并明确说明是什么阻碍了任务的完全完成。
 
-## Overview
+## 概述
 
-This Skill is used to audit the compliance of medical device technical files, checking whether documents contain necessary Clinical Evaluation Reports and Post-Market Surveillance plans according to EU MDR 2017/745 regulatory requirements.
+本技能用于审计医疗器械技术文件的合规性，依据欧盟 MDR（2017/745）法规要求，检查文档中是否包含必需的临床评价报告（Clinical Evaluation Report）和上市后监督（Post-Market Surveillance）计划。
 
-## Usage
+## 用法
 
 ```text
+# 检查单个技术文件目录
+python3 scripts/main.py --input /path/to/technical/file --class IIa
 
-# Check single technical file directory
-python3 /Users/z04030865/.openclaw/workspace/skills/medical-device-mdr-auditor/scripts/main.py --input /path/to/technical/file --class IIa
+# 使用 JSON 配置文件进行批量检查
+python3 scripts/main.py --config /path/to/config.json
 
-# Batch check using JSON configuration file
-python3 /Users/z04030865/.openclaw/workspace/skills/medical-device-mdr-auditor/scripts/main.py --config /path/to/config.json
-
-# Output detailed report
-python3 /Users/z04030865/.openclaw/workspace/skills/medical-device-mdr-auditor/scripts/main.py --input /path/to/technical/file --class III --verbose --output report.json
+# 输出详细报告
+python3 scripts/main.py --input /path/to/technical/file --class III --verbose --output report.json
 ```
 
-## Parameters
+> 注：以上路径为示例占位路径，实际使用时请替换为你自己的技术文件目录和输出路径。原文档中曾使用某位开发者本机的绝对路径作为示例，此处已修正为通用相对路径。
 
-| Parameter | Type | Required | Description |
+## 参数
+
+| 参数 | 类型 | 是否必填 | 说明 |
 |-----------|------|----------|-------------|
-| `--input` | string | Conditional | Technical file directory path |
-| `--config` | string | Conditional | JSON configuration file path |
-| `--class` | string | Yes | Device classification (I, IIa, IIb, III) |
-| `--output` | string | No | Output report path |
-| `--verbose` | flag | No | Output detailed information |
+| `--input` | 字符串 | 条件必填 | 技术文件目录路径 |
+| `--config` | 字符串 | 条件必填 | JSON 配置文件路径 |
+| `--class` | 字符串 | 是 | 器械分类（I、IIa、IIb、III） |
+| `--output` | 字符串 | 否 | 输出报告路径 |
+| `--verbose` | 标志 | 否 | 输出详细信息 |
 
-## MDR 2017/745 Check Points
+`--input`/`--class` 与 `--config` 二者需至少提供一种完整组合：要么同时提供 `--input` 与 `--class`，要么提供 `--config`；否则脚本会报参数错误并退出。
 
-### 1. Clinical Evaluation Report (CER)
+## MDR 2017/745 检查要点
 
-According to MDR Annex XIV Part A, must include:
-- [ ] Clinical Evaluation Plan
-- [ ] Clinical Data Assessment (Literature review / Clinical investigation data)
-- [ ] Clinical Evidence Analysis
-- [ ] Benefit-risk Conclusion
+### 1. 临床评价报告（CER）
 
-### 2. Post-Market Surveillance Plan (PMS)
+依据 MDR 附录 XIV A 部分（Annex XIV Part A），必须包含：
+- [ ] 临床评价计划
+- [ ] 临床数据评估（文献综述 / 临床研究数据）
+- [ ] 临床证据分析
+- [ ] 获益-风险结论
 
-According to MDR Article 83 & Annex III, must include:
-- [ ] PMS procedure description
-- [ ] Data collection methods
-- [ ] Risk assessment update mechanism
-- [ ] Trend reporting mechanism
+### 2. 上市后监督计划（PMS）
 
-### 3. Post-Market Clinical Follow-up Plan (PMCF Plan)
+依据 MDR 第 83 条及附录 III（Article 83 & Annex III），必须包含：
+- [ ] PMS 流程说明
+- [ ] 数据收集方法
+- [ ] 风险评估更新机制
+- [ ] 趋势报告机制
 
-According to MDR Annex XIV Part B, for Class IIa and above devices:
-- [ ] PMCF plan document
-- [ ] Clinical data continuous collection methods
-- [ ] Safety and performance monitoring procedures
+### 3. 上市后临床跟踪计划（PMCF Plan）
 
-### 4. Other Key Documents
+依据 MDR 附录 XIV B 部分（Annex XIV Part B），适用于 IIa 类及以上器械：
+- [ ] PMCF 计划文档
+- [ ] 临床数据持续收集方法
+- [ ] 安全性与性能监测流程
 
-- [ ] Risk Management File (ISO 14971)
-- [ ] Usability Engineering File
-- [ ] Biological Evaluation Report
-- [ ] Labeling & Instructions for Use
+### 4. 其他关键文档
 
-## Output Format
+- [ ] 风险管理文件（ISO 14971）
+- [ ] 可用性工程文件
+- [ ] 生物学评价报告
+- [ ] 标签与使用说明书
 
-### Compliance Report Example
+## 输出格式
+
+### 合规报告示例
 
 ```json
 {
@@ -180,126 +185,129 @@ According to MDR Annex XIV Part B, for Class IIa and above devices:
 }
 ```
 
-## Compliance Levels
+> 说明：以上 JSON 字段名与英文枚举值（如 `CRITICAL`、`MISSING`、`PARTIAL`）为脚本实际输出内容，保持原样不翻译；`description` 字段中的英文文本为脚本当前生成的实际提示语，详见下方脚本内容。
 
-| Level | Description |
+## 合规等级
+
+| 等级 | 说明 |
 |-------|-------------|
-| `COMPLIANT` | Fully compliant with MDR requirements |
-| `PARTIAL` | Partially compliant, with correctable deficiencies |
-| `NON_COMPLIANT` | Seriously non-compliant, critical documents missing |
+| `COMPLIANT` | 完全符合 MDR 要求 |
+| `PARTIAL` | 部分合规，存在可整改的缺陷 |
+| `NON_COMPLIANT` | 严重不合规，关键文档缺失 |
 
-## Exit Codes
+## 退出码
 
-| Code | Meaning |
+| 退出码 | 含义 |
 |------|---------|
-| 0 | Audit passed, fully compliant |
-| 1 | Audit passed, with warnings |
-| 2 | Audit failed, with deficiencies |
-| 3 | Execution error |
+| 0 | 审计通过，完全合规 |
+| 1 | 审计通过，存在警告 |
+| 2 | 审计未通过，存在缺陷 |
+| 3 | 执行错误 |
 
-## References
+## 参考依据
 
-- Regulation (EU) 2017/745 (MDR)
-- MDCG Guidance Documents
+- 欧盟法规 2017/745（MDR）
+- MDCG 指导文件
 - EN ISO 14971:2019
 - EN ISO 13485:2016
 
-## Author
+## 作者
 
-OpenClaw Skill Development Team
+AIPOCH
 
-## Risk Assessment
+## 风险评估
 
-| Risk Indicator | Assessment | Level |
+| 风险指标 | 评估 | 等级 |
 |----------------|------------|-------|
-| Code Execution | Python/R scripts executed locally | Medium |
-| Network Access | No external API calls | Low |
-| File System Access | Read input files, write output files | Medium |
-| Instruction Tampering | Standard prompt guidelines | Low |
-| Data Exposure | Output files saved to workspace | Low |
+| 代码执行 | 本地执行 Python/R 脚本 | 中 |
+| 网络访问 | 无外部 API 调用 | 低 |
+| 文件系统访问 | 读取输入文件、写入输出文件 | 中 |
+| 指令篡改 | 标准提示词规范 | 低 |
+| 数据暴露 | 输出文件保存至工作目录 | 低 |
 
-## Security Checklist
+## 安全检查清单
 
-- [ ] No hardcoded credentials or API keys
-- [ ] No unauthorized file system access (../)
-- [ ] Output does not expose sensitive information
-- [ ] Prompt injection protections in place
-- [ ] Input file paths validated (no ../ traversal)
-- [ ] Output directory restricted to workspace
-- [ ] Script execution in sandboxed environment
-- [ ] Error messages sanitized (no stack traces exposed)
-- [ ] Dependencies audited
+- [ ] 无硬编码凭据或 API 密钥
+- [ ] 无未授权的文件系统访问（../）
+- [ ] 输出不暴露敏感信息
+- [ ] 已具备提示注入防护
+- [ ] 输入文件路径已校验（无 ../ 路径穿越）
+- [ ] 输出目录限制在工作目录内
+- [ ] 脚本在沙箱环境中执行
+- [ ] 错误信息已做脱敏处理（不暴露堆栈跟踪）
+- [ ] 依赖项已审计
 
-## Prerequisites
+## 前置条件
 
 ```text
-
-# Python dependencies
+# Python 依赖
 pip install -r requirements.txt
 ```
 
-## Evaluation Criteria
+> 说明：`requirements.txt` 中列出的 `dataclasses`、`enum` 均为 Python 3.7+ 标准库内置模块，实际无需通过 pip 单独安装；该清单沿用自原始版本，保留以维持与脚本导入声明的一致性。
 
-### Success Metrics
-- [ ] Successfully executes main functionality
-- [ ] Output meets quality standards
-- [ ] Handles edge cases gracefully
-- [ ] Performance is acceptable
+## 评估标准
 
-### Test Cases
-1. **Basic Functionality**: Standard input → Expected output
-2. **Edge Case**: Invalid input → Graceful error handling
-3. **Performance**: Large dataset → Acceptable processing time
+### 成功指标
+- [ ] 成功执行核心功能
+- [ ] 输出符合质量标准
+- [ ] 能优雅处理边界情况
+- [ ] 性能表现可接受
 
-## Lifecycle Status
+### 测试用例
+1. **基本功能**：标准输入 → 预期输出
+2. **边界情况**：无效输入 → 优雅的错误处理
+3. **性能**：大数据集 → 可接受的处理时间
 
-- **Current Stage**: Draft
-- **Next Review Date**: 2026-03-06
-- **Known Issues**: None
-- **Planned Improvements**: 
-  - Performance optimization
-  - Additional feature support
+## 生命周期状态
 
-## Output Requirements
+- **当前阶段**：草稿（Draft）
+- **下次审阅日期**：2026-03-06
+- **已知问题**：无
+- **计划改进**：
+  - 性能优化
+  - 增加更多功能支持
 
-Every final response should make these items explicit when they are relevant:
+## 输出要求
 
-- Objective or requested deliverable
-- Inputs used and assumptions introduced
-- Workflow or decision path
-- Core result, recommendation, or artifact
-- Constraints, risks, caveats, or validation needs
-- Unresolved items and next-step checks
+在最终响应中，若以下内容相关，应明确列出：
 
-## Error Handling
+- 目标或所需的可交付物
+- 使用的输入及引入的假设
+- 工作流程或决策路径
+- 核心结果、建议或产出物
+- 约束、风险、注意事项或验证需求
+- 未解决事项及下一步核查
 
-- If required inputs are missing, state exactly which fields are missing and request only the minimum additional information.
-- If the task goes outside the documented scope, stop instead of guessing or silently widening the assignment.
-- If `scripts/main.py` fails, report the failure point, summarize what still can be completed safely, and provide a manual fallback.
-- Do not fabricate files, citations, data, search results, or execution outcomes.
+## 错误处理
 
-## Input Validation
+- 若必需输入缺失，明确说明具体缺失哪些字段，仅索要必要的补充信息。
+- 若任务超出已文档化的范围，应停止而不是猜测或悄悄扩大任务范围。
+- 若 `scripts/main.py` 执行失败，报告失败点，总结哪些部分仍可安全完成，并提供人工应急方案。
+- 不得编造文件、引用、数据、检索结果或执行结果。
 
-This skill accepts requests that match the documented purpose of `medical-device-mdr-auditor` and include enough context to complete the workflow safely.
+## 输入校验
 
-Do not continue the workflow when the request is out of scope, missing a critical input, or would require unsupported assumptions. Instead respond:
+本技能接受符合 `medical-device-mdr-auditor` 已文档化用途、且包含足够上下文以安全完成工作流的请求。
 
-> `medical-device-mdr-auditor` only handles its documented workflow. Please provide the missing required inputs or switch to a more suitable skill.
+若请求超出范围、缺少关键输入，或需要不受支持的假设，不应继续执行工作流，而应回复：
 
-## References
+> `medical-device-mdr-auditor` 仅处理其已文档化的工作流。请补充缺失的必需输入，或切换到更合适的技能。
 
-- [references/audit-reference.md](references/audit-reference.md) - Supported scope, audit commands, and fallback boundaries
+## 参考资料
 
-## Response Template
+- [references/audit-reference.md](references/audit-reference.md) - 支持范围、审计命令与应急处理边界
 
-Use the following fixed structure for non-trivial requests:
+## 响应模板
 
-1. Objective
-2. Inputs Received
-3. Assumptions
-4. Workflow
-5. Deliverable
-6. Risks and Limits
-7. Next Checks
+对于非简单请求，使用以下固定结构：
 
-If the request is simple, you may compress the structure, but still keep assumptions and limits explicit when they affect correctness.
+1. 目标
+2. 收到的输入
+3. 假设
+4. 工作流程
+5. 可交付物
+6. 风险与限制
+7. 下一步核查
+
+若请求较为简单，可以精简结构，但涉及正确性的假设与限制仍需明确列出。

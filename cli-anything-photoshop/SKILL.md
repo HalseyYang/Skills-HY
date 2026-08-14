@@ -1,7 +1,7 @@
 ---
 name: cli-anything-photoshop
 description: 通过 COM 自动化操控 Adobe Photoshop 的 CLI harness。支持项目管理、图层操作、选区控制、文字编辑、图像调整和多格式导出。
-disable: true
+disable-model-invocation: true
 ---
 
 # CLI-Anything Photoshop
