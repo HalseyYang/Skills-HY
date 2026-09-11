@@ -4,7 +4,6 @@ description: Behavioral guidelines to reduce common LLM coding mistakes. Use
   when writing, reviewing, or refactoring code to avoid overcomplication, make
   surgical changes, surface assumptions, and define verifiable success criteria.
 license: MIT
-disable-model-invocation: true
 ---
 
 # Karpathy Guidelines

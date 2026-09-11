@@ -2,7 +2,6 @@
 name: subagent-driven-development
 description: Use when executing implementation plans with independent tasks in
   the current session
-disable-model-invocation: true
 ---
 
 # Subagent-Driven Development

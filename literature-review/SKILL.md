@@ -7,7 +7,6 @@ description: Plan, conduct, evaluate, and write rigorous literature reviews,
   workflow, evidence tables, thematic synthesis, gap analysis, research
   background sections, related work sections, citation quality checks, or review
   of medical, scientific, technical, product, policy, or academic literature.
-disable-model-invocation: true
 ---
 
 # Literature Review

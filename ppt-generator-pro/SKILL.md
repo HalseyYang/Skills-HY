@@ -7,7 +7,6 @@ description: Generate high-quality AI-assisted PPT slide images and presentation
   to create a PPT, presentation deck, slide images, visual presentation,
   AI-generated slides, animated PPT transitions, looping title animation, or
   export a PPT-style video from source content.
-disable-model-invocation: true
 ---
 
 # PPT Generator Pro

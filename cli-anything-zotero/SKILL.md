@@ -1,7 +1,6 @@
 ---
 name: cli-anything-zotero
 description: CLI harness for Zotero.
-disable-model-invocation: true
 ---
 
 # cli-anything-zotero

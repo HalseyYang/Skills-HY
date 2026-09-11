@@ -7,7 +7,6 @@ description: Organize Zotero collections and all nested subcollection items,
   a literature review matrix, annotated review table, Markdown matrix, CSV
   export, Word literature review, docx 文献综述, or research synthesis table from
   Zotero.
-disable-model-invocation: true
 ---
 
 # Zotero Review Matrix

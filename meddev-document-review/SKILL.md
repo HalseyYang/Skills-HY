@@ -9,7 +9,6 @@ description: Expert review, editing, and drafting of medical device
   for professional comments, modification suggestions, redlines, gap analysis,
   writing, rewriting, translation-polishing, audit-style review, or document
   package preparation.
-disable-model-invocation: true
 ---
 
 # MedDev Document Review

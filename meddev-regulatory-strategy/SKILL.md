@@ -9,7 +9,6 @@ description: Senior medical device regulatory strategy expert for FDA, FDA
   strategy, notified body strategy, clinical evidence requirements, standards
   applicability, regulatory risk assessment, or expert consulting opinions for
   medical device clients.
-disable-model-invocation: true
 ---
 
 # MedDev Regulatory Strategy

@@ -5,7 +5,6 @@ description: Use when the user asks for OpenSpec, spec-driven development, SDD,
   implementation plans tied to specs, validating implementation against specs,
   or archiving completed changes. Provides workflow guidance for Fission-AI
   OpenSpec and the installed `openspec` CLI.
-disable-model-invocation: true
 ---
 
 # OpenSpec

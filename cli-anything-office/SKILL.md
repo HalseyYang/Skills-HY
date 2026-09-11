@@ -4,7 +4,6 @@ description: Cross-platform Office automation CLI for documents, spreadsheets,
   and presentations. Use for structured Office project creation, editing, style
   presets, and export. On macOS/Linux, LibreOffice is required for export;
   Windows supports WPS or Microsoft Office COM.
-disable-model-invocation: true
 ---
 
 # cli-anything-office

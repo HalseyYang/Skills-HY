@@ -95,6 +95,10 @@ CATEGORY_KEYWORDS = {
         "滴滴", "出租车", "的士", "打车", "快车", "专车", "花小猪",
         "T3出行", "首汽", "曹操", "神州", "享道", "高德打车", "哈啰打车",
         "出租", "网约车", "行程账单", "叫车", "乘车", "打表", "计程"
+    ],
+    "保险": [
+        "保险", "意外险", "保单", "保费", "众安", "航空意外",
+        "保险单", "投保", "保险人"
     ]
 }
 
@@ -118,6 +122,12 @@ def extract_text_from_pdf(pdf_path: str) -> str:
 
 def classify_invoice(text: str) -> str:
     """根据文本内容，判断发票类型"""
+    # 保险关键词优先：航空意外险含"航空"等词，会与车票关键词冲突
+    if any(kw in text for kw in CATEGORY_KEYWORDS["保险"]):
+        return "保险"
+    # 滴滴/网约车电子发票：票面含"旅客运输服务/客运"字样，但应归打车费
+    if "滴滴" in text and ("运输服务" in text or "客运" in text):
+        return "打车费"
     scores = {cat: 0 for cat in CATEGORY_KEYWORDS}
     for cat, keywords in CATEGORY_KEYWORDS.items():
         for kw in keywords:
@@ -202,6 +212,23 @@ def process_pdf(pdf_path: str) -> dict:
     amount = extract_amount(text)
     date = extract_date(text)
     city = extract_city_from_text(text)
+
+    # 行程单附件检测：行程单（如"滴滴出行行程报销单"）本身不是发票，
+    # 金额与对应电子发票重复，不应重复计入，仅作为报销附件
+    is_trip_slip = (
+        ("行程单" in text or "行程报销单" in text or "行程账单" in text)
+        and "发票" not in text
+        and "电子发票" not in text
+    )
+    if is_trip_slip:
+        return {
+            "file": Path(pdf_path).name,
+            "category": "附件",
+            "amount": 0.0,
+            "date": date,
+            "city": city,
+            "note": "行程单为报销附件，金额已含于对应电子发票，不重复计入"
+        }
 
     return {
         "file": Path(pdf_path).name,
@@ -305,7 +332,7 @@ def write_excel(invoices: list, allowance_rows: list, output_path: str):
         ws1.column_dimensions[get_column_letter(i)].width = w
 
     # 分类顺序
-    categories = ["车票", "住宿费", "打车费", "未分类"]
+    categories = ["车票", "住宿费", "打车费", "保险", "附件"]
     row_num = 4
     grand_total = 0.0
     seq = 1
