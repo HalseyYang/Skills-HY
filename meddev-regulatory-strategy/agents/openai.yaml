@@ -1,4 +1,0 @@
-interface:
-  display_name: "MedDev Regulatory Strategy"
-  short_description: "FDA and EU MDR regulatory strategy."
-  default_prompt: "Help me analyze the medical device regulatory pathway, evidence requirements, risks, and strategy for FDA and EU MDR registration."

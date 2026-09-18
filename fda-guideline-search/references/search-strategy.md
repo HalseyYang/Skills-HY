@@ -12,7 +12,7 @@
    - 包含生物制品和血液制品指南
 
 3. **ICH 指南**
-   - URL: https://database.ich.org/home
+   - URL: https://www.ich.org/page/efficacy-guidelines
    - FDA 采用的国际协调指南
 
 ## 搜索方法
@@ -57,4 +57,4 @@
 
 - FDA Guidance Index: https://www.fda.gov/regulatory-information/search-fda-guidance-documents
 - FDA Drug Guidance: https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
-- ICH Guidelines: https://database.ich.org/home
+- ICH Guidelines: https://www.ich.org/page/efficacy-guidelines

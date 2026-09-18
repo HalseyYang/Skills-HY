@@ -3,7 +3,7 @@
 ## 官方 FDA API
 
 ### 1. openFDA API
-- **基础 URL**: https://api.fda.gov
+- **基础 URL**: https://open.fda.gov/apis/
 - **文档**: https://open.fda.gov/apis/
 - **范围**: 药物不良事件、标签、召回、执法报告
 - **指南**: 有限 - 不包含完整的指导文件

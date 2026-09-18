@@ -1,0 +1,145 @@
+version: '2.1'
+last_reviewed: '2026-09-17'
+principle: Official regulator sources first; verify availability/status at runtime.
+sources:
+- id: fda_adverse_event_source_resolver
+  jurisdiction: US
+  authority: FDA
+  purpose: adverse_event_source_resolution
+  level: system_status
+  public: true
+  preferred: true
+  url: https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+  notes:
+  - Verify current AEMS/MAUDE/openFDA/MDR-download status at every run.
+  - If the current primary interface cannot be queried, mark access_limited rather
+    than zero_hit.
+- id: fda_openfda_device_event
+  jurisdiction: US
+  authority: FDA
+  purpose: adverse_event
+  level: incident_report
+  public: true
+  preferred: runtime_fallback
+  url: https://open.fda.gov/apis/device/event/
+  notes:
+  - Use only after runtime source-resolution check; FDA is transitioning device adverse-event
+    data toward AEMS in 2026.
+  - Machine-readable MAUDE route when current/appropriate; counts cannot be used as
+    incidence rates without an exposure denominator.
+  - One report may contain multiple problem codes.
+- id: fda_openfda_device_recall
+  jurisdiction: US
+  authority: FDA
+  purpose: recall
+  level: recall_record
+  public: true
+  preferred: true
+  url: https://open.fda.gov/apis/device/recall/
+- id: fda_tplc
+  jurisdiction: US
+  authority: FDA
+  purpose: class_overview
+  level: product_code_aggregate
+  public: true
+  preferred: false
+  url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfTPLC/tplc.cfm
+  notes:
+  - Use as procode/device-class overview and cross-check, not as brand/model-specific
+    evidence.
+- id: fda_device_classification
+  jurisdiction: US
+  authority: FDA
+  purpose: identity
+  level: product_code
+  public: true
+  preferred: true
+  url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm
+- id: openfda_udi
+  jurisdiction: US
+  authority: FDA
+  purpose: identity
+  level: device_identifier
+  public: true
+  preferred: true
+  url: https://open.fda.gov/apis/device/udi/
+- id: eudamed
+  jurisdiction: EU
+  authority: European Commission
+  purpose: identity_and_available_modules
+  level: mixed
+  public: true
+  preferred: true
+  url: https://health.ec.europa.eu/medical-devices-eudamed/overview_en
+  notes:
+  - Verify module status at runtime.
+  - Do not assume a public EU-wide vigilance incident dataset exists.
+- id: bfarm_safety_information
+  jurisdiction: EU-DE
+  authority: BfArM
+  purpose: fsca_fsn_safety_notice
+  level: safety_notice
+  public: true
+  preferred: true
+  url: https://www.bfarm.de/
+- id: aemps_medical_device_safety
+  jurisdiction: EU-ES
+  authority: AEMPS
+  purpose: fsca_fsn_safety_notice
+  level: safety_notice
+  public: true
+  preferred: true
+  url: https://www.aemps.gob.es/productos-sanitarios/acciones-informativas-productos-sanitarios/
+- id: ansm_medical_device_safety
+  jurisdiction: EU-FR
+  authority: ANSM
+  purpose: fsca_fsn_safety_notice
+  level: safety_notice
+  public: true
+  preferred: true
+  url: https://ansm.sante.fr/
+- id: tga_daen_medical_devices
+  jurisdiction: AU
+  authority: TGA
+  purpose: adverse_event
+  level: incident_report
+  public: true
+  preferred: true
+  url: https://www.tga.gov.au/safety/adverse-events/database-adverse-event-notifications-daen
+  notes:
+  - Public device adverse-event reports since July 2012 according to TGA.
+  - JavaScript-driven interface may require fallback/documented access limitations.
+- id: tga_drac
+  jurisdiction: AU
+  authority: TGA
+  purpose: recall_alert_correction
+  level: corrective_action
+  public: true
+  preferred: true
+  url: https://www.tga.gov.au/products/medical-devices/overview/find-information-about-medical-device
+- id: health_canada_mdi
+  jurisdiction: CA
+  authority: Health Canada
+  purpose: adverse_event
+  level: incident_report
+  public: true
+  preferred: true
+  url: https://www.canada.ca/en/health-canada/services/drugs-health-products/reports-publications/medeffect-canada/guidance-adverse-reaction-medical-device-incident-reports/procedure-releasing-information.html
+  notes:
+  - Verify direct Medical Device Incidents database access path at runtime.
+- id: health_canada_recalls
+  jurisdiction: CA
+  authority: Health Canada
+  purpose: recall_safety_alert
+  level: safety_notice
+  public: true
+  preferred: true
+  url: https://recalls-rappels.canada.ca/en
+- id: swissmedic_fsca
+  jurisdiction: CH
+  authority: Swissmedic
+  purpose: fsca_fsn
+  level: corrective_action
+  public: true
+  preferred: true
+  url: https://www.swissmedic.ch/swissmedic/en/home/medical-devices/fsca.html

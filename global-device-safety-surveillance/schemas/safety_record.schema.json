@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SafetyRecord",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "jurisdiction": {
+      "type": "string"
+    },
+    "record_type": {
+      "enum": [
+        "adverse_event",
+        "recall",
+        "fsca_fsn",
+        "safety_notice",
+        "safety_communication",
+        "other"
+      ]
+    },
+    "source_record_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "publication_or_received_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "event_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "manufacturer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "brand_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "udi_di": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "product_code_or_class": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "relevance": {
+      "enum": [
+        "exact_device",
+        "product_family",
+        "device_class",
+        "excluded"
+      ]
+    },
+    "relevance_rationale": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "problem_terms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "patient_problem_terms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "issue_summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "clinical_consequence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "corrective_action": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "manufacturer_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "duplicate_group_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "included_in_analysis": {
+      "type": "boolean"
+    },
+    "exclusion_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "source_authority_tier": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "evidence_status": {
+      "enum": [
+        "verified_primary",
+        "verified_secondary",
+        "unverified_secondary"
+      ]
+    }
+  },
+  "required": [
+    "record_id",
+    "source_id",
+    "jurisdiction",
+    "record_type",
+    "relevance",
+    "relevance_rationale",
+    "problem_terms",
+    "patient_problem_terms",
+    "included_in_analysis",
+    "source_url",
+    "retrieved_at",
+    "source_authority_tier",
+    "evidence_status"
+  ]
+}

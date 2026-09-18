@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "InputDocumentConsistencyFinding",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "finding_id": {
+      "type": "string"
+    },
+    "document_name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "observed_text": {
+      "type": "string"
+    },
+    "issue_type": {
+      "enum": [
+        "unrelated_model",
+        "unrelated_device_type",
+        "population_mismatch",
+        "manufacturer_identity_mismatch",
+        "regulatory_reference_mismatch",
+        "copied_requirement_or_warning",
+        "other"
+      ]
+    },
+    "assessment": {
+      "type": "string"
+    },
+    "regulatory_impact": {
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "to_confirm"
+      ]
+    },
+    "recommended_action": {
+      "type": "string"
+    },
+    "source_evidence": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "finding_id",
+    "document_name",
+    "location",
+    "observed_text",
+    "issue_type",
+    "assessment",
+    "regulatory_impact",
+    "recommended_action",
+    "source_evidence"
+  ]
+}

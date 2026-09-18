@@ -1,90 +1,128 @@
 ---
 name: medical-device-presales-registration
-description: 为医疗器械售前团队生成或修订面向客户的 CE MDR、美国 FDA 或双市场注册方案，包括产品与预期用途、分类和申报路径、资料清单、阶段计划、周期区间、官方及第三方费用、服务报价、Predicate/Equivalent Device、适用标准，以及品牌化 DOCX、真实 Word 批注和既有方案复用。用于客户询价、路径评估、报价方案、医疗器械出海方案、参照既有 Word 方案改版或按公司 Logo/模板排版的场景。所有时效性法规事实必须联网核验官方来源；关键信息缺失时必须先主动提问。
+description: 医疗器械售前注册策略评估。目标市场明确后，用于根据产品资料判断分类、申报路径、Predicate/Reference Device、测试与临床证据、Pre-Sub/NB 咨询必要性及并行合规要求；所有法规事实当次官方核验，并在内部完成三轮 Regulatory Audit 后交付 final version。完整售前评估默认在对话框提供精简 Executive Summary，并使用内置 clean template 生成完整 Final DOCX；若用户只要 summary 或明确不要文件，则仅按其要求交付。
 ---
 
-## 丽和康品牌、批注与 FDA 费用
+# 医疗器械注册售前策略
 
-制作丽和康品牌的售前 DOCX、沿用“江苏海明医疗器械有限公司”含批注参考版，或编制/更新 FDA 官方费用时，必须读取并执行 [bioray-brand-comments-fees.md](references/bioray-brand-comments-fees.md)。该文件中的丽和康字体、字号、配色和批注规则覆盖 `source-sop.md` 及通用模板中的对应默认值；本次用户明确要求或用户提供的更新品牌文件优先于该默认规则。
+## 核心原则
 
-## 独立专家复核
+本 Skill 的目标是直接形成可用于售前沟通和项目决策的最终注册策略。所有中间分析、QA、Audit、反证检查和修订均在内部完成。默认不向用户交付草稿、QA Word、审核清单、意见关闭表或内部工作底稿。
 
-所有中风险和高风险注册售前项目，以及用户要求专家审核的项目，必须读取并执行 [independent-expert-finalization.md](references/independent-expert-finalization.md)。独立复核在后台完成；默认只向用户交付吸收专家意见并再次核验后的 final version，不单独交付复核清单、意见关闭记录或未复核状态标识。
+工作顺序固定为：
 
-# 医疗器械注册售前方案
+`Target Market Gate → 产品事实提取 → 关键 blocker 判断 → 官方检索 → 路径设计 → 证据策略 → 三轮 Regulatory Audit → 自动修订 → Final Consistency Check → 对话框 Executive Summary + 完整 Final DOCX`
 
-面向售前团队制作客户可读的初步商业方案。展示专业判断和服务框架，同时避免把未核实信息、内部方法或未经确认的承诺写入客户版本。
+若用户明确只要 summary、只要对话框分析或不要文件，则按用户要求缩减交付物。
+
+不得以“需要 QA”作为终点。Audit 发现的问题必须在输出前修正；无法通过现有产品资料和公开官方证据解决的问题才保留为“待确认”或建议通过 FDA Pre-Sub / NB 咨询确认。
 
 ## 必须读取的资源
 
-1. 开始项目时读取 [intake-and-decision.md](references/intake-and-decision.md)。
-2. 研究 FDA、CE MDR、费用、标准或同类产品时读取 [official-source-policy.md](references/official-source-policy.md)。
-3. 起草交付物前读取 [output-contract.md](references/output-contract.md)。
-4. 需要复用原始业务规则时读取 [source-sop.md](references/source-sop.md)。若规则与本 Skill 冲突，以本 Skill 和用户本次明确要求为准。
-5. 生成 Word 时以 [ultrasound-reference.docx](assets/ultrasound-reference.docx) 为结构和视觉参考，并遵循 documents Skill 的模板蒸馏、生成、渲染和逐页复核流程。不得修改参考文件本体。
-6. 用户提供既有方案、Logo、品牌色、页眉页脚或批注要求时，读取 [brand-docx-workflow.md](references/brand-docx-workflow.md)。用户文件优先于内置参考；不得跳过文件检查直接套通用报告。
+1. 项目开始时读取 [intake-triage.md](references/intake-triage.md)，先执行 Target Market Gate。
+2. 研究任何法规、数据库、费用、标准、Predicate、NB 或时效性事实时读取 [source-evidence-policy.md](references/source-evidence-policy.md)。
+3. FDA 项目读取 [fda-pathway-strategy.md](references/fda-pathway-strategy.md)。
+4. CE MDR 项目读取 [eu-mdr-pathway-strategy.md](references/eu-mdr-pathway-strategy.md)。
+5. 涉及测试、动物、临床、软件、电气、可用性或多型号证据规划时读取 [evidence-strategy.md](references/evidence-strategy.md)。
+6. 每个最终项目在交付前必须读取并执行 [regulatory-audit.md](references/regulatory-audit.md)。
+7. 输出前读取 [final-delivery.md](references/final-delivery.md)。
+8. 只要属于完整售前评估并需要生成最终 DOCX，就读取 [commercial-brand-docx.md](references/commercial-brand-docx.md) 并使用 clean template；报价、批注或特殊品牌要求同样读取该文件。
 
-## 工作流
+## 1. Target Market Gate：市场不明确时先确认
 
-### 1. 建立输入台账
+目标申报市场是强制前置条件。不同市场的 device qualification、classification、pathway、clinical evidence、testing、submission unit 和 post-market/parallel compliance 均可能不同，因此禁止自行默认 FDA、EU MDR、中国或多市场。
 
-提取用户文件中的已知信息，并按 `intake-and-decision.md` 标记为“已确认、待确认、研究得出”。不要重复询问文件中已有且明确的信息。
+执行规则：
 
-若任何路径决定所需的关键信息缺失，先集中提出一轮简短问题再继续。至少确认：产品名称与型号、预期用途、使用人群与环境、工作原理和关键技术、侵入/植入/有源属性、软件与联网属性、无菌/测量/重复使用属性、目标市场、制造商和现有 QMS/证书、服务范围、预算/报价、税率和期望交付时间。
+- 用户明确说“申报 FDA / 美国” → 直接按 FDA 执行；
+- 用户明确说“CE / EU MDR / 欧盟” → 直接按 EU MDR 执行；
+- 用户明确说“中美欧 / FDA+CE / 多市场” → 按指定市场组合执行；
+- 用户只说“评估这个产品”“测试一下这个产品”“看看注册路径”，且当前任务没有明确市场 → **先询问目标市场，再开始法规检索和完整分析**；
+- 若当前对话中同一产品、同一任务已经明确市场，可沿用，不重复提问；
+- 若用户切换到新产品，不得仅因上一项目讨论过某市场就自动沿用，除非用户明确说“同样按美国/欧盟”等。
 
-不得用猜测填补会改变分类、申报路径、测试范围、周期或价格的事实。
+市场未确认时只问这一个问题，避免同时抛出产品细节问卷。例如：
 
-### 2. 联网研究并保留证据
+“这次主要评估哪个市场：FDA、EU MDR，还是中美欧/其他市场？”
 
-对法规版本、分类、产品代码、申报类型、510(k) 状态、Predicate 编号、官方费用、过渡期、NB 指定范围、标准版本及有效状态进行实时核验。
+## 2. 先建立事实台账
 
-只把官方或标准发布方可直接支持的事实写成确定结论。每项关键结论记录：结论、来源机构、页面标题、直达链接、发布日期或版本、查询日期、适用条件。网页打不开、信息冲突或只能找到二手资料时，标记“待人工确认”，不得编造链接、编号或引文。
+产品事实优先来自用户上传资料、说明书、规格书、标签、技术文件和用户明确说明。法规事实来自当次官方检索。两类事实不得混在一起。
 
-### 3. 分别确定市场路径
+内部至少区分四种状态：
 
-- FDA：从预期用途和技术特征出发，查询官方分类数据库、产品代码和同类获批记录；判断豁免、510(k)、De Novo 或 PMA 等路径。不得仅凭“Class II”自动认定必须 510(k)，也不得仅凭相似名称选择 Predicate。
-- CE MDR：依据 Regulation (EU) 2017/745 的 intended purpose、定义与 Annex VIII 逐条适用分类规则；说明最高适用规则、分类、符合性评估路径、NB 是否参与及关键前提。不要把 FDA 分类映射为欧盟分类。
-- 多市场：分别得出结论，再列共同资料、市场特有资料及可复用测试/文件；不得为了统一结论而模糊差异。
+- `Source-confirmed`：用户资料或用户明确说明已经确认；
+- `Officially verified`：本次通过官方法规、数据库、指南或标准发布方核验；
+- `Analysis`：基于前两类事实形成的法规判断；
+- `Pending`：现有证据不足，仍可能改变路径或证据要求。
 
-分类结论必须写明“基于当前已确认信息”，并列出可能改变结论的触发条件。
+不得用竞品、历史项目或模型常识反向补齐用户产品的关键参数。
 
-### 4. 制定资料、测试、计划和报价
+## 3. 市场确认后，不因次要信息不全停止工作
 
-根据已确认路径生成：
+只有缺失信息会直接阻断分类、路径、临床要求或 submission unit 判断时才先提问。其他情况下先给出条件式完整评估，并明确哪些条件会改变结论。
 
-- 客户需提供资料清单，按“立即需要 / 路径确认后需要 / 测试与申报阶段需要”分组；
-- 适用测试和标准矩阵，注明市场、版本、状态和适用理由；
-- 阶段计划、关键任务、客户配合点与里程碑；
-- 现实的周期区间、估算依据和不确定因素，不作审批结果或固定日期承诺；
-- 服务费、官方费、NB/实验室/授权代表/翻译等第三方费用分开列示；
-- 税前、税额、税后合计，币种与换算日期清楚；未给价格时先询问，不自行代表公司定价。
+默认优先追问 1 个最关键开放问题；确有多个独立 blocker 时可集中询问，但避免一次抛出长问卷。
 
-报价默认有效期、付款节点和不含项必须来自用户、公司规则或参考模板；不可把样例金额当通用价目表。
+以下信息通常可能改变路径：预期用途/适应症、目标人群、作用机制、侵入/植入属性、有源诊断或治疗属性、关键输出参数、软件是否独立诊断、无菌/重复使用、组合产品属性、型号之间的实质差异。
 
-### 5. 编写客户版本
+报价、税率、签约主体等商务信息仅在用户要求报价或正式报价内容时收集，不得作为一般注册路径评估的前置条件。
 
-按 `output-contract.md` 输出。保持商业化、清楚、可执行：展示路径与边界，不披露内部检索方法、内部利润、未经授权的竞争分析或不必要的执行细节。
+## 4. 注册策略必须一次性完整设计
 
-事实性法规结论在正文附近给出可点击官方链接；另附“法规核验记录”，列查询日期。不得使用虚假引用、搜索结果页链接或不能直接支持结论的来源。
+FDA 或 CE 注册路径评估默认至少覆盖：
 
-若用户提供既有 Word 方案，先蒸馏其封面、章节、表格、报价、品牌和页眉页脚，再创建新文档。复用结构与视觉系统，不复用旧客户事实、产品参数、价格、税率、日期、法规状态、Predicate 或标准版本。未确认的商务信息标记为待确认；用户要求批注时插入真实 Word 批注并核验作者、锚点和文本。
+- 主路径及备选路径；
+- 分类依据和可能改变分类的触发条件；
+- Predicate / Reference Device 或 Similar Device / Equivalence Candidate 策略；
+- 关键技术差异及监管风险；
+- 测试、动物、临床、软件、电气安全、EMC、可用性、生物相容性、包装/灭菌等证据规划；
+- 多型号/系列产品的申报和 worst-case 逻辑；
+- 是否需要美国临床、OUS 数据是否可能接受、是否需要桥接；
+- Pre-Sub / NB 咨询必要性以及建议提问；
+- 并行合规义务，例如 QMSR、UDI、企业注册/列名、U.S. Agent、辐射产品、网络安全、SRN、Basic UDI-DI、EUDAMED 等；
+- 当前仍需确认的信息和主要监管风险。
 
-### 6. 质量门槛
+不要等用户逐项追问再补齐上述内容。
 
-交付前逐项检查：
+## 5. 所有时效性事实必须当次核验
 
-- 输入缺口已提问或清晰标注；
-- FDA 与 CE 分类推理独立、可追溯；
-- 所有时效性事实已在本次任务中联网核验；
-- 编号、费用、日期、标准版本和同类产品状态与官方页一致；
-- 周期是有依据的区间，无保证性措辞；
-- 服务费与第三方费用分开，计算正确；
-- 客户资料清单和下一步行动完整；
-- Word 的标题、表格、页眉页脚、分页及中文字体正常；
-- 用户指定的 Logo、品牌色、页眉页脚、首页段距和版本号已逐项核验；页眉不得残留模板横线；
-- 全文不存在旧客户、旧产品、旧报价、旧税率、旧日期或旧法规结论；
-- 若有批注，`comments.xml`、锚点、作者和批注内容完整，且所有目标出现位置均已覆盖；
-- 重要改版使用新文件名，避免覆盖缓存导致用户打开旧版本；
-- 生成的 DOCX 已渲染并逐页检查；若渲染工具缺失，明确告知未完成视觉 QA，不能宣称已通过。
+法规版本、FDA classification/product code、510(k)/De Novo/PMA 状态、Predicate 编号、submission type、Third Party Review eligibility、FDA 用户费、QMSR 状态、EUDAMED 实施、NB scope、标准版本、FDA recognition / EU harmonisation、NB 费率等，必须使用本次任务中的官方来源核验。
 
-发现矛盾时停止定稿，回到证据或输入台账修正。
+历史模板和旧项目中的数字只能作为线索，不能作为最终事实。
+
+## 6. 输出前必须执行三轮 Regulatory Audit
+
+三轮审核均为内部质量步骤，执行后自动修订，不单独向用户输出：
+
+1. **Evidence Audit**：检查每项关键事实是否由当前官方证据支持，是否存在过期、错引、扩大解释或遗漏反例；
+2. **Regulatory Logic Audit**：从反方向重新挑战 classification、pathway、predicate/equivalence、临床要求、测试充分性和 Pre-Sub/NB 必要性；
+3. **Final Consistency Audit**：检查 Executive Summary、完整报告、表格、周期、费用、风险和下一步是否完全一致，删除模板残留和未经证实的确定性措辞。
+
+每一轮发现问题必须回到正文自动修正，再进入下一轮。严禁把同一个执行者的三轮自检表述成“独立专家审核”。只有实际调用独立 reviewer 或人工专家时才能使用“独立专家复核”这一表述。
+
+## 7. 默认交付：短 Summary + 完整 Final DOCX
+
+对于“评估注册路径 / 测试这个产品 / 做售前方案 / 全面评估”这类完整项目，市场确认并完成三轮 Audit 后，默认交付两部分：
+
+1. **对话框 Executive Summary**：真正可直接发微信/领导/客户，默认 1–2 个紧凑段落，通常 3–5 句话，重点只有“注册路径、临床要求、最大监管风险、下一步建议”。禁止把完整报告压缩后仍堆在对话框中；
+2. **完整 Final DOCX**：使用 `assets/bioray-presales-clean-template.docx` 的结构和视觉生成，完整展开分类、路径、predicate/reference、差异、测试、动物、临床、Pre-Sub/NB、并行合规、风险、待确认项和官方 references。DOCX 必须先完成三轮法规 Audit，再做文档 QA，只交付 clean final。
+
+例外：
+
+- 用户说“只给我 summary / 微信版 / 简单说” → 只交付精简 Summary，不生成文件；
+- 用户说“先别出文件 / 只在对话框分析” → 不生成 DOCX；
+- 用户只问一个局部问题，例如“这个需要临床吗” → 直接回答该问题，不自动生成完整报告；
+- 用户明确要求其他格式 → 按用户指定格式。
+
+## 8. Final Version 的边界
+
+最终结论应直接、可执行，但必须与证据强度匹配。可以给出首选路径、风险高低、建议动作和有条件结论；不得承诺获批、保证免临床、保证固定周期或把公开证据不能解决的问题写成确定事实。
+
+当关键问题仍存在真实不确定性时，Final Version 中应明确写出：
+
+- 当前最合理判断；
+- 不确定性来自哪里；
+- 哪个新增信息可解决；
+- 是否建议 Pre-Sub / NB 咨询；
+- 如监管机构给出相反反馈，备选路径是什么。

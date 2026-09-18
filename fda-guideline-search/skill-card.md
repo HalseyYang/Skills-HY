@@ -32,7 +32,7 @@ MIT-0 <br>
 - [FDA API 文档说明](references/fda-api-notes.md) <br>
 - [FDA Guidance Index](https://www.fda.gov/regulatory-information/search-fda-guidance-documents) <br>
 - [FDA Drug Guidance Documents](https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs) <br>
-- [ICH Guidelines Database](https://database.ich.org/home) <br>
+- [ICH Guidelines Database](https://www.ich.org/page/efficacy-guidelines) <br>
 - [openFDA APIs](https://open.fda.gov/apis/) <br>
 
 

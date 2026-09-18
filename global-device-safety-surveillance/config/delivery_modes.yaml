@@ -1,0 +1,35 @@
+version: 2.1
+default_for_full_run: full_audit_surveillance
+modes:
+  quick_check:
+    mandatory_files: []
+  standard_surveillance:
+    mandatory_files: [docx]
+  full_audit_surveillance:
+    mandatory_files: [docx, xlsx]
+    docx_sections:
+      - Executive Summary
+      - Product Identity Resolution
+      - Search Strategy and Scope
+      - Source Coverage and Source-System Resolution
+      - Exact-Device Findings
+      - Product-Family Findings
+      - Device-Class Context
+      - Adverse-Event Analysis
+      - Recall / FSCA / Safety-Notice Analysis
+      - Safety-Signal Matrix
+      - Input Document Consistency Findings
+      - Data Gaps and Interpretation Limits
+      - Search Audit Trail
+      - QA Status
+      - References
+    xlsx_sheets:
+      - Product Identity
+      - Search Log
+      - Raw Records
+      - Included Records
+      - Excluded Records
+      - Recalls_FSCA
+      - Signal Matrix
+      - Input Consistency
+      - Source QA

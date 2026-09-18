@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SearchAudit",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "source_id": {
+      "type": "string"
+    },
+    "jurisdiction": {
+      "type": "string"
+    },
+    "query": {
+      "type": "string"
+    },
+    "query_scope": {
+      "enum": [
+        "exact_device",
+        "product_family",
+        "device_class",
+        "identity"
+      ]
+    },
+    "date_from": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "date_to": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "accessed_at": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "raw_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "included_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "excluded_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "duplicate_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "status": {
+      "enum": [
+        "complete",
+        "partial",
+        "zero_hit",
+        "access_limited",
+        "failed"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_authority_tier": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "source_system": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "query_method": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "system_status_verified_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fallback_used": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "completion_basis": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "source_id",
+    "jurisdiction",
+    "query",
+    "query_scope",
+    "accessed_at",
+    "source_url",
+    "status",
+    "limitations",
+    "source_authority_tier"
+  ]
+}

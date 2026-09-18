@@ -120,7 +120,7 @@
         {
           "id": "ec_guidance",
           "name": "MDCG指南文件（新URL）",
-          "url": "https://health.ec.europa.eu/medical-devices-sector-new-regulation/guidance-mdcg-endorsed-documents-and-other-guidance_en",
+          "url": "https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en",
           "type": "static",
           "parser": "eu_ec",
           "category": "guidance",

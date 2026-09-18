@@ -1,5 +1,5 @@
 interface:
-  display_name: "医疗器械注册售前方案"
-  short_description: "生成CE MDR、FDA注册路径、报价及品牌化Word方案"
+  display_name: "医疗器械注册售前策略"
+  short_description: "先确认目标市场，完成三轮Audit后交付精简Summary+完整Final方案"
   brand_color: "#00B8D0"
-  default_prompt: "使用 $medical-device-presales-registration 生成经官方来源核验并符合公司模板的医疗器械注册售前方案。"
+  default_prompt: "使用 $medical-device-presales-registration 评估产品注册路径。若目标市场未明确，先只确认申报市场；市场明确后完成官方核验、完整路径设计和三轮 Regulatory Audit，自动修正后在对话框给出精简 Executive Summary，并用 clean template 生成完整 Final DOCX，除非我明确只要 summary 或不要文件。"

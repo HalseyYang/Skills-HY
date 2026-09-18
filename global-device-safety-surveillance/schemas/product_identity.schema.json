@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProductIdentity",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "generic_name": {"type": ["string", "null"]},
+    "brand_names": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "manufacturer": {"type": ["string", "null"]},
+    "manufacturer_aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "models": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "catalog_numbers": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "intended_use": {"type": ["string", "null"]},
+    "technology": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "anatomical_site": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "patient_population": {"type": ["string", "null"]},
+    "us": {
+      "type": "object",
+      "properties": {
+        "product_codes": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "regulation_numbers": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "submission_numbers": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "udi_di": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      },
+      "additionalProperties": false
+    },
+    "eu": {
+      "type": "object",
+      "properties": {
+        "basic_udi_di": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "udi_di": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "emdn_codes": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "gmdn_terms": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      },
+      "additionalProperties": false
+    },
+    "identity_confidence": {"enum": ["high", "medium", "low"]},
+    "identity_rationale": {"type": "string"},
+    "unresolved_items": {"type": "array", "items": {"type": "string"}}
+  },
+  "required": ["brand_names", "manufacturer_aliases", "models", "catalog_numbers", "technology", "anatomical_site", "us", "eu", "identity_confidence", "identity_rationale", "unresolved_items"]
+}

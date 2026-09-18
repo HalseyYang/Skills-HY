@@ -1,0 +1,10 @@
+{
+  "name": "法规标准分解",
+  "installedAt": 1789460954202,
+  "source": "marketplace",
+  "version": "1.0.1",
+  "skillId": "skill_2098339907018846208",
+  "description_zh": "法规标准分解技能——把标准正文条款逐条拆解为「最小可执行试验单元」并生成测试用例。试验环境条件与合格判定准则逐字取自条款原文或其规范性引用文件，不臆造参数；以章级兜底、条款本体、文档记录审查、引用标准展开四类用例形态保证注册送检覆盖度，杜绝系统性漏项；把验证方式标签（实测、文档审查、风险文档审查等）置于「关键词」列首位以承载证据类型，且不新增列；全部用例按「产品类别 + 测试模块」双代码体系（8 + 11 项）归属，严格按条款顺序输出，最终封装为 12 列固定格式 Excel（表头冻结，不可变更）。适用于医疗器械，尤其是有源二类、三类能量类设备的标准条款解读、标准符合性验证与注册送检用例库建设。",
+  "description_en": "Decompose regulatory and standards clauses into executable test cases. Each clause is split into the smallest executable test unit, and both the test environment and the acceptance criteria are quoted verbatim from the clause text or its normative references, never invented. Four case forms, namely chapter-level fallback, clause body, document review, and normative-reference expansion, guarantee registration-submission coverage and prevent systematic omissions. A verification-method tag such as physical test, document review, or risk-file review is placed first in the Keywords column, so evidence type is carried without adding any column. Cases are classified by a dual code system of product category plus test module, 8 and 11 items respectively, output strictly in clause order, and packaged as a fixed 12-column Excel workbook with a frozen header row. Intended for medical devices, especially active Class II and III energy-based devices.",
+  "iconSource": "letter:auto"
+}
