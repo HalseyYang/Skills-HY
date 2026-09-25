@@ -9,5 +9,6 @@
   "iconDownloadedFrom": "https://openplatform-cdn.codebuddy.cn/public/skills/icons/minimax-docx.svg",
   "skillName": "minimax-docx",
   "description_zh": "Word 文档生成与编辑",
-  "description_en": "Generate and edit Word documents from scratch"
+  "description_en": "Generate and edit Word documents from scratch",
+  "installedContentHash": "sha256:87aff09f0480175beb432ff453c8d575d6007d99e586df8aff8f6a0595f47040"
 }

@@ -3,5 +3,6 @@
   "installedAt": 1786697316181,
   "source": "marketplace",
   "version": "1.5.2",
-  "skillId": "skill_2062731548497326080"
+  "skillId": "skill_2062731548497326080",
+  "installedContentHash": "sha256:5c9846428498391ad6471ffaf67e2bb27d22449dbae874e2e7efab0515f5786e"
 }

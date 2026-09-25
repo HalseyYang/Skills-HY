@@ -7,5 +7,6 @@
   "skillId": "skill_2053082421296758784",
   "skillName": "nano-banana-pro",
   "description_zh": "AI 图片生成与编辑（支持 4K）",
-  "description_en": "AI image generation & editing (up to 4K)"
+  "description_en": "AI image generation & editing (up to 4K)",
+  "installedContentHash": "sha256:4b79055695304b42adcf2ad06a979fecc33c39957917dc606ea7adb6bc4f2e7c"
 }

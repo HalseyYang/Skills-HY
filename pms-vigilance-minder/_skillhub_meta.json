@@ -6,5 +6,6 @@
   "skillId": "skill_2095210660444962816",
   "iconSource": "https://openplatform-cdn.codebuddy.cn/public/common/capability_cover/9d990a3d-8a09-431e-b833-822e9c59ee01/57f54636-c0de-4080-981e-c9b672099ccd.png",
   "iconLocalPath": "C:\\Users\\ThinkBook\\.workbuddy\\skills\\pms-vigilance-minder\\_icon.png",
-  "iconDownloadedFrom": "https://openplatform-cdn.codebuddy.cn/public/common/capability_cover/9d990a3d-8a09-431e-b833-822e9c59ee01/57f54636-c0de-4080-981e-c9b672099ccd.png"
+  "iconDownloadedFrom": "https://openplatform-cdn.codebuddy.cn/public/common/capability_cover/9d990a3d-8a09-431e-b833-822e9c59ee01/57f54636-c0de-4080-981e-c9b672099ccd.png",
+  "installedContentHash": "sha256:ac96c04caf04636ebaaeeeee158d089a924aab034a704459f1de1a83c5b01049"
 }

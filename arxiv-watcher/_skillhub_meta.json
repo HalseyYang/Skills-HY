@@ -9,5 +9,6 @@
   "iconDownloadedFrom": "https://openplatform-cdn.codebuddy.cn/public/skills/icons/arxiv-watcher.svg",
   "skillName": "arxiv-watcher",
   "description_zh": "搜索和总结 ArXiv 最新研究论文",
-  "description_en": "Search and summarize the latest research papers from ArXiv"
+  "description_en": "Search and summarize the latest research papers from ArXiv",
+  "installedContentHash": "sha256:6d66cd7ba0d3df0414064ff3a731ad7da4f9fa7569fc37ea1bbcbf3fab196491"
 }

@@ -7,5 +7,6 @@
   "skillId": "skill_2053082097175687168",
   "skillName": "humanizer",
   "description_zh": "去除文本中的 AI 写作痕迹",
-  "description_en": "Remove AI writing patterns from text"
+  "description_en": "Remove AI writing patterns from text",
+  "installedContentHash": "sha256:8db4582ae2e42e3a77cff9c3c7f83fe20dbd751b4c40a4b6c8fb062817097769"
 }

@@ -9,5 +9,6 @@
   "iconDownloadedFrom": "https://openplatform-cdn.codebuddy.cn/public/skills/icons/minimax-pdf.svg",
   "skillName": "minimax-pdf",
   "description_zh": "高质量 PDF 文档生成",
-  "description_en": "Generate high-quality designed PDF documents"
+  "description_en": "Generate high-quality designed PDF documents",
+  "installedContentHash": "sha256:b760f4862112fe21007cede7af2bf74810e006032ebd1e87969cb9425fe9d617"
 }

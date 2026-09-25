@@ -9,5 +9,6 @@
   "iconDownloadedFrom": "https://openplatform-cdn.codebuddy.cn/public/skills/icons/minimax-xlsx.svg",
   "skillName": "minimax-xlsx",
   "description_zh": "Excel 文件创建与分析",
-  "description_en": "Create, edit, and analyze Excel spreadsheets"
+  "description_en": "Create, edit, and analyze Excel spreadsheets",
+  "installedContentHash": "sha256:c5db62c4cd13f13f92ceae661ab9ba10c84f5f1107bbb022c681cabb2816075a"
 }
