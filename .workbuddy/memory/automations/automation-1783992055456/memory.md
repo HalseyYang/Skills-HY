@@ -40,6 +40,8 @@ cd ~/.workbuddy/skills && GIT_TERMINAL_PROMPT=0 git -c http.version=HTTP/1.1 pus
   经验补充：`GIT_TERMINAL_PROMPT=0 git -c http.version=HTTP/1.1 push` 前缀目前稳定，无需重试逻辑；
   本次全流程（add/commit/push）后台执行合计约 12s。
 
+- **2026-09-26**：43 files changed, +3715 / -36。35 个 `_skillhub_meta.json` 修改（skillhub 元数据批量刷新）+ 新技能 `literature-search-strategy/`（含 3 个生成脚本和 sources-registry）。提交 `7d79272`，HTTP/1.1 前缀推送一次成功（`203d0fe..7d79272 main -> main`）。
+
 ## 记录习惯
 - 每次运行：先读本文件；结束后仅追加一行执行历史摘要（日期 / 变更规模 / commit sha / 是否成功）。
 - 不写入完整输出或文件清单正文。
