@@ -42,6 +42,13 @@ cd ~/.workbuddy/skills && GIT_TERMINAL_PROMPT=0 git -c http.version=HTTP/1.1 pus
 
 - **2026-09-26**：43 files changed, +3715 / -36。35 个 `_skillhub_meta.json` 修改（skillhub 元数据批量刷新）+ 新技能 `literature-search-strategy/`（含 3 个生成脚本和 sources-registry）。提交 `7d79272`，HTTP/1.1 前缀推送一次成功（`203d0fe..7d79272 main -> main`）。
 
+- **2026-10-03**：20 files changed, +21 / -19（19 个 `_skillhub_meta.json` 修改 + 本自动化 memory.md）。
+  本地提交成功 `d60294b`。**推送失败**：连续两次均连接层失败
+  （第 1 次 `Recv failure: Connection was reset`，第 2 次 `Failed to connect to github.com:443 after 21251 ms`）。
+  `curl https://github.com` 返回 `000`，确认是**本机到 GitHub 的网络不通**，与 PAT / SSL / HTTP 版本无关。
+  结论：**变更已安全落在本地 commit，未丢失**；下次运行若网络恢复，直接 `push origin main` 即可补推（无需重新 commit）。
+  排查提示：遇 `Connection was reset` / `Failed to connect` 且 curl 返回 000，优先判断网络/代理问题，不要反复重试或改动 git 配置。
+
 ## 记录习惯
 - 每次运行：先读本文件；结束后仅追加一行执行历史摘要（日期 / 变更规模 / commit sha / 是否成功）。
 - 不写入完整输出或文件清单正文。
