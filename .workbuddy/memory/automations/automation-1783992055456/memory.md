@@ -49,6 +49,12 @@ cd ~/.workbuddy/skills && GIT_TERMINAL_PROMPT=0 git -c http.version=HTTP/1.1 pus
   结论：**变更已安全落在本地 commit，未丢失**；下次运行若网络恢复，直接 `push origin main` 即可补推（无需重新 commit）。
   排查提示：遇 `Connection was reset` / `Failed to connect` 且 curl 返回 000，优先判断网络/代理问题，不要反复重试或改动 git 配置。
 
+- **2026-10-09**：20 files changed, +26 / -19（19 个 `_skillhub_meta.json` 修改 + 本 memory.md）。
+  提交 `7c2ad2a`。**本次网络已恢复**：`curl https://github.com` 返回 200。
+  推送一次成功，且把上次（10-03）遗留的本地提交 `d60294b` 一并补推
+  （`7d79272..7c2ad2a main -> main`）。工作树干净，本地/远程 HEAD 一致。
+  教训确认：网络中断时不要改 git 配置，等恢复后直接 push 即可自动补推历史 commit。
+
 ## 记录习惯
 - 每次运行：先读本文件；结束后仅追加一行执行历史摘要（日期 / 变更规模 / commit sha / 是否成功）。
 - 不写入完整输出或文件清单正文。

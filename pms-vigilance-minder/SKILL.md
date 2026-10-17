@@ -1,23 +1,40 @@
 ---
 name: pms-vigilance-minder
-description: "Post-Market Surveillance (PMS) and Vigilance system designer for medical devices. Generates PMS Plan, PSUR, vigilance reporting timelines (EU MDR Article 87, FDA 21 CFR 803, China NMPA, Japan PMDA), global incident reporting workflows, FSCA/FSN templates, CAPA triggering logic, and cybersecurity post-market vulnerability management (FDA Section 524B + EU MDR Annex I §17.2). Also covers EU AI Act 2024/1689 post-market monitoring for high-risk AI medical devices."
+description: Post-Market Surveillance (PMS) and Vigilance system designer for
+  medical devices. Generates PMS Plan, PSUR (Annex III audit-grade structure),
+  vigilance reporting timelines (EU
+  MDR Article 87, FDA 21 CFR 803 with 5/10/30-day decision tree, China NMPA, Japan PMDA), global incident
+  reporting workflows, FSCA/FSN templates, CAPA triggering logic, and
+  cybersecurity post-market vulnerability management (FDA Section 524B + EU MDR
+  Annex I §17.4 IT 安全——§17.2 为软件生命周期，勿混). Also covers EU AI Act
+  2024/1689 post-market monitoring for high-risk AI medical devices（Digital
+  Omnibus (EU) 2026/1744 修订时间线：嵌入器械高风险义务 2028-08-02、第 50 条透明度
+  2026-08-02 已适用）, EUDAMED vigilance module rollout（遗留器械 2026-11-28 截止）, and
+  AAMI SW96/TIR97 referenced cyber risk practices. Built to the audit-grade
+  deliverable standard（提交前验收门，目标零整改）。
 agent_created: true
 author: 北京奥斯曼认证咨询
-version: 1.0.0
+version: 1.2.1
 display_name: "上市后监管与警戒系统规划器"
-display_name_en: "Post-Market Surveillance & Vigilance Planner"
-description_zh: "生成 PMS 计划、PSUR、警戒报告时限（MDR Art.87 / FDA 803 / NMPA / PMDA）、FSCA/FSN 模板与 CAPA 触发逻辑"
-description_en: "Generates PMS plans, PSUR, vigilance reporting timelines (EU MDR Art.87, FDA 21 CFR 803, NMPA, PMDA), FSCA/FSN templates and CAPA triggering logic."
+display_name_en: "PMS & Vigilance Minder"
+description_zh: "设计 PMS 计划、PSUR、多国警戒报告时间线、FSCA/FSN 模板、CAPA 触发逻辑与网络安全漏洞管理，覆盖 EU AI Act 上市后监控"
+description_en: "Design PMS plans, PSURs, multi-market vigilance timelines, FSCA/FSN templates, CAPA triggers and cyber vulnerability management, including EU AI Act post-market monitoring."
 ---
 
-# 上市后监管与警戒系统规划器（PMS & Vigilance Minder）
+# 上市后监管与警戒系统规划器（PMS & Vigilance Minder）v1.2
+
+> 🆕 **v1.2.1 升级**（2026-10-16 官方核实修正）：**NMPA 报告时限全线勘误**（gov.cn / NMPA / SAMR 三源核实）——原表"严重事件 15 个工作日 / 死亡 24h 内"无法规依据，现按总局令第 1 号第二十五条改为**死亡 7 日内、严重伤害/可能严重伤害/可能死亡 20 日内**；群体事件 12h 电话 + 24h 个例系统报告；境外事件 30 日；评价结果死亡 30 日/严重伤害 45 日；FSCA 对应《医疗器械召回管理办法》**一级 1 日/二级 3 日/三级 7 日**通知到位 + 立即报事件报告表 + 5 个工作日交评估报告。同步修正流程图与 `references/vigilance-timeline-matrix.md`。
+>
+> 🆕 **v1.2 升级**（2026-10-16 审核级专项）：① PSUR 升级为 **Annex III 全结构（A–G 七节）**审核级指南——含暴露量分母、reportability 判定记录、趋势图、CAPA 有效性验证、收益-风险结论等 NB 审核视角要点；② 新增 FDA MDR 报告决策树（5/10/30 天三档判定 + 起算点规则）；③ 内置提交前验收门（与全技能族 audit-grade-deliverable-standards 对齐），目标 **PSUR/警戒记录零整改**。
+>
+> 🆕 **v1.1 升级**（2026-10-16）：① 补充版本元数据（与线上发布对齐，v1.0.0→v1.1.0）；② 修订网络安全条款引用：EU MDR Annex I **§17.4 = IT 安全**（§17.2 为软件生命周期，业界常误标）；③ EU AI Act 严重事故报告改为**三档时限（2/10/15 天）**并同步 Digital Omnibus (EU) 2026/1744 延期口径；④ 增补 EUDAMED 遗留器械 2026-11-28 截止与 VPMS 模块状态；⑤ 补齐 references/ 三个配套文件（此前清单列名但文件缺失）。
 
 ## 目的
 
 帮助医疗器械制造商在**产品上市后**建立完善的**上市后监管（PMS）系统**和**警戒（Vigilance）系统**，确保符合：
 - **欧盟 MDR (EU) 2017/745 Article 83-87**（PMS + PSUR + Vigilance + EUDAMED）
 - **美国 FDA 21 CFR Part 803**（MDR + 5-day Correction Reporting）
-- **中国 NMPA《医疗器械不良事件监测和再评价管理办法》**（2022 修订）
+- **中国 NMPA《医疗器械不良事件监测和再评价管理办法》**（总局令第 1 号，2019-01-01 施行）
 - **日本 PMDA JFMDA** + **英国 MHRA MORE** + **加拿大 HC MPR** + **澳大利亚 TGA IRIS** + **巴西 ANVISA**
 
 **核心能力**：
@@ -26,7 +43,7 @@ description_en: "Generates PMS plans, PSUR, vigilance reporting timelines (EU MD
 3. **Vigilance 报告时间线**（EU 10/15 天、FDA 10/30 天、China 7/15 天）
 4. **FSCA + FSN 模板与流程**
 5. **CAPA 8 触发源监控**（与 ISO 13485 §8.3 整合）
-6. **🆕 EU EUDAMED 强制报告**（首批 4 模块 2026-05-28 起；⚠️ **警戒模块约 2027 Q2 才强制**，详见步骤 7 口径校正）
+6. **🆕 EU EUDAMED 强制报告**（2026-05-28 起）
 7. **🆕 网络安全上市后管理**（Vulnerability Management Plan + CVD）
 8. **🆕 EU AI Act 上市后监控**（高风险 AI 系统持续监控义务）
 
@@ -120,34 +137,42 @@ PMS Plan 必须包含的 9 部分：
 | **Class III** | PSUR | 至少每年 | 提交 NB |
 | **🆕 EU AI Act 高风险 AI** | 上市后监控报告 | 持续 + 重大事件 | 公告机构 + 市场监督 |
 
-#### 3.2 PSUR 标准结构（7 部分）
+#### 3.2 PSUR 标准结构（Annex III A–G 七节，审核级）
 
-1. **产品信息**（Device Info）
-2. **PSUR 时间段**（Reporting Period）
-3. **销售量与暴露人群**（Sales Volume & Population Exposure）
-4. **不良事件与投诉摘要**（Adverse Events & Complaints Summary）
-5. **CAPA 与 FSCA 摘要**（CAPA & FSCA Summary）
-6. **临床数据更新**（Clinical Data Update，包括 PMCF 进度）
-7. **🆕 网络安全事件**（Cyber Incidents）
-8. **🆕 AI 算法性能更新**（AI Algorithm Performance Update）
-9. **结论与改进建议**（Conclusions & Recommendations）
+**完整撰写指南（含每节必备内容与 NB 高频问题）见 `references/psur-annex3-audit-structure.md`**。结构速览：
+
+| 节 | 内容 | NB 审核视角 |
+|----|------|-----------|
+| **A** | 器械与报告期标识（名称/型号/BUDI-DI/分类/NB 证书号 + EUDAMED 一致性核对） | 与 EUDAMED 不一致 = 退回 |
+| **B** | 销售量与暴露人群估算（**分母**） | 没有分母的绝对数无意义 |
+| **C** | 严重事件与投诉摘要（按类型×严重度分布 + 每起的 reportability 判定记录） | 「没报」的事件也要有判定理由 |
+| **D** | 趋势分析与信号检测（投诉率/事件率历史趋势 + 阈值比对） | 只放总数不放趋势 = 退回 |
+| **E** | CAPA 与 FSCA 摘要（CAPA 有效性验证 + FSN 回复率） | CAPA 未验证有效性 = 体系缺陷 |
+| **F** | 临床数据与 PMCF 更新 | PMCF 须挂回 CER 缺口 |
+| **G** | 结论与改进措施（收益-风险结论显式 + PRRC/管理层签字） | 结论含糊 = 退回 |
+
+**⚠️ Class I 没有 PSUR**——按 Article 85 编制 PMSR，留存备查、不主动提交。
 
 ### 步骤 4：Vigilance 报告时间线与决策树
 
 #### 4.1 各国报告时间线对照表
 
-| 事件类型 | EU MDR (Article 87) | FDA 21 CFR 803 | NMPA（2022 修订） | PMDA | HC | TGA |
+**FDA 三档报告（5/10/30 天）判定决策树见 `references/fda-mdr-decision-tree.md`**——含 reportable 判定流程、报告内容必备清单与 483 高频错误。
+
+| 事件类型 | EU MDR (Article 87) | FDA 21 CFR 803 | NMPA（总局令第1号） | PMDA | HC | TGA |
 |---------|---------------------|----------------|------------------|------|-----|-----|
-| **严重事件** | 15 天 | 30 天（30-day） | 15 个工作日 | 15 天 | 30 天 | 30 天 |
-| **死亡/严重伤害** | 10 天 | 10 天（10-day） | **立即**（24h 内） | 10 天 | 10 天 | 10 天 |
-| **公共卫生威胁** | 10 天（EUDAMED）| 10 天 | 立刻 | 10 天 | 10 天 | 10 天 |
-| **FSCA 计划** | **24h** 通知 NB/当局 | 5 个工作日 | 24h 内通知 | 24h | 24h | 24h |
-| **FSN 致用户** | 24h 内分发 | 5 个工作日 | 24h | 24h | 24h | 24h |
+| **严重事件（非死亡）** | 15 天 | 30 天（30-day） | **20 日**（严重伤害/可能严重伤害/可能死亡） | 15 天 | 30 天 | 30 天 |
+| **死亡** | 10 天 | 10 天（10-day） | **7 日** | 10 天 | 10 天 | 10 天 |
+| **群体不良事件** | 10 天（EUDAMED）| 10 天 | **12h 电话报告 + 24h 系统按个例报告** | 10 天 | 10 天 | 10 天 |
+| **FSCA / 召回通知** | **24h** 通知 NB/当局 | 5 个工作日 | **分级：一级 1 日 / 二级 3 日 / 三级 7 日**通知到位；立即报召回事件报告表 + **5 个工作日**交调查评估报告和召回计划 | 24h | 24h | 24h |
+| **FSN 致用户** | 24h 内分发 | 5 个工作日 | 随召回分级通知同步执行 | 24h | 24h | 24h |
 | **Trend Report** | 显著增加即报 | CFR 803.53 | 显著增加即报 | 显著增加 | 趋势 | 趋势 |
 | **PSUR** | IIa 2 年、IIb/III 1 年 | 年度（部分） | 年度 | 年度 | 年度 | 年度 |
 | **🆕 漏洞披露（CVD）** | 90 天 | 90 天 | 暂无明文 | 90 天 | 90 天 | 90 天 |
 
-**⚠️ 起算点：事件首次获知时间**（不是事件发生时间）
+**⚠️ NMPA 口径依据**（《医疗器械不良事件监测和再评价管理办法》，总局令第 1 号，2019-01-01 施行，非"2022 修订"）：持有人发现可疑不良事件**应立即调查原因**，导致死亡 **7 日内**报告，导致严重伤害、可能导致严重伤害或死亡 **20 日内**报告（第二十五条）；群体事件 **12 小时内**电话报告 + 每起 **24 小时内**按个例报告（第三十一条）；境外发生的死亡/可能死亡事件 **30 日内**报告（第二十七条）；死亡事件 **30 日内**、严重伤害事件 **45 日内**向省级监测机构报告评价结果（办法个例报告章节口径）。召回时限另按《医疗器械召回管理办法》（2017-05-01 施行）第十五/十六条执行。
+
+**⚠️ 起算点：事件首次获知时间**（不是事件发生时间；任何员工获知即启动计时）
 
 #### 4.2 严重事件判定流程图
 
@@ -155,7 +180,7 @@ PMS Plan 必须包含的 9 部分：
 不良事件收到
     │
     ▼
-是否：死亡？ ─── 是 ─→ 10 天内报告（EU） / 立即报告（NMPA）
+是否：死亡？ ─── 是 ─→ 10 天内报告（EU） / 7 日内报告（NMPA）
     │
     ▼ 否
 是否：严重伤害（住院/延长住院/永久/显著伤残）？
@@ -164,7 +189,7 @@ PMS Plan 必须包含的 9 部分：
 是否：可预期？（在 IFU/标签中已充分告知）
     │
     ▼ 否（不可预期）
-10 天内报告（EU） / 15 个工作日（NMPA）
+10 天内报告（EU） / 20 日内报告（NMPA）
     │
     ▼ 是（可预期）
 记录在 PSUR 中 + 监控趋势
@@ -192,7 +217,8 @@ PMS Plan 必须包含的 9 部分：
     ▼ 是
 启动 FSCA 流程
     │
-    ├─→ 24h 内通知 NB/当局（EU + NMPA）
+    ├─→ 24h 内通知 NB/当局（EU）
+    ├─→ 召回分级通知到位（NMPA：一级 1 日 / 二级 3 日 / 三级 7 日；立即报召回事件报告表，5 个工作日交调查评估报告和召回计划——《医疗器械召回管理办法》第十五/十六条）
     ├─→ 5 工作日内通知 FDA
     ├─→ 同步发布 FSN 给受影响用户
     └─→ 跟踪回复率（目标 >95%）
@@ -226,11 +252,7 @@ PMS Plan 必须包含的 9 部分：
 触发源 10: AI 算法性能下降（任一指标下降 ≥ 5%）
 ```
 
-### 步骤 7：🆕 EU EUDAMED 强制报告（首批 4 模块 2026-05-28 起；⚠️ 警戒模块约 2027 Q2 才强制）
-
-> ⚠️ **口径校正（2026-08-29 复审落实）**：2026-05-28 强制的是**首批 4 模块**（Actor / UDI-DEV / NB&证书 / 市场监管）。**7.1 所列警戒事件提交与 FSCA 字段不在首批强制范围**，预计约 2027 Q2 才强制（依 Commission Decision (EU) 2025/2371）。
-> 过渡期内：III 类/植入的 PSUR 与严重事件**仍走 NB / 国家 portal 通道**。
-> **但无豁免的情形**：若某器械成为严重不良事件或 FSCA 对象，**须立即在 EUDAMED 注册并上报**——不受警戒模块是否强制影响。
+### 步骤 7：🆕 EU EUDAMED 强制报告（2026-05-28 起）
 
 #### 7.1 EUDAMED 警戒模块功能
 - 制造商注册（SRN）
@@ -244,6 +266,8 @@ PMS Plan 必须包含的 9 部分：
 - 严重事件：**事件获知起 15 天内**（与 EU MDR 一致）
 - FSCA 计划：**24h 内**通知主管当局（与 EU MDR 一致）
 - 完整警戒报告：与 EU MDR 第 87 条一致
+- **遗留器械 UDI/器械注册补录截止 2026-11-28**（自 2026-05-28 起 6 个月宽限）——未注册器械不得合法投放，PMS 数据链断档
+- **警戒与上市后监督（VPMS）模块**：📅 开发中（可能 2027 强制）；就绪前警戒报告按 MDR Article 87 时限向主管当局提交
 
 #### 7.3 EUDAMED 注册步骤
 1. 经济运营商在 EUDAMED 注册 → 获取 SRN
@@ -306,8 +330,10 @@ NVD/CISA/内部测试发现漏洞
 
 #### 9.1 适用条件
 - **Class IIa 及以上** 含有 AI/ML 算法的医疗器械
-- 在 EU AI Act 框架下多归"高风险 AI"（Annex III）
+- 在 EU AI Act 框架下多归"高风险 AI"（Annex I Section A——医疗器械未被移出）
 - 与 MDR PMS 整合（不重复建系统）
+
+> ⏳ **Digital Omnibus (EU) 2026/1744（2026-07-27 生效）**：嵌入器械的高风险义务适用日推迟至 **2028-08-02**（原 2027-08-02），Annex III 独立系统 2027-12-02；第 50 条透明度义务已自 **2026-08-02** 适用（未延期）。上市后监控义务内容不变——多出的一年用于建设监控体系，不是放松理由。
 
 #### 9.2 持续监控义务
 - 算法性能监控（与 PCCP 衔接）
@@ -316,10 +342,16 @@ NVD/CISA/内部测试发现漏洞
 - 鲁棒性监控
 - 关键 KPI：敏感度、特异度、AUC、Calibration、Demographic Parity
 
-#### 9.3 重大事件报告
-- **15 天内**报告严重事故
-- 涉及生命安全或基本权利的事件
-- 与 MDR 警戒报告同步
+#### 9.3 重大事件报告（AI Act Article 73 三档时限）
+
+| 情形 | 时限 |
+|------|------|
+| 导致死亡或健康严重损害 | **2 天内** |
+| 基本权利受到广泛侵害 | **10 天内** |
+| 其他严重事故 | **15 天内** |
+
+- 与 MDR 警戒报告同步提交（同一 NB + 市场监督机构）
+- 涉及生命安全或基本权利的事件，不可因 Digital Omnibus 延期而推迟报告体系准备
 
 #### 9.4 持续学习（Continuous Learning）管理
 - 再训练触发器定义（性能下降阈值）
@@ -330,12 +362,14 @@ NVD/CISA/内部测试发现漏洞
 ## 输出标准
 
 - PMS Plan 引用 MDR Article 84 + 85 + MDCG 2020-7
+- **PSUR 按 Annex III A–G 七节结构撰写**（含暴露量分母与 reportability 判定记录）
 - 报告时间线以**自然日**为标准（与法规保持一致）
 - 模板覆盖 EU/FDA/NMPA/PMDA/HC/TGA 至少 6 个主要市场
 - 警戒事件决策树清晰可执行
 - CAPA 触发源至少 10 个（含新增 9/10）
 - 网络安全 SLA 量化（CVSS + 响应时间）
 - AI 算法监控指标量化
+- **🆕 交付前跑 PSUR 12 问 + 验收门评分 ≥90 且零致命项**
 - 输出语言与用户需求一致
 
 ## 约束
@@ -346,21 +380,15 @@ NVD/CISA/内部测试发现漏洞
 - 网络安全事件涉及机密信息时，须与法务/律师协调披露内容
 - 不替代临床/医学专家对医学事件的判断
 - AI 算法阈值由制造商确定，但需有科学依据并在 PCCP 中说明
+- **🆕 AI Act 截止日引用 Digital Omnibus 修订后口径（嵌入器械 2028-08-02；第 50 条 2026-08-02 已适用），旧 2027-08-02 与 2026-08-02（嵌入器械）口径已失效**
+- **🆕 NMPA 不良事件报告时限以《医疗器械不良事件监测和再评价管理办法》最新版为准（本表时限需在客户项目中按现行法规复核后使用）**
 
 ## 参考资料
 
 - `references/vigilance-timeline-matrix.md`：各市场警戒报告时间线对照表
+- `references/psur-annex3-audit-structure.md`：**PSUR Annex III A–G 七节审核级撰写指南**（NB 高频问题 + PSUR 12 问）
+- `references/fda-mdr-decision-tree.md`：**FDA MDR 报告决策树**（5/10/30 天判定 + 内容必备 + 483 高频错误）
 - `references/eudamed-registration-guide.md`：EUDAMED 注册步骤详解
 - `references/vulnerability-management-playbook.md`：网络安全漏洞响应 Playbook
+- `references/audit-grade-deliverable-standards.md`：审核级交付标准总纲（成熟度四级/五性/验收门评分卡/致命项）
 - 基于《合规之战：全球医疗器械监管进化史》第十五章（PMS 专题）
-
-## 2026 团队自学更新（2026-08-16）
-
-> 来源：联网检索 FDA / 欧盟委员会 / NMPA 官网及权威合规解读，详见 `references/2026-self-study-pms.md`。仅增不减，核心逻辑不变。
-
-1. **EUDAMED 强制时间线修正**：2026-05-28 强制的是首批 4 模块（Actor、UDI/DEV、NB&证书、市场监管）；**警戒与 PMS 模块预计 2027 Q2 才强制**（Commission Decision (EU) 2025/2371）。Step 7 所述「警戒模块 2026-05-28 强制」不准确——过渡期走 NB/国家 portal，但 FSCA/严重事件须即时在 EUDAMED 注册。详见 reference 文件第三节。
-2. **EU 趋势报告（Art 88）须预定义阈值**：PMS Plan 中必须预先设定基线、统计方法（控制图/CUSUM）与「统计学显著上升」判定标准，越阈即无延迟报告；与 Art 87 严重事件报告并行。详见 reference 文件第二节。
-3. **PSUR 提交路径区分**：III 类/植入式依 Art 86(2) 经 EUDAMED 提交 NB；IIa 与非植入 IIb 依 Art 86(3) 留存技术文件供调阅（无主动提交义务）。NB 实操常设 90 天+30 天宽限，否则可暂停证书。详见 reference 文件第一节。
-4. **FDA MDR/召回时限**：MDR 死亡/严重伤害/可报告故障 **30 日历日**，加急 **5 工作日**；纠正/撤除报告 **10 工作日**（21 CFR 806）；召回分 I/II/III 类。详见 reference 文件第四节。
-5. **AI/SaMD 后市场监测加重**：PCCP 授权不减轻 PMS——每次变更须版本受控 + 部署后漂移/偏差监测并衔接 CAPA；EU AI Act（Digital Omnibus）医疗器械嵌入义务延至 2028-08-02，透明度义务 2026-08-02 起。详见 reference 文件第六节。
-6. **中国 NMPA 新 GMP（2026-11-01 施行）**：第 123–127 条将不良事件监测、数据分析、召回、信息告知纳入 QMS 强制程序，与 PMS 体系衔接。详见 reference 文件第五节。
