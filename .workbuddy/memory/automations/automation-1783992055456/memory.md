@@ -55,6 +55,11 @@ cd ~/.workbuddy/skills && GIT_TERMINAL_PROMPT=0 git -c http.version=HTTP/1.1 pus
   （`7d79272..7c2ad2a main -> main`）。工作树干净，本地/远程 HEAD 一致。
   教训确认：网络中断时不要改 git 配置，等恢复后直接 push 即可自动补推历史 commit。
 
+- **2026-10-17**：30 files changed, +524 / -203。17 个 `_skillhub_meta.json` 修改 +
+  `pms-vigilance-minder` 技能大更新（SKILL.md 修改、删除 `_icon.png` 与旧版
+  `2026-self-study-pms.md`，新增 6 个 references 文档）+ 本 memory.md。
+  提交 `243e8d5`，HTTP/1.1 前缀推送一次成功（`7c2ad2a..243e8d5 main -> main`，耗时 5s）。
+
 ## 记录习惯
 - 每次运行：先读本文件；结束后仅追加一行执行历史摘要（日期 / 变更规模 / commit sha / 是否成功）。
 - 不写入完整输出或文件清单正文。

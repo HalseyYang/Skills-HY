@@ -1,49 +1,33 @@
 ---
 name: fda-510k-pathway
-description: "FDA 510(k) 上市前通知路径规划与判断器 v2.1。输入器械描述，判断是否需要 510(k)、推荐提交类型、指导查找 predicate device、生成12列实质等同对比表（含差异论证）、列出完整提交文件清单。覆盖 2026 最新法规：FDA QMSR（2026-02-02 生效）、HFE 终版指南（2026-05-29 发布，2026-08-01 过渡截止）、PCCP（AI 器械）、Section 524B 网络安全、QMSR 转换、MDUFA VI 草案（FY2028–2032）关注〔⚠️ 2026-08-29 复审：早期记录的「首次区分外国/本土企业费率」一说，在 2026-07-07 草案的公开解读中未见此项，引用前须核实〕。适用于准备进入美国市场的医疗器械制造商做上市路径判断时使用。触发词：FDA 510k、premarket notification、FDA注册、predicate device、实质等同、substantial equivalence、eSTAR、美国注册、PCCP、AI医疗器械、Section 524B、QMSR。"
+description: "FDA 510(k) 上市前通知路径规划与判断器 v2.2.1。输入器械描述，判断是否需要 510(k)、推荐提交类型、指导查找 predicate device、生成审核级 12 列实质等同对比表、列出完整提交文件清单。覆盖 2026 最新法规：FDA QMSR（2026-02-02 生效）、HFE 终版指南（2026-05-29 发布，2026-08-01 起强制三层分类）、PCCP（AI 器械，终版 2024-12-04）、Section 524B 网络安全（现行指南版 2026-02-03，QMSR 对齐）、eSTAR v7.0、FDA 认可共识标准清单 #66。新增审核级能力：实审退回原因库（12 项 Top 缺陷+对策）、性能测试标准映射、软件文档层级判定、提交前验收门。适用于准备进入美国市场的医疗器械制造商做上市路径判断与零整改提交时使用。触发词：FDA 510k、premarket notification、FDA注册、predicate device、实质等同、substantial equivalence、eSTAR、美国注册、PCCP、AI医疗器械、Section 524B、QMSR。"
 agent_created: true
 author: 北京奥斯曼认证咨询
-version: 2.1.0
+version: 2.2.1
 display_name: "FDA 510(k) 路径规划器"
 display_name_en: "FDA 510(k) Pathway Planner"
-description_zh: "判断器械是否需要 510(k)、推荐提交类型、查找 predicate device、生成实质等同对比表与提交文件清单"
-description_en: "Determines whether a device needs 510(k), recommends the submission type, finds predicate devices, and generates substantial-equivalence tables and submission checklists."
+description_zh: "判断是否需要 510(k)、选择提交类型、查找 predicate、生成实质等同论证与完整提交清单，覆盖 QMSR/HFE/PCCP/网络安全全部 2026 新规"
+description_en: "Determine 510(k) need, pick submission type, find predicates and build the substantial equivalence case and full submission checklist under 2026 QMSR/HFE/PCCP/cyber rules."
 ---
 
-# FDA 510(k) 路径规划器 v2.1
+# FDA 510(k) 路径规划器 v2.2.1
 
+> 🆕 **v2.2 升级**（2026-10-16 审核级专项）：① 新增 `references/se-comparison-audit-template.md`——审核级 SE 论证模板（12 要素 × 6 论证列、差异论证三件套、NSE 红线、SE 表 10 问自检）；② 新增 `references/fda-deficiency-playbook.md`——实审退回原因库（12 项 Top 技术缺陷+对策）与性能测试标准映射（13 类测试 × FDA 认可标准）；③ 新增「软件文档层级判定」步骤；④ 内置提交前验收门（与全技能族 audit-grade-deliverable-standards 对齐），目标**零 AI 请求**。
+>
+> 🆕 **v2.2.1 勘误**（2026-10-16，QMSR 过渡期口径统一；依据 **89 FR 7496 最终规则全文 + FDA 官方 QMSR FAQ** 逐字核实）：规则 2024-02-02 发布、2026-02-02 生效——"2 年"指**发布至生效的迟发周期**，不是存量器械过渡期；FDA 在 Comment 77 答复中**明确拒绝**分阶段生效与 QSR/QMSR 双轨并行，QMSR 自生效日起适用于全部成品器械制造商（含已上市产品）。**规则全文与官方 FAQ 中均无"2029-02-02"或任何存量过渡期表述**——第三方咨询机构流传的"存量器械 3 年过渡至 2029-02-02"没有法规依据，禁止用于客户交付。
+>
+> 🆕 **v2.1 升级**（2026-10-16）：① 版本号与线上发布对齐（v2.0→v2.1）；② **勘误三处日期**：HFE 终版指南为 **2026-05-29 发布 / 2026-08-01 起强制**（原误作 2024-05-28 / 2024-08-01）；PCCP 终版指南为 **2024-12-04**（原误作 2025-08-18）；网络安全指南现行版为 **2026-02-03**（QMSR 对齐更新，取代 2025-06-27 版）；③ 新增 FDA 认可共识标准清单 #66（ISO 10993-1:2025 获承认）与 MDUFA VI 费用/审评目标提示。
+>
 > 🆕 **v2.0 升级**：集成 2026 五大最新动态
 > 1. **FDA QMSR** 2026-02-02 生效（QSR 820 → QMSR）
-> 2. **FDA HFE 终版指南** 2026-05-29 发布，2026-08-01 过渡截止
-> 3. **FDA PCCP 终版指南** 2024-12-04（AI 器械）
-> 4. **Section 524B 网络安全** + 当前版本 **2026-02-03**（沿革：2023-09-27 首版 → 2025-06-27 → **2026-02-03 现行**，与 QMSR 对齐）
+> 2. **FDA HFE 终版指南** 2026-05-29 发布（2026-08-01 起强制三层分类提交）
+> 3. **FDA PCCP 终版指南** 2024-12-04（AI 器械；术语：训练+调优+测试）
+> 4. **Section 524B 网络安全** + 现行指南版 2026-02-03（QMSR 对齐）
 > 5. **EU EUDAMED 强制** 2026-05-28（影响跨境产品）
-
-> 🔧 **v2.1 优化**（本次更新）：① 12 列实质等同对比表补回「差异论证」列，与主文/参考清单完全一致；② 统一 HFE 指南"发布日(2026-05-29) / 强制日(2026-08-01)"表述，消除歧义；③ 新增「快速决策流程图」与「2026 关键合规日历」；④ 配套 `references/510k-checklist.md` 升级至 v2.1，补齐 HFE/PCCP/网络安全/UDI/QMSR/29 项 RTA 清单。
 
 ## 目的
 
 帮助医疗器械制造商判断产品是否需要向 FDA 提交 510(k) 上市前通知，并规划完整的提交流程。覆盖从 predicate device 查找、提交类型选择、实质等同论证、PCCP 编写、Section 524B 网络安全章节、HFE 提交类别判定到完整文件清单的全链路。
-
-## 快速决策流程图
-
-```
-是否需要 510(k)？
-├─ 豁免（多数 Class I / 部分 Class II）→ 企业注册 + 产品列名，结束
-├─ Class III → PMA 路径（非 510(k)）
-└─ 需 510(k)：
-    ├─ 选提交类型（Traditional / Abbreviated / Special / PCCP / Third-Party）
-    ├─ 查 Predicate（明确指定 Primary）
-    ├─ 填 12 列 SE 对比表（含差异论证）
-    ├─ 判定 HFE 提交类别（1 / 2 / 3）
-    ├─ AI 器械 → 编写 PCCP 三大模块
-    ├─ 网络器械 → 编写 Section 524B 网络安全七部分
-    ├─ 编完整文件清单（含 UDI / GUDID）
-    └─ eSTAR **v7.0** 提交 → 29 项 RTA 自检 → 获批
-       ⚠️ eSTAR v6.2 及更早（含 v6.1/v6.0）+ PreSTAR v2.2 已于 **2026-08-03 退役**，
-          新提交一律用 nIVD eSTAR 7.0 / IVD eSTAR 7.0（2026-06-01 发布）；
-          模板只从 FDA eSTAR 官方页下载，禁用第三方缓存版（缺板块会被退）
-```
 
 ## 使用方式
 
@@ -68,9 +52,6 @@ description_en: "Determines whether a device needs 510(k), recommends the submis
 | **🆕 PCCP 510(k)** | AI/ML 器械 + PCCP 范围 | 90天 |
 | **🆕 Third-Party 510(k)** | 部分 Class II 经认可第三方审核 | 30-60天 |
 
-> ⚠️ **周期口径**：上表为 **FDA 日**（FDA Days），不是自然日。审查时钟在 FDA 发出补充资料要求（AI/Additional Information）时**暂停**，企业答复后重启；实际自然日通常明显长于表列值。向客户报周期时必须说明这一口径，否则极易引发预期落差。
-> 📝 MDUFA VI 草案（FY2028 起）另设**平均总决策时间**口径：510(k) 平均 **128 日历日**（FY2028）→ 112 日历日（FY2032）。两个口径不可混用。
-
 推荐：能走 Special 不走 Traditional，能用 Abbreviated 不浪费传统路径的审查资源。
 
 ### 步骤 3：查找 Predicate Device
@@ -88,35 +69,41 @@ Predicate device 是 510(k) 的核心——你需要证明你的器械与已合�
 - 优先选择近 5 年内获批的 predicate（技术更接近当代标准）
 - 查看 predicate 的 Indications for Use 和 510(k) Summary
 
-### 步骤 4：撰写实质等同论证表（12列对比表）
+> **🆕 产品代码（Product Code）是找 predicate 的钥匙**：同一产品代码下的器械共享预期用途与监管分类，是定位 predicate 最高效的入口。可用以下任一方式实时检索 openFDA：
+> - **本地 MCP 连接器 `fda-devices-mcp`**（推荐，零 Key）：让助手调用 `search_510k`（`product_code:XXX` / `applicant:"X"` / `decision_date:[from+TO+to]` / `clearance_type:"Traditional"`），按 `decision_date:desc` 取最近获批者。
+> - **网页工具** `fda-predicate-finder`（rlwadh，MIT，GitHub Pages，支持离线）：按设备名/功能/K 号/产品代码/申请人多字段检索，结果可导出 CSV。
+> - **openFDA Device 510(k) API** 直连：`https://api.fda.gov/device/510k.json?search=product_code:XXX+AND+decision_date:[2021-01-01+TO+2026-08-15]&sort=decision_date:desc&limit=50`
+> 方法论细节、查询模板与 PDF 反抽坑点见知识库 `fda-regulation-kb/24-predicate-finder-methodology.md`。
 
-生成以下对比表模板：
+### 步骤 4：撰写实质等同论证表（审核级 12 列对比表）
 
-| # | 对比要素 | Predicate Device | Your Device | 差异？ | 差异论证 |
-|---|---------|-----------------|-------------|--------|---------|
-| 1 | 预期用途/Indications for Use | | | | |
-| 2 | 目标人群 | | | | |
-| 3 | 使用环境 | | | | |
-| 4 | 工作原理 | | | | |
-| 5 | 材料 | | | | |
-| 6 | 设计特征 | | | | |
-| 7 | 性能规格 | | | | |
-| 8 | 软件（如适用） | | | | |
-| 9 | 灭菌方法（如适用） | | | | |
-| 10 | 标签 | | | | |
-| 11 | 尺寸/规格 | | | | |
-| 12 | 生物相容性 | | | | |
+**完整模板、逐行填写规范、差异论证句式与 NSE 红线见 `references/se-comparison-audit-template.md`**。要点：
 
-**判定标准**：
-- 差异不影响安全性和有效性 → 实质等同成立
-- 差异引入了新的安全性或有效性问题 → 需要额外测试数据
-- 差异改变了预期用途 → 不是同一类器械，需要换 predicate
+1. **法律标准**：SE = 同一预期用途 + 技术差异不引发新的安全/有效性问题（FD&C Act §513(i)(1)(A)）
+2. **指定唯一 Primary Predicate**（K 号+商业名+申请人）——多 predicate 不指定 primary 是 RTA 高频拒收
+3. **12 要素全覆盖**：预期用途/目标人群/使用环境/工作原理/材料/设计特征/性能规格/软件/灭菌/标签/尺寸/生物相容性
+4. **每个差异三件套**：差异具体描述 → 影响分析科学论证 → 页码级证据引用（禁止「无影响」三个字式论证）
+5. **NSE 红线**：预期用途任何实质措辞差异、新 S&E 问题、风险不可接受 → 换 predicate 或转 De Novo
+6. 交付前跑「SE 表 10 问」自检
+
+### 步骤 4.5：软件文档层级判定（含软件器械必做）
+
+> FDA 审评员对软件文档的第一问：「你的 Documentation Level 是什么？」答不上来就是退回。
+
+| 层级 | 判定条件 | 文档要求 |
+|------|---------|---------|
+| **Basic** | 软件故障不导致严重伤害/死亡（低严重度） | 软件描述 + 风险分析 + V&V 概要 |
+| **Enhanced** | 软件故障可能导致严重伤害或死亡（中/高严重度） | 软件描述 + 架构设计图 + 需求规格 + 完整 V&V + 可追溯矩阵 |
+
+**判定流程**：ISO 14971 风险分析中软件相关危害的严重度评级 → 取最高 → 定层级 → **在提交中明确声明层级及理由**。
+**可追溯矩阵**：每个软件需求 ↔ 设计 ↔ 代码 ↔ 测试用例，形成闭环（Enhanced 层级必查）。
+**AI/ML 器械**：叠加 PCCP 三模块（见步骤 5）。
 
 ### 步骤 5：🆕 PCCP 三大模块（AI 器械必选）
 
 > 适用条件：AI/ML 算法的持续学习或频繁更新
 > 法律基础：FDORA 2022 Section 3201
-> 指南：FDA Final Guidance 2024-12-04
+> 指南：FDA Final Guidance **2024-12-04**（术语由"训练+测试"调整为"训练+调优+测试"）
 
 #### Module 1：Description of Modifications（变更描述）
 - 修改的具体边界（Specific Modifications）
@@ -138,7 +125,7 @@ Predicate device 是 510(k) 的核心——你需要证明你的器械与已合�
 
 > 适用范围：所有含软件（含固件）、可编程逻辑、可连接网络的器械
 > 法律基础：FD&C Act Section 524B（2023 Consolidated Appropriations Act 修订）
-> 指南：FDA Final Guidance **2025-06-27**（取代 2023-09 版本，官网核实 2026-07-03）
+> 指南：FDA Final Guidance **现行版 2026-02-03**（Level 2 更新，取代 2025-06-27 版；实质为 **QMSR 对齐**——威胁模型溯源至 ISO 13485 §7.3、安全确认锚定 §7.3.7、漏洞处理置于 §8.5；**Section 524B 实质要求未变**）
 
 **必须包含的 7 部分**：
 1. 威胁建模（Threat Model，STRIDE/PASS）
@@ -156,15 +143,12 @@ Predicate device 是 510(k) 的核心——你需要证明你的器械与已合�
 - **总耗时**（含准备）：通常 6-12 个月
 - **🆕 AI 器械**：PCCP 编写 + 测试，+$50K-$200K，+3-6 个月
 - **🆕 网络安全**：SBOM + 渗透测试，+$30K-$80K
-- **🆕 QMSR 转换**：❌ **QMSR 没有过渡期**——FDA QMSR FAQ（2026-02-02 更新）明确**自生效日即开始执法、无宽限期**，且**未发现任何正式"过渡期执法裁量"文件**。现有 QSR 820 持有者**应立即完成转换**，不存在"3 年缓冲"。
-  - 检查可**回溯审查 2026-02-02 之前生成的 QMS 记录**，但记录本身**不需要改造或重新贴标**。
-  - 关键动作：SOP 中失效的旧 820 子部分引用（如 820.30/820.100）须翻译为 ISO 13485:2016 条款号。
-  〔2026-08-29 复审修正：原文误称"3 年过渡期（2029-02-02 截止）"，该错误同时存在于本技能合规日历、global-market-access-planner、2026-self-study-510k 及 iso13485-gap-diagnosis，已全部更正〕
-- **🔍 MDUFA VI 草案关注（2026-07-08 发布，FY2028–2032）**：FDA 已发布下一轮用户费协议（MDUFA VI）草案，尚处征求意见阶段（2027-01-15 前提交国会，尚未生效）。草案含两项对中国出海企业直接相关的新动向——① 新增 **45 日「专项跟进预提交」（Tailored Review Pre-Sub）** 快速通道，复杂器械可更早锁定审查要点；② 启动 **多国同步审评试点**。⚠️ **2026-08-29 复审修正**：早期记录的「首次区分外国/本土企业注册费、外国企业费率更高」一说，在 2026-07-07 草案公开解读中未见，已从正文删除，引用前须以 FDA 最终文本为准。本技能暂不写死具体费率，建议正式申报前复核 FDA 官网最新 MDUFA VI 最终文本。
+- **🆕 QMSR 已生效**：QMSR 已于 2026-02-02 正式生效（2024-02-02 发布，迟发 2 年；**无存量器械过渡期**——FDA 在最终规则中明确拒绝分阶段生效与 QSR/QMSR 双轨并行，2026-02-02 起 QMSR 适用于全部成品器械制造商，含已上市产品，FDA 自该日起按 QMSR 执法）；现有 QSR 820 体系须已完成向 QMSR/ISO 13485:2016 对齐
+- **🆕 MDUFA VI 提示**：FY2028 起 510(k) 平均审评目标 **128 日历日**（现行 112 天先回退、FY2032 降回）——**勿向客户宣传"审评变快"**；第三方 510(k) 审评**免缴 FDA 用户费**（须付第三方商业费）；RTA 拒收/撤回扣 $4,400 行政审查费后退余款，进入实审后撤回或收到 NSE 判定不退款
 
-### 步骤 8：人因工程/可用性工程（HFE/UE）提交类别判定（2026年强制要求）
+### 步骤 8：人因工程/可用性工程（HFE/UE）提交类别判定（2026-08-01 起强制）
 
-> ⚠️ **2026年5月29日生效**：FDA《医疗器械上市申请中人因信息内容指南》终版，过渡期至**2026年8月1日**截止。
+> ⚠️ **2026-05-29 发布**：FDA《医疗器械上市申请中人因信息内容指南》终版（Docket FDA-2015-D-4599，FR 2026-10734），过渡期至 **2026-08-01** 截止，此后所有 510(k)/PMA/De Novo/HDE 均须按三层分类框架提交人因资料。配套《Applying Human Factors and Usability Engineering to Medical Devices》August 2026 版；eSTAR v7.0 自 2026-08-01 内嵌 HFE 模块。
 
 在准备 510(k) 提交前，必须按四步决策流程判断人因资料提交层级：
 
@@ -172,7 +156,7 @@ Predicate device 是 510(k) 的核心——你需要证明你的器械与已合�
 1. **A** — 是否属于对现有器械的修改？
 2. **B** — UI/用户/用途/环境/标签是否变更？
 3. **C** — 是否引入新关键任务或影响现有关键任务？（基于 URRA 分析）
-4. **D** — 鉴于使用历史、界面复杂性、风险控制充分性，是否必须 HFE 验证测试？
+4. **D** — 鉴于使用历史、界面复杂性、风险控制充分性，是否必须 HFE 验证测试？（新增决策点，可用于论证**免做总结性验证**；口罩类 FXX 通常落入类别 1/2，常可用 D 论证豁免）
 
 **三层提交类别**：
 
@@ -214,7 +198,9 @@ Predicate device 是 510(k) 的核心——你需要证明你的器械与已合�
 > 
 > **来源说明**：以下29项是基于 ChinamedGlobal 深度分析归纳的行业避坑清单。FDA 官方 RTA 检查清单按 Traditional/Abbreviated/Special 三种类型分别有独立 checklist（详见 FDA Guidance for RTA Policy for 510(k)s），结构与此归纳略有差异。建议提交前务必对照 FDA 官方 checklist 原文逐项校验。
 
-**使用 eSTAR 模板（2023年10月起强制）**：eSTAR 自带红绿灯校验机制，排除 80%+ 格式性错误。必须使用最新版本（**v6.1**，截至 2026-04），旧版本系统直接拒绝上传。自 2025-10-01 起，De Novo 申请也强制使用 eSTAR。
+**使用 eSTAR 模板（2023年10月起强制）**：eSTAR 自带红绿灯校验机制，排除 80%+ 格式性错误。必须使用最新版本（**nIVD/IVD eSTAR v7.0**，2026-06-01 发布；旧版 6.x（含 6.2）已于 **2026-08-03 正式停用**，系统直接拒绝上传）。自 2025-10-01 起，De Novo 申请也强制使用 eSTAR。截至 2026-08 当前有效版本：nIVD eSTAR v7.0 / IVD eSTAR v7.0 / PreSTAR v3.0。
+
+> 🆕 **标准版本纪律（FDA 认可共识标准清单 #66，2026-08-24）**：申报资料引用的标准版本，须在清单中查到**对应的有效认可号**——"标准出了新版"≠"FDA 已承认新版"。已知 **ISO 10993-1:2025 已获承认**（认可号 2-313，影响生物学评价策略）；**ASTM F2100-26、ISO 10993-7:2026 仍未获承认**，引用前须确认。
 
 #### 行政性基础审查（第1-10项）
 
@@ -291,29 +277,53 @@ Predicate device 是 510(k) 的核心——你需要证明你的器械与已合�
 
 **NAI 比例下降**：从 QSIT 时期 **52.7%** → QMSR 时期 **48.8%**（来源：MDP April 2026 Update）。VAI 从 43.5% → **51.2%**，OAI 从 3.7% → **0.0%**——检查员发现更多系统级缺陷，但尚未升级为执法行动。
 
-### 📅 2026 关键合规日历
+### 步骤 10.6：🆕 实审退回原因库与性能测试标准映射（零 AI 请求）
 
-| 日期 | 事件 | 对 510(k) 的影响 |
-|------|------|---------------|
-| 2026-02-02 | FDA QMSR 生效（QSR 820 → QMSR） | 质量体系全面对齐 ISO 13485；⚠️ **无过渡期、无宽限期，即刻执法**（原写"3 年过渡（2029-02-02 截止）"系错误，2026-08-29 已更正） |
-| 2026-05-28 | EU EUDAMED 强制 | 跨境欧盟产品须完成 EUDAMED 登记 |
-| 2026-05-29 | FDA HFE 终版指南发布 | 人因资料提交改为 URRA 自判三层类别 |
-| 2026-08-01 | FDA HFE 过渡期截止 | 此后未用新框架 → 大概率收到 AI 补充信息要求 |
-| 2025-10-01 起 | De Novo 强制 eSTAR | 与 510(k) 同样强制 eSTAR 模板 |
-| FY2026（至 2026-09-30） | MDUFA 用户费标准年 | 标准 $26,067 / 小企业 $6,517；⏳ FY2027（2026-10-01 起）已公布 $28,653 / $7,163（FR 2026-15335） |
+> RTA 只查行政完整性，**真正的淘汰发生在实审的 AI 请求**。完整 12 项退回原因库 + 13 类测试的 FDA 认可标准映射见 `references/fda-deficiency-playbook.md`。
+
+**实审 Top 退回速查（完整版含对策与自检问题）**：
+
+| # | 退回原因 | 一句话对策 |
+|---|---------|-----------|
+| 1 | 性能测试不充分 | 建立「IFU 声称规格 ↔ 测试项」覆盖矩阵，worst-case 论证 |
+| 2 | 生物相容性缺口 | 材料/接触变更 → ISO 10993-1:2025 框架追加终点评价 |
+| 3 | 软件层级未声明/V&V 不足 | 明确 Basic/Enhanced 层级 + 理由 + 完整报告（非大纲） |
+| 4 | 网络安全缺 SBOM/VMP | 7 件套齐；含 USB/蓝牙也算 cyber device |
+| 5 | HFE 类别误判/URRA 缺失 | Decision Point A–D 逐条留痕；类别 2 也要 URRA 摘要 |
+| 6 | 灭菌验证不完整 | SAL + 残留（EO）+ 包装完整性三支柱 |
+| 7 | 货架寿命缺口 | 加速老化 + 实时老化方案与时间表 |
+| 8 | 电气/EMC 缺 DoC | 测试报告 + 制造商签字 DoC 双交付 |
+| 9 | 标签声称超范围 | 标签 ↔ 测试报告 ↔ SE 表三方核对 |
+| 10 | 临床数据不足 | 用途/人群实质变化 → 提前评估 De Novo |
+| 11 | Predicate 选择问题 | 唯一 Primary + 选择理由 + 当前有效核验 |
+| 12 | 报告形式问题 | 完整版（非摘要）+ 签字日期 + 认证翻译 |
+
+**AI 请求响应黄金法则**：三列对照表（审评员原文/回应/附件页码）；180 天内回复；只给一次完整机会；回复时不引入新变更。
+
+### 步骤 10.7：提交前验收门（全技能族统一标准）
+
+> 标准全文见 `references/audit-grade-deliverable-standards.md`。
+
+**100 分制评分卡**：结构完整 20 / 证据闭环 25 / 一致性 15 / 可验证性 15 / 版本时效 10 / 语言规范 10 / 退回库排除 5。
+**一票否决致命项**（任一命中阻断交付）：NA 无理由 / 只交摘要 / 风险控制只写「见 IFU」/ 跨文档用途矛盾 / 软件版本不一致 / 无版本号文档 / 引用作废标准无 gap 分析 / 分类无规则引用 / 证据无评价者资质 / 语言不符。
+**门禁规则：≥90 分且零致命项，方可出门。**
 
 ## 11. 输出物清单（2026 完整版）
 
 完成本 Skill 调用后，应输出：
 1. **510(k) 必要性判定**（是/否/豁免）
 2. **提交类型建议**（Traditional/Abbreviated/Special/PCCP/Third-Party）
-3. **Predicate Device 候选清单**（1-3 个）
-4. **12 列 SE 对比表**
-5. **完整提交文件清单**（含 HFE + PCCP + 网络安全）
-6. **费用与时间估算**
-7. **🆕 2026 时间线提醒**（QMSR/EUDAMED/HFE/AI Act）
-8. **🆕 HFE 提交类别判定**（类别 1/2/3）
-9. **风险点与应对建议**
+3. **Predicate Device 候选清单**（1-3 个，含选择理由与有效性核验）
+4. **审核级 12 列 SE 对比表**（差异三件套：描述+论证+页码级证据）
+5. **软件文档层级声明**（Basic/Enhanced + 理由，含软件器械）
+6. **完整提交文件清单**（含 HFE + PCCP + 网络安全）
+7. **费用与时间估算**
+8. **🆕 2026 时间线提醒**（QMSR/EUDAMED/HFE/AI Act）
+9. **🆕 HFE 提交类别判定**（类别 1/2/3）
+10. **🆕 性能测试标准映射表**（本产品适用的 FDA 认可标准清单）
+11. **🆕 退回库自查结果**（12 项 Top 缺陷逐条过）
+12. **🆕 验收门评分**（100 分制结果 + 致命项核查）
+13. **风险点与应对建议**
 
 ### 🆕 统一输出格式（供奥斯曼主理人整合）
 
@@ -342,19 +352,22 @@ Predicate device 是 510(k) 的核心——你需要证明你的器械与已合�
 ```
 
 [是否豁免 510(k)]
-若 510(k) 豁免 → 路径简化为「企业注册 + 产品列名（免费）」，输出上述摘要后结束。
-> **年费口径**：FY2026 **$11,423**（适用于 2026-09-30 前）；⏳ **FY2027 起 $13,785**（2026-10-01 生效）。**该费用小企业无折扣**（标准费 = 小企业费）。
-> 用户费行「审查周期」按 **FDA 日**填写（非自然日），并注明 clock 暂停不计入。
+若 510(k) 豁免 → 路径简化为「企业注册（$11,423/年）+ 产品列名（免费）」，输出上述摘要后结束。
 
 ## 参考资料
 
 - `references/510k-checklist.md`：完整提交文件清单 + 各文件写作要点
+- `references/se-comparison-audit-template.md`：审核级 SE 论证模板（12 要素 × 6 论证列、差异论证句式、NSE 红线、SE 表 10 问）
+- `references/fda-deficiency-playbook.md`：实审退回原因库（12 项）+ 性能测试标准映射（13 类）+ AI 请求响应法则
+- `references/audit-grade-deliverable-standards.md`：审核级交付标准总纲（成熟度四级/五性/验收门评分卡/致命项）
 - 基于《合规之战：全球医疗器械监管进化史》第三章（FDA 深度拆解）
-- 基于 FDA《Content of Human Factors Information in Medical Device Marketing Submissions》终版指南（2026-05-29）
+- 基于 FDA《Content of Human Factors Information in Medical Device Marketing Submissions》终版指南（2026-05-29 发布，Docket FDA-2015-D-4599，FR 2026-10734；2026-08-01 起强制）
+- 🆕 基于 FDA《Applying Human Factors and Usability Engineering to Medical Devices》August 2026 版
 - 🆕 基于 FDA QMSR Final Rule（2024-01-31，2026-02-02 生效）
 - 🆕 基于 FDA PCCP Final Guidance（2024-12-04）
-- 🆕 基于 FDA Cybersecurity Final Guidance（**2026-02-03 现行版**；沿革 2023-09-27 → 2025-06-27 → 2026-02-03。⚠️ 2025-06-27 版是**真实存在的一版**，不是错误日期，但已被 2026-02-03 取代——本条于 2026-08-29 复审修正，原记录为"2025-06-27，官网核实 2026-07-03"）
-- 🆕 MDUFA 费率：**FY2026 $26,067 / 小企业 $6,517**；⏳ **FY2027 $28,653 / 小企业 $7,163**（2026-10-01 生效）。年度工厂注册费 FY2026 **$11,423** → FY2027 **$13,785**（**小企业无折扣**）。完整对照见 `references/fda-regulatory-history-1976-present.md` 第 12 节
+- 🆕 基于 FDA Cybersecurity Final Guidance（**现行版 2026-02-03**，取代 2025-06-27 版；QMSR 对齐，Section 524B 实质要求未变）
+- 🆕 基于 FDA 认可共识标准清单 #66（2026-08-24：ISO 10993-1:2025 获承认，认可号 2-313）
+- 🆕 基于 MDUFA VI 草案承诺函（2026-07-07：FY2028 510(k) 目标 128 日历日；FY2026 用户费 $11,423 / 510(k) $26,067）
 
 ---
 
@@ -374,7 +387,7 @@ Predicate device 是 510(k) 的核心——你需要证明你的器械与已合�
 | 2 | **QMSR 检查方式变了什么？** | QSIT（质量体系检查技术）**已废止**，新检查程序为 Compliance Program 7382.850 | FDA 检查不再按 QSIT 四区走，而是按 QMSR 全面检查 |
 | 3 | **ISO 13485 标准去哪看？** | ANSI IBR Portal（https://ibr.ansi.org）可免费在线只读查看 ISO 13485:2016 和 ISO 9000:2015 Clause 3 | 编写 QMSR 对标文件时可免费引用原文 |
 | 4 | **QMSR 和 MDSAP 有什么关系？** | FDA 检查不遵循 MDSAP 审核计划；ISO 13485 合规证书不豁免 FDA 检查 | 有 MDSAP 证书 ≠ 通过 FDA QMSR 检查，两套独立 |
-| 5 | **过渡期间旧记录怎么处理？** | FDA 可审查 2026-02-02 之前创建的 QMS 记录，建议做"对标分析"证明旧记录符合 QMSR | 现有 QSR 记录需逐一对照 QMSR 要求补齐 |
+| 5 | **生效日前创建的旧记录怎么处理？** | FDA 可审查 2026-02-02 之前创建的 QMS 记录，建议做"对标分析"证明旧记录符合 QMSR | 现有 QSR 记录需逐一对照 QMSR 要求补齐 |
 | 6 | **CGMP 豁免是否仍然有效？** | 是。21 CFR 862-892 中豁免 CGMP 的器械仍豁免，**但投诉文件（820.35）仍必须保留** | 即使 Class I 豁免 510(k) + GMP，投诉记录不可省略 |
 
 ### 补充 2：FDA 510(k) 豁免 2026 年更新（FDA 官网核实）
@@ -394,9 +407,11 @@ Predicate device 是 510(k) 的核心——你需要证明你的器械与已合�
 - 如器械用途变更、新用途、重大设计变更 → 豁免失效，必须提交 510(k)
 - Reserved Devices（对健康有重大意义或存在不合理风险的 Class I）不豁免
 
-### 补充 3：FDA 网络安全最终指南（2025-06-27 发布，2026 官网核实）
+### 补充 3：FDA 网络安全最终指南（现行版 2026-02-03，官网核实）
 
-> 来源：https://www.fda.gov/medical-devices/digital-health-center-excellence/cybersecurity + Censinet 分析
+> 来源：https://www.fda.gov/medical-devices/digital-health-center-of-excellence/cybersecurity + Censinet 分析
+> 版本沿革：2023-09-27 首次终版 → 2025-06-27 更新版（对齐 QMSR 的选择性更新）→ **2026-02-03 现行版**（Level 2 更新，取代 2025-06-27 版）
+> 实质：把遗留 21 CFR Part 820（QSR）引用替换为 QMSR 引用与 ISO 13485:2016 子条款——威胁模型溯源至 **§7.3**、安全确认锚定 **§7.3.7**、漏洞处理置于 **§8.5**；**Section 524B 实质要求未变**（SBOM、上市后漏洞监测、CVD、SPDF 照旧）
 
 **"网络器械"定义极为宽泛**：
 
@@ -426,7 +441,7 @@ Predicate device 是 510(k) 的核心——你需要证明你的器械与已合�
 
 ### 补充 4：FDA HFE 终版指南关键细节（FDA 官网 + ChinamedGlobal 核实）
 
-> 来源：FDA Final Guidance 2026-05-29 + Federal Register **91 FR 2026-10734**
+> 来源：FDA Final Guidance 2026-05-29（Docket FDA-2015-D-4599，FR 2026-10734 / 91 FR 32061）；配套《Applying Human Factors and Usability Engineering to Medical Devices》August 2026 版（注意：2026-08-03 是 eSTAR v6.2 退役日，不是 HFE 指南发布日，二者勿混）
 
 **决策点 D 的三个判定因素**（新增，最具影响力）：
 1. 设备用户界面的使用历史（UI use history）
@@ -442,7 +457,7 @@ Predicate device 是 510(k) 的核心——你需要证明你的器械与已合�
 **HFE/UE 报告大纲变化**（vs 2016 版）：
 - 第 5-6 节顺序互换：形成性评估摘要 → URRA + 关键任务识别（而非旧版反向）
 - 三份新增附录：Appendix A/B/C 分别对应 Category 1/2/3 的样本报告
-- 过渡期后仍用 2016 大纲 → 大概率收到 **补充信息（AI）要求**
+- QMSR 生效后仍用 2016 大纲 → 大概率收到 **补充信息（AI）要求**
 
 ### 补充 5：FDA UDI/GUDID 境外制造商关键要求（FDA 官网核实）
 
@@ -458,36 +473,3 @@ Predicate device 是 510(k) 的核心——你需要证明你的器械与已合�
 - 须指定 US Agent 辅助 GUDID 账号申请
 - GUDID 提交可通过 HL7 SPL 或 Web 界面两种方式
 - FDA Accredited Issuing Agency：GS1、HIBCC、ICCBBA、IFA
-
----
-
-## 📝 v2.1 更新日志（本次优化）
-
-| # | 优化项 | 说明 |
-|---|--------|------|
-| 1 | 12 列 SE 对比表补「差异论证」列 | 主文步骤 4 表格与 `references/510k-checklist.md` 完全对齐（此前主文缺该列） |
-| 2 | 统一 HFE 日期表述 | 全篇统一为「发布日 2026-05-29 / 过渡截止 2026-08-01」，消除"强制日"歧义 |
-| 3 | 新增快速决策流程图 | 在「目的」后插入 ASCII 决策树，便于同事快速判断路径 |
-| 4 | 新增 2026 关键合规日历 | 汇总 QMSR / EUDAMED / HFE / De Novo eSTAR / MDUFA 的关键日期 |
-| 5 | 配套参考清单升级至 v2.1 | `references/510k-checklist.md` 补齐 HFE 提交类别、PCCP 三模块、Section 524B、UDI/GUDID、QMSR 六大领域、29 项 RTA 清单，与主文一致 |
-| 6 | 费用与周期数字核对 | 确认 FY2026 用户费（$26,067 / $6,517）、审查周期（90/30 天）在主文与参考清单一致 |
-
----
-
-## 2026 团队自学更新（2026-08-16）
-
-> 本节为「分类与 FDA 补完小队」复核后追加，未改动 frontmatter 与原有正文逻辑。详细信源与待核实点见 `references/2026-self-study-510k.md`。
-
-1. **FDA 网络安全指南核准（前队友冲突根因）**：实为三版迭代——2023-09-27 终版（首版可执行）、2025-06-27 更新、**2026-02 QMSR 对齐版（现行有效，标题改 *Quality Management System Considerations*，524B 实质要求不变）**。原正文「2025-06-27 取代 2023-09」漏了 2026-02 版；步骤 6 与参考清单应标注以 2026-02 版为准。
-2. **HFE 实为两份文件**：*Content of Human Factors Information…* 于 **2026-05-29 发布、2026-08-01 起生效**（原正文误标「5-29生效」）；基础方法指南 *Applying Human Factors and Usability Engineering…* 于 **2026-08-03 终版更新**（术语对齐 QMSR/ISO 14971:2019/IEC 62366-1，删除旧 Appendix A），原正文未提及，须补。
-3. **PCCP / eSTAR 校准**：AI 器械 PCCP 终版 **2024-12-04**（FDA 下载页标 "August 2025"，具体张贴日待核实）；eSTAR 现行 **v6.1（2026-02 QMSR 对齐）**，De Novo 强制 eSTAR 自 **2025-10-01** 起，与正文一致但版本号需更新至 v6.1。
-4. **Predicate 现代化**：FDA 已淘汰 1,750+ 过时 predicate，建议优先近 5 年 predicate（与步骤 3 一致，可作为强提示）。
-
-## 2026-08-16 FDA 官网深度自学（法规史 1976–present + 公开数据挖掘）
-
-> 用户指示：专家团应有空就到 FDA 官网学习，**从 1976 年《医疗器械修正案》起**（preamendment/grandfathered 器械为分水岭），因 510(k) Summary 等公开资源是专家差异化知识来源。本轮据此派两支学习小队联网自学并写回，细节与全部真实信源见以下两份参考文件：
-
-1. **`references/fda-regulatory-history-1976-present.md`** — 美国医疗器械监管史（1938 基线 → 1976 修正案 → 1990/1997/2002/2007/2011/2012/2016/2022/2024/2026 全部里程碑，含 510(k) 类型演变、第三方审评、eSTAR、QMSR、MDUFA 用户费表）。含两处硬核校正：① **513(g) 分类请求实为 1997 年 FDAMA（PL 105-115）设立，非 1992**；② **eSTAR 510(k) 强制自 2023-10-01 起**（De Novo 自 2025-10-01），2026 年所谓"强制"实为模板 v6.1 对齐 QMSR（2026-02-02）与 HFE 字段启用（2026-08-01）。
-2. **`references/fda-public-data-mining-guide.md`** — FDA 公开数据挖掘实操指南：accessdata 510(k) 数据库检索、openFDA 510(k) API（真实字段名 `k_number`/`product_code`/`decision_date`/`review_advisory_committee`/`clearance_type` 等）、认可共识标准库（Rec# 与版本/过渡期）、指南库检索、FD&C Act 与 21 CFR 800–898 入口，以及"专家日课 SOP"（找 predicate → 核标准版本 → 学 Summary 表述 → 监控竞品 clearance）。**Summary 脱敏边界**：配方/工艺/原始验证数据/软件源码不公开，仅给"思路与结论"，决策须以 accessdata 原始记录 + 指南/CFR 原文为最终依据。
-
-> **长期行为（固化）**：本技能将"持续从 FDA 官网与公开数据库学习"作为专家团常态能力；凡涉及 FDA 路径判断，优先引用上述两份参考与实时官方信源，而非凭记忆。

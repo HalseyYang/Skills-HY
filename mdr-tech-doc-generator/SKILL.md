@@ -1,28 +1,32 @@
 ---
 name: mdr-tech-doc-generator
-description: "MDR CE 技术文件生成器 v2.1。输入产品信息，自动生成符合 MDR Annex II/III 要求的技术文档结构、GSPR 符合性检查表、ISO 14971 风险管理模板框架、临床评价报告 CER 结构、等同器械对比模板。覆盖 2026 重大变化：EUDAMED 强制 2026-05-28、MDCG 2026-4 SSCP/SSP 上传职责转移至制造商（2026-10 起，已上市截止 2027-02-27）、协调标准 (EU) 2026/1231（EN ISO 15223-1 A1:2025 EU REP 标志）、WET 成熟技术豁免、EU AI Act 2024/1689 及 Omnibus（医疗 AI 大限延至 2028-08-02）、MDR Annex I §17.2 网络安全、Annex XVI 无医疗器械目的产品。适用于准备 CE 标志申请的医疗器械制造商撰写技术文件时使用。触发词：MDR 技术文件、Technical Documentation、CE 技术文档、GSPR、CER、临床评价报告、risk management、ISO 14971、等同器械对比、STED、EUDAMED、AI Act。"
+description: MDR CE 技术文件生成器 v2.2。输入产品信息，自动生成符合 MDR Annex II/III 要求的技术文档结构、GSPR
+  符合性检查表（Annex I 全 23 章，官方条款号勘误版）、ISO 14971 风险管理模板框架、临床评价报告 CER 结构（MEDDEV 2.7/1 r4 + MDCG 2020-13）、等同器械对比模板（MDCG 2020-5 三要素）。覆盖 2026 重大变化：EUDAMED 强制
+  2026-05-28（遗留器械 2026-11-28）、EU AI Act 2024/1689 经 Digital Omnibus (EU) 2026/1744 修订（嵌入器械高风险义务 2028-08-02 / 第 50 条透明度 2026-08-02 已适用）、MDR Annex I §17.4 网络安全、NB 合格评定时限法定化（Reg (EU) 2026/977，2027-02-25）、Annex XVI
+  无医疗器械目的产品。新增审核级能力：NB 退回原因库（Top 15）、符合性评估路径选择（Annex IX vs XI）、CER 审核级指南、提交前验收门。适用于准备 CE 标志申请的医疗器械制造商撰写技术文件时使用。触发词：MDR 技术文件、Technical
+  Documentation、CE 技术文件、GSPR、CER、临床评价报告、risk management、ISO
+  14971、等同器械对比、STED、EUDAMED、AI Act、Digital Omnibus。
 agent_created: true
 author: 北京奥斯曼认证咨询
-version: 2.1.0
+version: 2.2.0
 display_name: "MDR 技术文件生成器"
 display_name_en: "MDR Technical Documentation Generator"
-description_zh: "生成符合 MDR Annex II/III 的技术文档结构、GSPR 检查表、风险管理与 CER 框架"
-description_en: "Generates MDR Annex II/III technical documentation structure, GSPR checklists, risk management and CER frameworks."
+description_zh: "生成符合 MDR Annex II/III 的技术文档框架：GSPR 检查表、ISO 14971 风险管理、CER 结构、等同性论证，覆盖 EUDAMED 与 AI Act 双层合规"
+description_en: "Generate MDR Annex II/III technical documentation frameworks with GSPR checklists, ISO 14971 risk management, CER structure and equivalence appraisal, covering EUDAMED and dual AI Act compliance."
 ---
 
-# MDR 技术文件生成器 v2.1
+# MDR 技术文件生成器 v2.2
 
-> 🆕 **v2.0 升级**：整合 2026 三大新要求
-> 1. **EU EUDAMED 强制** 2026-05-28（**首批 4 模块**：经济运营商/Actor+SRN、UDI/器械注册、NB 与证书、市场监管）
->    ⚠️ **警戒与 PMS 模块不在首批强制范围内**，预计约 **2027 Q2** 才强制（Commission Decision (EU) 2025/2371）。过渡期内警戒报告仍走 NB / 国家 portal；但器械若成为严重事件或 FSCA 对象，**须立即在 EUDAMED 注册上报，无豁免**
-> 2. **EU AI Act 2024/1689**（医疗 AI 高风险系统的双层合规）
-> 3. **MDR Annex I §17.2 网络安全**（与 ISO 27001 / IEC 62443 整合）
-> 4. **MDR Annex XVI** 无医疗器械目的产品的特殊要求
+> 🆕 **v2.2 升级**（2026-10-16 审核级专项）：① **勘误 GSPR 条款号**（重要）：旧版速查表把「化学物理生物特性」误标 GSPR 7（实为 10）、「电气安全 EMC」误标 11（实为 18.5-18.7）、「测量功能」误标 10.X（实为 15）、「临床证据」误标 GSPR 14（临床证据依据是 Article 61 + Annex XIV，非 Annex I 条款）——错误条款号在 NB 审核员面前是硬伤；② 新增 `references/gspr-annex1-full-checklist.md`（Annex I 全 23 章逐条对照：条款号/要求/证据/标准/NB 关注点）；③ 新增 `references/nb-rejection-database.md`（NB 退回 Top 15 + 提交前模拟审核 20 问）；④ 新增 `references/cer-audit-guide.md`（CER 十章审核级结构 + MDCG 2020-13/2020-5 实操）；⑤ 新增符合性评估路径选择（Annex IX vs XI）；⑥ 内置提交前验收门，目标 **NB 一次通过**。
 >
-> 🆕 **v2.1 更新（2026-07-27）**：
-> 5. **MDCG 2026-4**：EUDAMED 强制使用后，SSCP/SSP 上传职责由公告机构**转移至制造商**——2026 年 10 月起制造商直接上传主版及全部语言翻译件，已上市器械截止 **2027-02-27**；公告机构仅保留验证确认角色
-> 6. **协调标准更新 (EU) 2026/1231**（2026-06-11 生效）：EN ISO 15223-1:2021/A1:2025 引入"EU REP"标志（5 年共存期）、EN ISO 10993-12:2021/A1:2025 等九大类别——技术文件/DoC/测试报告须引用最新版本
-> 7. **WET 成熟技术授权法案**（2026-06-30 发布）：缝合线、吻合器、骨钉等特定 IIb 类植入及 III 类器械的临床试验豁免条件明确，临床评价策略可相应调整
+> 🆕 **v2.1 升级**（2026-10-16）：① 版本号与线上发布对齐（v2.0→v2.1）；② EU AI Act 时间线按 **Digital Omnibus (EU) 2026/1744**（2026-07-27 生效）更新——嵌入器械高风险义务 2027-08-02→**2028-08-02**、Annex III 独立系统→**2027-12-02**、第 50 条透明度 **2026-08-02 已适用**；③ 新增 **Reg (EU) 2026/977** NB 合格评定时限法定化（2027-02-25：30/120/90/20 天）与 **MDCG 2025-6**（MDAI、一审双认）要求；④ 修正 FDA HFE 日期口径（终版指南 2026-05-29 发布、2026-08-01 强制）；⑤ 修复三大市场对照表第 10-12 行列错位。
+>
+> 🆕 **v2.0 升级**：整合 2026 三大新要求
+> 1. **EU EUDAMED 强制** 2026-05-28（UDI 注册、警戒模块、经济运营商）
+> 2. **EU AI Act 2024/1689**（医疗 AI 高风险系统的双层合规）
+> 3. **MDR Annex I §17.4 网络安全**（与 ISO 27001 / IEC 62443 整合）
+>    ⚠ **条款编号更正（2026-09-04 核实）**：官方文本中 **§17.2 = 软件生命周期**（state of the art、开发生命周期、风险管理含信息安全、验证确认），**§17.4 = IT 安全**（硬件、IT 网络特性、IT 安全措施、防未授权访问）。业界与旧版资料常把 IT 安全误标为 §17.2，编写 GSPR 表时必须按官方文本标注。（来源：MDR Annex I 原文，ANSM 网络安全指南、瑞典 MPA、zechmeister-solutions 一致引用）
+> 4. **MDR Annex XVI** 无医疗器械目的产品的特殊要求
 
 ## 目的
 
@@ -36,7 +40,7 @@ description_en: "Generates MDR Annex II/III technical documentation structure, G
 - 产品名称、型号、预期用途
 - 器械分类（Class I/IIa/IIb/III，参见 med-device-classifier skill）
 - **🆕 是否含 AI/ML 算法**（触发 EU AI Act 高风险合规）
-- **🆕 是否可连接网络**（触发 MDR Annex I §17.2 + EU AI Act）
+- **🆕 是否可连接网络**（触发 MDR Annex I §17.4 + EU AI Act）
 - 是否含软件、是否灭菌、是否含药
 - 是否有已上市同类产品可用于等同性论证
 - 目标市场（决定 EUDAMED/AI Act 适用度）
@@ -66,17 +70,56 @@ Module G: 上市后监督 (PMS Plan / PMCF Plan / PSUR)
 | 3 | 在正常使用条件下达到预期性能 | 性能测试合格报告 | 引用测试报告 |
 | ... | ... | ... | ... |
 
-关键条款必须覆盖：
-- GSPR 1-3：通用安全与性能要求
-- GSPR 7：化学、物理和生物特性
-- GSPR 10.X：有源器械测量功能
-- GSPR 11.X：电气安全和 EMC
-- **🆕 GSPR 17.2**：IT 安全措施（与网络安全一致）
-- GSPR 14：临床证据
-- **🆕 GSPR 17.x**：软件验证 + AI 算法验证
-- GSPR 23：标签和说明书
+关键条款必须覆盖（**条款号以官方文本为准，v2.2 已勘误——旧版把 7/10/11/14 对错，是会被 NB 当场抓住的错误**）：
 
-### 步骤 3.5：🆕 TEAM-NB 技术文档审核期望（审核级合规关键）
+**Chapter I 通用要求（1–9）**：
+- **GSPR 1**：性能与安全（总条款——风险可接受、收益-风险、SOTA）
+- **GSPR 2**：「尽可能降低（AFAP）」的法定边界（不损害收益-风险比）
+- **GSPR 3**：风险管理体系（ISO 14971:2019 全生命周期）
+- **GSPR 4**：风险控制三层优先级（固有安全→防护措施→安全信息）+ 残余风险告知
+- **GSPR 5**：使用相关风险（IEC 62366-1，含非专业/残障用户考量）
+- **GSPR 6**：寿命期内性能保持
+- **GSPR 7**：包装、运输、储存（ISO 11607-1/-2）⚠️ 不是「化学生物特性」
+- **GSPR 8**：收益-风险比为正
+- **GSPR 9**：Annex XVI 无医疗目的产品（常规器械标不适用+一句话理由）
+
+**Chapter II 设计与制造（10–22）**：
+- **GSPR 10**：化学、物理和生物特性（ISO 10993 系列）⚠️ 生物相容性挂这里，不是 7
+- **GSPR 11**：感染与微生物污染（灭菌 ISO 11135/11137/17665）⚠️ 不是电气安全
+- **GSPR 12/13**：含药器械 / 人-动物源材料
+- **GSPR 14**：构造及与环境交互（**14.2d = 软件与 IT 环境交互风险**）
+- **GSPR 15**：诊断/测量功能（准确度/精密度/稳定性）⚠️ 不是「10.X」
+- **GSPR 16**：辐射防护
+- **🆕 GSPR 17.2**：**软件生命周期**（按 SOTA 开发：开发生命周期、风险管理含信息安全、验证确认）→ IEC 62304 + IEC 81001-5-1
+- **🆕 GSPR 17.4**：**IT 安全措施与网络安全**（硬件、IT 网络特性、防未授权访问）→ **这才是网络安全条款**，勿标为 17.2
+- **GSPR 18.x**：有源器械（18.5 EMI / 18.6 EMS / 18.7 电击 / 18.8 防未授权访问）⚠️ 电气安全 EMC 在 18.x，不是 11
+- **GSPR 22**：非专业用户/自我给药器械（lay user 可用性证据）
+- **GSPR 23**：标签和说明书（23.1 一般 / 23.2 标签 / 23.3 IFU / 23.4 专项）
+- ⚠️ **临床证据不是 GSPR 条款**——依据是 **Article 61 + Annex XIV**（旧版「GSPR 14 临床证据」为错误编号）
+
+> **全 23 章逐条对照表（含每条款证据/标准/NB 关注点）见 `references/gspr-annex1-full-checklist.md`——生成 GSPR 检查表必须逐条过，一条不漏。**
+
+### 步骤 3.4：🆕 符合性评估路径选择（Annex IX vs Annex XI）
+
+> 路径选错 = 白干几个月。NB 签约前必须定。
+
+| 维度 | **Annex IX（QMS + 技术文档评估）** | **Annex XI（型式检验 + 产品验证）** |
+|------|----------------------------------|-----------------------------------|
+| 审核内容 | QMS 审核 + 每款器械技术文档评估 | 只审「型式」（代表性样品），不审 QMS |
+| 适用类别 | Class III/IIb/IIa/Is/Im/Ir（主流） | 主要为 Class IIa/IIb（按规则 1-4 的部分） |
+| 证书范围 | QMS 证书 + 器械证书 | 仅器械型式证书 |
+| 后续监督 | NB 年度监督审核 + PSUR 审查 | 需另做 QMS 认证（通常 Annex IX 补） |
+| 时间/费用 | 12-24 个月 / €15K-50K+ | 6-12 个月 |
+| 适用场景 | 绝大多数制造商（推荐默认路径） | 已有 QMS 证书、快速补充某型号 |
+
+**决策要点**：
+1. **Class III/植入式 → 只能 Annex IX**（含设计 dossier 审查）
+2. **已有 ISO 13485 证书的制造商**：Annex IX 可省 QMS 初审，直接进技术文档评估
+3. **AI 器械**：确认 NB 持 **MDR + AI Act 双重资质**（MDCG 2025-6 一审双认）
+4. **时限法定化**（Reg (EU) 2026/977，2027-02-25 起）：申请审查+签约 30 天 / QMS 审核 120 天 / 技术文档评估 90 天 / 发证 20 天——签约时把时限写进协议
+5. **多型号家族策略**：同一 NB 一份申请覆盖产品家族，主型号全审 + 变体走变更程序
+
+### 步骤 3.5：TEAM-NB 技术文档审核期望（审核级合规关键）
 
 > 来源：TEAM-NB Position Paper BPG V3 (2025-04-09, 79页) — 代表欧洲 20+ 家公告机构的统一期望标准
 
@@ -138,7 +181,6 @@ Module G: 上市后监督 (PMS Plan / PMCF Plan / PSUR)
 - 包含：器械标识/预期用途/风险/临床证据/PMCF计划/警告
 - 面向**患者和医疗专业人员**
 - 须在 EUDAMED 公开模块中上传
-- 🆕 **MDCG 2026-4（2026-06-17 发布）**：EUDAMED 强制使用后，SSCP/SSP 上传职责由公告机构**转移至制造商**——制造商负责上传经验证的主版 + 全部所需语言翻译件（MDR Article 29(4)），并确保上传版本与 NB 验证版本一致；公告机构仅通过 EUDAMED 新功能确认哪些文件已经其验证。**关键节点**：2026-05-28 起过渡期内 NB 继续上传；**2026 年 10 月起制造商直接上传**；已上市器械补齐截止 **2027-02-27**。尚未上传 SSCP/SSP 的制造商应优先处理，未齐语言翻译件须尽快补齐。
 
 #### AI 器械 NB 审核额外要求（TEAM-NB AI 问卷）
 
@@ -157,7 +199,9 @@ Module G: 上市后监督 (PMS Plan / PMCF Plan / PSUR)
 
 1. **早期沟通**：与 NB 就语言要求、提交标签和方法、讨论主题达成一致（MDCG 2019-6 §1.6.3）
 2. **结构化提交**：清晰有序可搜索 + 带超链接的目录/索引 + 文件夹数量最小化 + 逻辑流程按 Annex II 结构
-3. **模拟 RTA 自查**：非项目 RA 工程师按 TEAM-NB 期望逐项检查
+3. **模拟 NB 自查**：非项目 RA 工程师按 `references/nb-rejection-database.md` 的「Top 15 退回原因 + 20 问」逐项检查——**这是把 40% 首交补充信息率打到 0 的核心动作**
+4. **符合性路径确认**：Annex IX vs XI 已与 NB 书面确认（见步骤 3.4）
+5. **跑提交前验收门**：100 分制评分卡 ≥90 且零致命项（见 `references/audit-grade-deliverable-standards.md`）
 
 按照标准 9 节结构生成模板框架（参照 references/risk-management-template.md）：
 
@@ -174,7 +218,7 @@ Module G: 上市后监督 (PMS Plan / PMCF Plan / PSUR)
 8. 综合剩余风险评价（收益-风险分析）
 9. 生产和生产后信息
 
-**🆕 整合网络安全风险**（MDR Annex I §17.2）：
+**🆕 整合网络安全风险**（MDR Annex I §17.4）：
 - 威胁 → 漏洞 → 影响的链式分析
 - 与 ISO 14971 风险矩阵整合
 - 风险控制 = 安全控制（加密、认证、审计）
@@ -187,29 +231,31 @@ Module G: 上市后监督 (PMS Plan / PMCF Plan / PSUR)
 
 ### 步骤 5：生成临床评价报告 (CER) 结构
 
-按照 MEDDEV 2.7/1 Rev.4 标准结构输出模板：
+按照 MEDDEV 2.7/1 Rev.4 + MDCG 2020-13 标准结构输出模板。**审核级完整指南（十章结构/等同三要素/检索可复现/评价双维度/结论写法）见 `references/cer-audit-guide.md`**：
 
 1. 临床评价计划 (CEP)
-2. 器械描述与预期用途
-3. 临床数据识别（文献检索策略 + 检索结果）
-4. 临床数据评估（文献质量评价 + 适用性分析）
-5. 临床数据分析（数据综合 + 安全性/有效性结论）
-6. 等同器械论证（如适用）
-7. 收益-风险结论
-8. 临床专家签字
-9. **🆕 PMCF 计划与中期报告**
-10. **🆕 AI 算法的临床证据要求**（如适用）
+2. 器械描述与预期用途（与主数据表逐字一致）
+3. 临床背景与 SOTA
+4. 临床数据识别（文献检索策略 + PRISMA 流程，必须可复现）
+5. 临床数据评估（文献质量 + 适用性双维度）
+6. 临床数据分析（数据综合 + 安全性/有效性结论）
+7. 等同器械论证（MDCG 2020-5 三要素：临床/技术/生物）
+8. 收益-风险结论（五要素显式结论）
+9. 临床专家签字 + 评估者 CV + 利益声明（TEAM-NB 明确要求）
+10. **🆕 PMCF 计划与中期报告**（每项挂回 CER 缺口）
+11. **🆕 AI 算法的临床证据要求**（如适用）
 
 **CER 更新频率（法规依据）**：
 - **Class IIa**：至少每 **2 年**更新 — **MDR Article 61(11)**（临床评价须贯穿器械生命周期）+ **Article 86(2)(a)**（PSUR 中更新 CER）
 - **Class IIb/III**：至少每 **1 年**更新 — **MDR Article 86(2)(b)**
 - **Class III 植入式 + 等同性路径**：须额外提供临床数据论证 — **MDR Article 61(4)**
+- **⚠ Class I（含 Is/Im/Ir）**：**不适用 Article 86 的 PSUR 周期**。Class I 按 **Article 85 编制 PMSR**（非 PSUR），且 PMSR **不主动提交**、须应主管当局要求提供。CER 更新频率由制造商在 CEP 中自行定义（建议每 2–3 年），与 PMSR 周期同步 —— 依据 Article 61(11) 全生命周期更新义务。切勿把 Class I 的定期报告写成 PSUR
 - CER 更新须与 PSUR 周期同步，PMCF 数据须实质性更新 CER 内容
 
 ### 步骤 6：生成三大市场人因/可用性工程文档对照表
 
-> ⚠️ **2026年5月29日更新**：FDA 发布人因工程申报新规（三层分类框架），所有 510(k)/PMA/De Novo/HDE 均需按新框架提交 HFE/UE 文档。
-> ⚠️ **EU AI Act（Omnibus 后）**：嵌入 MDR/IVDR 产品的高风险 AI 大限 **2028-08-02**，医疗 AI 须遵守 AI Act + MDR 双层要求。
+> ⚠️ **FDA HFE/UE 三层分类框架**：终版指南 2026-05-29 发布、**2026-08-01 起强制**（Decision Point A–D，无关键任务也须提交至少类别 1/2 文档）；配套《Applying Human Factors and Usability Engineering to Medical Devices》August 2026 版；eSTAR v7.0（2026-06-01 发布，v6.2 于 2026-08-03 退役）内嵌 HFE 模块。
+> ⚠️ **EU AI Act（Digital Omnibus (EU) 2026/1744 修订后）**：第 50 条透明度义务 **2026-08-02 已适用**；嵌入器械（MDR IIa/IIb/III + IVDR B/C/D）高风险义务 **2028-08-02** 适用；Annex III 独立系统 2027-12-02。医疗 AI 须遵守 AI Act + MDR 双层要求。
 
 | 维度 | EU MDR | FDA (2026 新规) | NMPA | 🆕 EU AI Act |
 |------|--------|----------------|------|---------|
@@ -239,14 +285,14 @@ Module G: 上市后监督 (PMS Plan / PMCF Plan / PSUR)
 - **MDR/IVDR** 现有器械合规要求
 - **AI Act 2024/1689** 高风险 AI 系统要求
 
-#### 7.3 关键义务（分档生效）
-
-> 🆕 **AI Act Omnibus（2026-06-29 正式通过）已延后以下两个截止日**
+#### 7.3 关键义务（分档生效，Digital Omnibus (EU) 2026/1744 修订后）
 
 | 截止日 | 适用范围 | 法规依据 |
 |--------|---------|---------|
-| **2027-12-02**（原 2026-08-02） | Annex III 独立高风险AI（非产品监管） | AI Act Omnibus 简化包调整 |
-| **2028-08-02**（原 2027-08-02） | MDR IIa/IIb/III + IVDR B/C/D 的AI器械（需第三方符合性评估） | AI Act Omnibus 简化包调整 |
+| **2026-08-02（已适用）** | 第 50 条透明度义务 + 第 4 条 AI 素养义务（未延期） | AI Act Article 50 / Article 4 |
+| **2026-12-02** | 50(2) 机器可读标记：2026-08-02 前已投放生成式系统的宽限截止 | AI Act Article 50(2) |
+| **2027-12-02** | Annex III 独立高风险AI（非产品监管） | AI Act Article 113 通用（经 Omnibus 延期） |
+| **2028-08-02** | MDR IIa/IIb/III + IVDR B/C/D 的AI器械（嵌入受监管产品，需第三方符合性评估） | AI Act Article 113(c)（经 Omnibus 延期一年） |
 
 | 维度 | 关键义务 |
 |------|---------|
@@ -258,7 +304,7 @@ Module G: 上市后监督 (PMS Plan / PMCF Plan / PSUR)
 | 人为监督 | Human Oversight 机制 |
 | 准确性 | 性能基线 + 准确度要求 |
 | 稳健性 | 抗扰动 + 抗对抗样本 |
-| 网络安全 | 与 MDR Annex I §17.2 整合 |
+| 网络安全 | 与 MDR Annex I §17.4 整合 |
 | 合格性评估 | CE 标识 + EU 数据库注册 |
 | 上市后监控 | 与 MDR PMS 整合 |
 
@@ -277,7 +323,7 @@ Module G: 上市后监督 (PMS Plan / PMCF Plan / PSUR)
 9. 重大事件报告流程
 ```
 
-### 步骤 8：🆕 MDR Annex I §17.2 网络安全要求
+### 步骤 8：🆕 MDR Annex I §17.4 网络安全要求（⚠ 勿误标为 §17.2）
 
 #### 8.1 适用范围
 - 含软件（含固件）的所有器械
@@ -342,12 +388,10 @@ Module G: 上市后监督 (PMS Plan / PMCF Plan / PSUR)
 | 6 | 临床前数据 | **CS 符合性声明**（Class D） | 临床数据 | 检验报告 | 网络安全（Annex IV §6） |
 | 7 | CER | **性能评价研究**（如适用） | 标签 | 临床评价资料 | 人为监督（Annex IV §7） |
 | 8 | 标签 | 标签 | 灭菌/保质期 | — | 性能监控（Annex IV §8） |
-| 9 | PMS Plan + **PSUR**（IIa 至少每 2 年 / IIb·III 至少每年，Article 86） | **PMS Report**（Class A/B，Article 80，"必要时"更新）/ **PSUR**（Class C/D，Article 81，**均至少每年**） | — | — | 上市后监控（Annex IV §9） |
-| **🆕 10** | **MDR Annex I §17.2 网络安全** | **IVDR Annex I §17.2 网络安全** | **Section 524B + 2026-02-03 现行指南** | **网络安全注册审查指导原则（2022 修订版）** | **AI Act 网络安全义务** |
-| **🆕 11** | **EUDAMED UDI 注册** | **EUDAMED UDI 注册** | **GUDID** | **NMPA UDI** | **EU 数据库（高风险 AI 注册）** |
-| **🆕 12** | **PCCP（AI 器械）** | **PCCP（AI 器械）** | **PCCP（AI 器械）** | **AI 指导原则** | **变更协议（AI Act）** |
-
-> ⚠️ **2026-08-29 复审修正**：① 原第 9 行 IVDR 列写「PPMP（Periodic Performance Update）」——**IVDR 中不存在该缩写**，正确术语为 PMS Report（A/B）与 PSUR（C/D）。② 原第 10–12 行**少一列**，导致各市场内容整体错位，已补全为 6 列。
+| 9 | PMS Plan | **PPMP**（Periodic Performance Update） | — | — | 上市后监控（Annex IV §9） |
+| **🆕 10** | **Annex I §17.4 网络安全** | **Annex I §17.4 同样适用** | **Section 524B** | **网络安全指导原则** | **Article 15（网络安全）** |
+| **🆕 11** | **EUDAMED UDI 注册** | **EUDAMED UDI 注册** | **GUDID** | **NMPA UDI** | **EU 数据库注册（Article 49）** |
+| **🆕 12** | **PCCP（AI 器械）** | **PCCP（AI 器械）** | **AI 指导原则** | **变更协议（AI Act）** |
 
 ### 步骤 12：技术文档撰写六条黄金法则（v2.0）
 
@@ -360,15 +404,30 @@ Module G: 上市后监督 (PMS Plan / PMCF Plan / PSUR)
 5. **文件版本号+日期**——没有版本控制的文档 = 无效文档
 6. **🆕 跨市场引用**——一份"国际版"文档可同时给 MDR/510k/AI Act 用，关键在于**单独附"市场差异说明"**
 
+### 步骤 13：🆕 开源工具与数据源（GitHub 实地摸排 2026-08-02）
+
+> 以下开源方案可补足本 skill 的「模板素材」「EUDAMED 实操」「证据驱动」三块短板。详见知识库 `fda-regulation-kb/28-eu-mdr-ivdr-open-tools.md`。
+
+| 工具 | 用途 | 接入方式 |
+|------|------|---------|
+| **openregulatory/templates**（121★，社区免费） | ISO 13485 / IEC 62304 / ISO 14971 / IEC 62366 现成合规模板 | 客户要 Word 交付时作底稿，再叠加本 skill 的 Annex II/III 结构 |
+| **openregulatory/eudamed-api** | 非官方 EUDAMED API 端点与数据模型（Actor/UDI/证书/警戒） | 理解 UDI-DI / Basic UDI-DI / SRN / EMDN 字段映射，落地「EUDAMED 注册」步骤 |
+| **Charles-Fang-95/EUDAMEDbulkupload**（v0.9.0） | 批量生成 UDI-DI XML 并上传 EUDAMED（模板 v2.6，MDR/IVDR 通用） | 借鉴其 XSD 字段映射与 Clinical Sizes / Annex XVI / Kit 结构 |
+| **mdr-medical-device-mcp**（PyPI，MIT） | MCP 服务：classify_medical_device / classify_ivd / samd_ai_ml_check / ce_marking_requirements / eudamed_registration | ⚠️**当前仅 scaffold（空 stub，无实时数据）**；设为观察项，待 v1.1.0 接入真实数据再评估部署 |
+
+**⚠️ EUDAMED 生产 API 需授权访问**：不要把非官方 API 当实时数据源接进 MCP，仅作字段映射参考。
+
 ## 输出标准
 
 - 模块结构符合 MDR Annex II/III
-- GSPR 表格覆盖所有相关条款
+- **GSPR 表格覆盖 Annex I 全部 23 条**（含不适用条款及理由；条款号以官方文本为准）
+- **符合性评估路径（Annex IX/XI）已书面确认**
 - 风险文档按 ISO 14971:2019 九节
-- CER 符合 MEDDEV 2.7/1 Rev.4
+- CER 符合 MEDDEV 2.7/1 Rev.4 + MDCG 2020-13（十章结构 + 三要素等同论证）
 - **🆕 AI Act 文档符合 Annex IV**
-- **🆕 网络安全章节覆盖 Annex I §17.2**
+- **🆕 网络安全章节覆盖 Annex I §17.4（§17.2 为软件生命周期）**
 - **🆕 EUDAMED 信息齐全**
+- **🆕 交付前跑 NB 退回 Top 15 自查 + 20 问模拟审核 + 验收门评分 ≥90 且零致命项**
 - 输出语言与用户需求一致
 
 ## 约束
@@ -380,12 +439,20 @@ Module G: 上市后监督 (PMS Plan / PMCF Plan / PSUR)
 ## 参考资料
 
 - `references/tech-doc-structure.md`：Annex II 七个模块详解 + 各模块内容要点
+- `references/gspr-annex1-full-checklist.md`：**Annex I 全 23 章逐条对照表**（条款号/要求/证据/标准/NB 关注点 + 17.x/18.x 详解 + 六列格式 + 8 问自检）
+- `references/nb-rejection-database.md`：**NB 退回 Top 15 原因库**（现象/根因/对策/自检）+ 提交前模拟审核 20 问
+- `references/cer-audit-guide.md`：**CER 审核级指南**（十章结构 + MDCG 2020-5 三要素 + 检索可复现 + PMCF 衔接 + 15 问）
 - `references/risk-management-template.md`：ISO 14971 风险管理报告标准结构 + 模板
-- `references/eudamed-registration-guide.md`：EUDAMED 注册步骤详解（新增）
-- `references/ai-act-compliance-checklist.md`：EU AI Act 高风险 AI 合规清单（新增）
+- `references/eudamed-registration-guide.md`：EUDAMED 注册步骤详解（SRN→UDI→NB 证书→警戒，含 120+ 字段与 swissdamed 差异）
+- `references/ai-act-compliance-checklist.md`：EU AI Act 高风险 AI 合规清单（八大义务 + Annex IV 映射 + Digital Omnibus 时间线 + 一审双认）
+- `references/audit-grade-deliverable-standards.md`：审核级交付标准总纲（成熟度四级/五性/验收门评分卡/致命项）
 - 基于《合规之战：全球医疗器械监管进化史》第十三章
-- 🆕 基于 Commission Decision (EU) 2025/2371（EUDAMED 强制）
-- 🆕 基于 EU AI Act 2024/1689
+- 🆕 基于 Commission Decision (EU) 2025/2371（EUDAMED 强制，2026-05-28）
+- 🆕 基于 EU AI Act 2024/1689 + **Digital Omnibus (EU) 2026/1744**（2026-07-27 生效）
+- 🆕 基于 MDCG 2025-6（AI Act × MDR/IVDR 交互 FAQ）
+- 🆕 基于 Reg (EU) 2026/977（NB 合格评定时限法定化，2027-02-25 适用）
+- 🆕 基于协调标准实施决定 (EU) 2026/1231（MDR）/ (EU) 2026/1313（IVDR）——EC REP → EU REP 过渡至 2031-06-15 / 06-17
+- 🆕 基于授权法案 (EU) 2026/1451 与 (EU) 2026/1359（WET 成熟技术豁免，67 类 / 35 类）
 
 ---
 
@@ -428,7 +495,7 @@ Module G: 上市后监督 (PMS Plan / PMCF Plan / PSUR)
 
 ### 补充 3：EU AI Act 医疗器械 7 项核心合规要求详解（EU 官网核实）
 
-> 来源：EU AI Act 2024/1689 + MdxCRO 深度分析 + EC Article 6 分类指南
+> 来源：EU AI Act 2024/1689 + MdxCRO 深度分析 + EC Article 6 分类指南 + **Digital Omnibus (EU) 2026/1744**（2026-07-27 生效，时间线延期）+ MDCG 2025-6（交互 FAQ）
 
 **AI Act 文档与 MDR 技术文档的整合方式**：
 - **整合规则**：AI Act Article 11 + Annex II → AI 专项内容可直接整合到 MDR 技术文档中，无需单独创建
@@ -442,8 +509,14 @@ Module G: 上市后监督 (PMS Plan / PMCF Plan / PSUR)
 
 **Class I SaMD 的 AI Act 特殊情况**：
 - 如属 MDR Class I 且搭载 AI → **不自动归 AI Act 高风险**（因 Class I 无第三方符合性评估）
-- 仅当 AI 功能满足 Annex III 高风险场景 → 适用 **2027-12-02** 截止日（Omnibus 后）
-- 如后续升级为 IIa → 适用 **2028-08-02** 截止日（Omnibus 后）
+- 仅当 AI 功能满足 Annex III 高风险场景 → 适用 **2027-12-02** 截止日（Digital Omnibus 延期后）
+- 如后续升级为 IIa → 适用 **2028-08-02** 截止日
+
+**AI Act 文档与 MDR 技术文档的整合规则（MDCG 2025-6）**：
+- AI Act Article 8(2) 允许 AI 文档**整合进** MDR/IVDR 现有文件——不必另建一套
+- 负责 MDR CE 认证的**同一 NB 整合审查**：一次审核、一份 DoC、CE 覆盖双法规（Article 45(1)）
+- MDAI（Medical Device AI）概念涵盖 MDR Annex XVI 产品、器械附件、IVD 及其附件
+- 自 2027-02-25 起 NB 合格评定时限法定化（Reg (EU) 2026/977：申请审查+签约 30 天 / QMS 审核 120 天 / 技术文档 90 天 / 发证 20 天）——**AI 器械须确认合作 NB 持 MDR + AI Act 双重资质**
 
 ### 补充 4：MDR/IVDR 简化提案对技术文档的潜在影响（EU 官网核实）
 
@@ -473,14 +546,3 @@ Module G: 上市后监督 (PMS Plan / PMCF Plan / PSUR)
 5. **投放市场前完成**：所有 EUDAMED 注册是投放市场的前提条件
 
 **⚠️ Class I 自我声明 ≠ 低标准**：EUDAMED 数据须与技术文档中器械描述、预期用途、分类完全一致，不一致可导致主管当局质疑
-
-## 2026 团队自学更新（2026-08-16）
-
-> 来源见本技能 `references/2026-self-study-eu.md`（欧盟法规学习小队整理，基于 EU 官方信源）。以下为最关键 5 条，仅增不改原逻辑。
-
-1. **EUDAMED 四模块已强制（2026-05-28）**：Actor/UDI/器械、NB 与证书、市场监督模块强制使用，新器械上市前须完成注册，遗留器械 2026-11-28 前补录。
-2. **NB 合格评定时限法定化（Reg (EU) 2026/977，2027-02-25 适用）**：申请审查+签约 30 天、QMS 审核 120 天、技术文档 90 天、发证 20 天，NB 须公开年度绩效。
-3. **EC REP → EU REP 标签标识切换（Impl. Dec (EU) 2026/1231，MDR）**：引入 EN ISO 15223-1:2021/A1:2025，5 年过渡至 **2031-06-15**，纯编辑性变更无需 NB 批准；同期新增 **EN ISO 10993-1:2025** 等协调标准。
-   > ⚠️ **勿与 IVDR 混用**：IVDR 的对应决定是 **Impl. Dec (EU) 2026/1313**，过渡至 **2031-06-17**。两者是**两份不同的实施决定**，截止日相差两天属正常，**不是笔误**——引用时须分清适用的是 MDR 还是 IVDR。
-4. **WET 成熟技术授权法案（Del. Reg (EU) 2026/1451、2026/1359）**：扩大免于逐件临床调查/技术文档审查的器械清单（67 类 / 35 类），减轻长期成熟产品负担。
-5. **MDR/IVDR 简化提案 COM(2025) 1023 尚未成法**：预计 2027 Q2 通过，现行规则完全有效，技术文档策略暂不变。

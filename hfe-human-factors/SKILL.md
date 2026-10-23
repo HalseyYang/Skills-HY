@@ -1,22 +1,25 @@
 ---
 name: hfe-human-factors
-description: "FDA 人因工程/可用性工程合规判断器与提交方案生成器 v1.0。输入器械描述，自动判断 FDA HFE 提交类别（类别1/2/3）、生成三层分类决策树、输出 URRA 分析框架、撰写人因验证测试方案、列出完整提交文件清单。覆盖 FDA 2026 终版指南（2026-08-01 强制）、IEC 62366-1:2015 可用性工程流程、MDR Annex I 可用性要求。适用于医疗器械制造商准备 FDA 510(k)/PMA/De Novo/HDE 人因提交时使用。触发词：人因工程、HFE、human factors、可用性、usability、URRA、summative testing、formative evaluation、IEC 62366、用户界面、UI变更、关键任务、critical tasks、人因验证。"
+description: FDA 人因工程/可用性工程合规判断器与提交方案生成器 v1.1。输入器械描述，自动判断 FDA HFE
+  提交类别（类别1/2/3）、生成三层分类决策树、输出 URRA 分析框架、撰写人因验证测试方案、列出完整提交文件清单。覆盖 FDA 2026
+  终版指南（2026-05-29 发布、2026-08-01 起强制三层分类）、IEC 62366-1:2015 可用性工程流程、MDR Annex I 可用性要求。新增审核级能力：类别判定理由说明模板（Decision Point A–D 留痕）、URRA 扩充列模板（根因+验证关联）、总结性测试报告 7 节结构、HFE 12 问自检。适用于医疗器械制造商准备
+  FDA 510(k)/PMA/De Novo/HDE 人因提交时使用。触发词：人因工程、HFE、human
+  factors、可用性、usability、URRA、summative testing、formative evaluation、IEC
+  62366、用户界面、UI变更、关键任务、critical tasks、人因验证。
 agent_created: true
 author: 北京奥斯曼认证咨询
-version: 1.0.0
+version: 1.1.0
 display_name: "FDA 人因工程合规判断器"
-display_name_en: "FDA Human Factors Engineering Assessor"
-description_zh: "判定 FDA HFE 提交类别（1/2/3），生成 URRA 分析框架与人因验证测试方案"
-description_en: "Determines the FDA HFE submission category (1/2/3), and generates URRA analysis frameworks and human factors validation test plans."
+display_name_en: "FDA HFE Compliance Assessor"
+description_zh: "判断 FDA HFE 提交类别（1/2/3），生成 URRA、人因验证测试方案与提交文件清单，覆盖 2026 三层分类强制要求"
+description_en: "Determine FDA HFE submission category, generate URRA, validation test protocols and submission checklists under the 2026 three-tier framework."
 ---
 
-# FDA 人因工程合规判断器与提交方案生成器 v1.0
+# FDA 人因工程合规判断器与提交方案生成器 v1.1
 
-> **2026 关键时间线**：FDA《Content of Human Factors Information in Medical Device Marketing Submissions》终版，**2026-05-29 发布 / 2026-08-01 生效**。此后所有 510(k)/PMA/De Novo/HDE 均须按三层分类框架（类别 1/2/3）+ 决策点 A–D 提交人因资料。
+> 🆕 **v1.1 升级**（2026-10-16 审核级专项）：① 补充版本元数据（与线上发布对齐）；② 新增 `references/hfe-submission-templates.md`——类别 1/2/3 判定理由说明模板（Decision Point A–D 逐条留痕，**IFU/标签修改也算 UI 变更**这个最常见误判写进模板）、URRA 扩充列模板（新增根因列+验证关联列）、总结性测试报告 7 节结构、HFE 12 问；③ 内置提交前验收门。
 >
-> 💡 **决策点 D 的实操价值**：走到 D 若判定"无须人因验证测试"，可**论证免做总结性验证（summative validation）**，直接降为类别 2。口罩类（Product Code FXX）通常落入类别 1/2，常可用 D 点论证豁免。
->
-> 配套指南：《Applying Human Factors and Usability Engineering to Medical Devices》为 **August 2026 版**（2026-07-22 FDA 举办 HFE Town Hall）。
+> **2026 关键时间线（口径勘误）**：FDA《Content of Human Factors Information in Medical Device Marketing Submissions》终版 **2026-05-29 发布**（Docket FDA-2015-D-4599，FR 2026-10734），**2026-08-01 起强制**三层分类提交——此后所有 510(k)/PMA/De Novo/HDE 均须按 Decision Point A–D 判定并提交至少类别 1/2 文档。配套《Applying Human Factors and Usability Engineering to Medical Devices》August 2026 版。⚠️ **2026-08-03 是 eSTAR v6.2 退役日，不是 HFE 指南发布日**，二者勿混。
 
 ## 目的
 
@@ -26,9 +29,9 @@ description_en: "Determines the FDA HFE submission category (1/2/3), and generat
 
 ### 步骤 1：判断 FDA HFE 提交类别
 
-> 法律依据：FDA Final Guidance **"Content of Human Factors Information in Medical Device Marketing Submissions"**
-> （注意官方标题是 **Submissions**，不是 Applications）
-> **2026-05-29 发布 / ✅ 2026-08-01 生效**；Docket FDA-2015-D-4599，Federal Register 2026-10734（91 FR 32061）
+> 法律依据：FDA Final Guidance "Content of Human Factors Information in Medical Device Marketing Applications"（**2026-05-29 发布，2026-08-01 起强制**，Docket FDA-2015-D-4599，FR 2026-10734）
+
+**判定结论必须用《HFE 提交类别判定理由说明》落档**（Decision Point A–D 逐条留痕，模板见 `references/hfe-submission-templates.md` 第 1 节）——类别 1/2 的器械这份说明就是提交物本体，写不好 = AI 请求。
 
 **四步决策流程**：
 
@@ -84,10 +87,10 @@ D. 鉴于使用历史、界面复杂性、风险控制充分性，是否必须�
    - 危险情况导致不可接受风险（🔴 矩阵区域）
    - 操作失误风险控制措施不足以将风险降至可接受水平
 
-   **关键任务清单模板**：
+   **关键任务清单模板**（审核级扩充列版见 `references/hfe-submission-templates.md` 第 2 节——新增**根因列**与**验证关联列**，后者断链 = 链条不闭环）：
 
-| # | 关键任务 | 使用场景 | 相关危险情况 | 严重度 | 概率 | 风险等级 | 现有控制措施 | 残余风险 |
-|---|---------|---------|------------|--------|------|---------|------------|---------|
+| # | 关键任务 | 使用场景 | 相关危险情况 | 严重度 | 概率 | 风险等级 | 现有控制措施 | 残余风险 | 根因 | 验证关联 |
+|---|---------|---------|------------|--------|------|---------|------------|---------|------|---------|
 
 4. **风险控制措施层级**（与 ISO 14971 一致）
    - 设计固有安全（最优）→ 防护措施 → 安全信息（最末）
@@ -122,6 +125,7 @@ Phase 4: 可用性工程报告
 ### 步骤 4：人因验证测试方案（类别 3 专属）
 
 > 类别 3 需完整人因验证测试。成本约 $50K-$200K，周期 3-6 个月。
+> **测试报告的 7 节标准结构（FDA 附录 A/B/C）与常见报告缺陷见 `references/hfe-submission-templates.md` 第 3 节。**
 
 **测试方案模板**：
 
@@ -201,20 +205,27 @@ Phase 4: 可用性工程报告
 
 | 法规/标准 | 版本 | 状态 | 核心要求 |
 |----------|------|------|---------|
-| **FDA HFE 终版指南** | 2026 终版 | **2026-08-01 强制** | 三层分类 + URRA + 验证测试 |
+| **FDA HFE 终版指南** | 2026-05-29 发布 | **2026-08-01 强制** | 三层分类 + URRA + 验证测试 |
 | **IEC 62366-1** | :2015+Amd1:2020 | FDA 认可 + MDR 协调 | 可用性工程全流程 |
 | **IEC 62366-2** | :2016（技术报告） | 辅导性 | 可用性工程方法指南 |
 | **ISO 14971** | :2019 | 整合使用 | 风险管理 + URRA 衔接 |
 | **MDR Annex I §5** | 2017/745 | 现行 | 可用性设计要求 |
 | **IEC 60601-1-6** | :2010+Amd1:2013 | FDA 认可 | 基本性能 + 可用性 |
 
+## 参考资料
+
+- `references/hfe-submission-templates.md`：**HFE 提交模板集**（类别判定理由说明 + URRA 扩充列模板 + 总结性测试报告 7 节 + HFE 12 问）
+- `references/audit-grade-deliverable-standards.md`：审核级交付标准总纲（成熟度四级/五性/验收门评分卡/致命项）
+- 配套：fda-510k-pathway 技能（步骤 8 HFE 提交类别判定 + RTA 清单）
+
 ## 输出规范
 
-- HFE 类别判定给出四步决策流程的每一步结论
-- URRA 关键任务清单须覆盖所有 S≥3 使用相关危险
+- HFE 类别判定给出四步决策流程的每一步结论（**判定理由说明落档，Decision Point A–D 逐条留痕**）
+- URRA 关键任务清单须覆盖所有 S≥3 使用相关危险（**含根因列与验证关联列**）
 - 类别 3 测试方案须包含：用户数、环境、任务脚本、统计方法、判定标准
 - 所有法规引用精确到条款号（如 FDA HFE Guidance §IV.B）
 - 与 ISO 14971 风险管理文件的衔接点须明确标注
+- **🆕 交付前跑 HFE 12 问自检 + 验收门评分 ≥90 且零致命项**
 
 ## 约束
 
@@ -223,15 +234,3 @@ Phase 4: 可用性工程报告
 - 总结性测试主持者不得参与产品设计（避免偏差）
 - 人因测试数据必须来自代表性用户群体，不可使用公司内部员工
 - 涉及 NMPA 注册时：中国可用性要求参照 YY/T 9706.106（等同 IEC 62366-1）
-
----
-
-## 2026 团队自学更新（2026-08-16）
-
-> 详情见参考文件 `references/2026-self-study-hfe.md`（含官方信源 URL）。
-
-1. **两份互补指南成型**：Applying HFE 终版于 **2026-08-03** 发布（2016 后首修），《Content of HF Information》终版 **2026-05-29** 发布、**2026-08-01** 起对收到的申报生效；二者互补，前者讲"怎么做"、后者讲"交什么"。
-2. **Decision Point D 为终版新增**：即使存在新/受影响关键任务，也可基于 UI 安全使用历史、界面复杂性、现有风险控制充分性，以 Category 2 论证免做验证测试——补强本技能四步流程。
-3. **eSTAR v7.0 自 2026-08-01 内嵌 HFE 模块**：申报须声明 HF 类别（1/2/3），选错可致最长 180 天技术筛选搁置；旧版 v6.2 于 2026-08-03 停用。
-4. **Applying HFE 终版删除原 Appendix A 报告模板**，改引用伴侣指南推荐结构；术语对齐 ISO 14971（"risk control measures"）、ISO 13485、IEC 62366-1。
-5. **美欧差异须明示**：FDA 有 15 人/组基准与分类触发；EU MDR 可用性统一嵌入 Annex I GSPR（EN IEC 62366-1），无最低人数但须技术文件永久留存并经 NB 审核。
